@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="mongodb"
 VERSION=${VERSION:-8.2.7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -45,7 +45,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -92,7 +92,6 @@ mv usr/share/man usr/
 
 mkdir -p ${PKG}/usr/doc/${PRGNAM}-${VERSION}
 mv usr/share/doc/mongodb-org-* ${PKG}/usr/doc/${PRGNAM}-${VERSION}
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 rm -rf usr/share/doc
 
 mkdir -p $PKG/etc/{logrotate,rc}.d

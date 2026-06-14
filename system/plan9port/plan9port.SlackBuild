@@ -32,8 +32,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=plan9port
 VERSION=${VERSION:-20241024_61e362ad}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 COMMIT=61e362add9e1485bec1ab8261d729016850ec270
 
 if [ -z "$ARCH" ]; then
@@ -52,7 +52,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -92,7 +92,6 @@ install -D -m 0755 $CWD/xinitrc.rio $PKG/etc/X11/xinit/xinitrc.rio
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cd $PKG/opt/plan9
 mv CHANGES CONTRIBUTORS INSTALL LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

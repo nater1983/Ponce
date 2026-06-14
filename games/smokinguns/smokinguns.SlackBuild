@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=smokinguns
 VERSION=${VERSION:-1.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # 2023-05-16 DW: need an ARCH test
 if [ -z "$ARCH" ]; then
@@ -51,7 +51,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -95,7 +95,6 @@ install -m 0755 -D $CWD/launcher.sh $PKG/usr/bin/smokinguns
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 find $PKG/opt -iname *.txt -type f -exec cp {} $PKG/usr/doc/$PRGNAM-$VERSION \;
 cp $PKG/opt/$PRGNAM/README $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

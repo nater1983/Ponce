@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=avogadrolibs
 VERSION=${VERSION:-1.100.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 AVERSION=${AVERSION:-1.98.0}
 FVERSION=${FVERSION:-1.99.0}
 
@@ -55,7 +55,7 @@ USELIBMSYM="" ; [ "${LIBMSYM:-yes}" = "no" ] && USELIBMSYM="-DUSE_LIBMSYM=OFF"
 USESPGLIB="" ; [ "${SPGLIB:-yes}" = "no" ] && USESPGLIB="-DUSE_SPGLIB=OFF"
 USEMMTF="" ; [ "${MMTF:-yes}" = "no" ] && USEMMTF="-DUSE_MMTF=OFF"
 
-TMP=${TMP:-/tmp/SBo}	
+TMP=${TMP:-/tmp/rdlnx}	
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -67,6 +67,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -153,7 +156,6 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a *.md LICENSE CITATION.cff $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Remove doc files installed by make install in /usr/share/doc/AvogadroLibs that are redundant
 rm -rf $PKG/usr/share/doc

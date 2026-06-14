@@ -44,9 +44,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=oldschool-pc-fonts
 VERSION=${VERSION:-2.2}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -55,7 +55,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -131,7 +131,6 @@ fi
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a *.TXT docs/*.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/README_console.txt > $PKG/usr/doc/$PRGNAM-$VERSION/README_console.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@TYPE@,$TYPE," $CWD/slack-desc > $PKG/install/slack-desc

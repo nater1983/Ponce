@@ -19,9 +19,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=unetbootin
 VERSION=${VERSION:-702}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -36,7 +36,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -49,6 +49,9 @@ elif [ "$ARCH" = "i686" ]; then
     archname="i386"
 elif [ "$ARCH" = "x86_64" ]; then
     LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
     archname="amd64"
 else
     LIBDIRSUFFIX=""
@@ -109,7 +112,6 @@ cp -a $PTMP/unetbootin_icons.svg $PKG/usr/share/pixmaps/$PRGNAM.svg
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README.TXT $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README.issues > $PKG/usr/doc/$PRGNAM-$VERSION/README.issues
 
 mkdir -p $PKG/install

@@ -28,8 +28,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=homm3_shareware_data
 VERSION=${VERSION:-4.0} # This is the version stated in the ReadMe
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 DEMO=heroes_3_complete_demo.sit
 ARCH=noarch
@@ -42,7 +42,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -78,7 +78,6 @@ rm -rf $PKG/usr/share/Maps/*.rsrc
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a Read\ Me $PKG/usr/doc/$PRGNAM-$VERSION/ReadMe.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

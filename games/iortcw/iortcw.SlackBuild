@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=iortcw
 VERSION=${VERSION:-1.51c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 INSTALL_COMMON_DATA=${INSTALL_COMMON_DATA:-yes}
 
@@ -69,7 +69,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -83,6 +83,9 @@ elif [ "$ARCH" = "i686" ]; then
   BUILDARCH="x86"
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
   BUILDARCH="x86_64"
 else
@@ -305,7 +308,6 @@ cp -a SP/COPYING.txt SP/README.txt \
 cp -a MP/COPYING.txt MP/README.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION/MP
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 
 mkdir -p $PKG/install

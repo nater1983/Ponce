@@ -20,9 +20,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=convertlit
 VERSION=${VERSION:-1.8}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -37,7 +37,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -49,6 +49,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -101,7 +104,6 @@ gzip -9c < $CWD/lit2epub.1 > $PKG/usr/man/man1/lit2epub.1.gz
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 sed 's,\r,,' cl?t$SRCVER/COPYING > $PKG/usr/doc/$PRGNAM-$VERSION/COPYING
 sed '/^Build/,$d' README > $PKG/usr/doc/$PRGNAM-$VERSION/README
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

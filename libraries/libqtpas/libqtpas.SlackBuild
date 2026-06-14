@@ -56,8 +56,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=libqtpas
 VERSION=${VERSION:-4.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SRCNAM=${SRCNAM:-lazarus}
 SRCVER=${SRCVER:-4.6-0}
 
@@ -74,7 +74,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}"  ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,6 +86,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-march=x86-64 -mtune=generic -pipe -O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -125,7 +128,6 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 cd $TMP/$SRCNAM
 mkdir -pv $PKG/usr/doc/$PRGNAM-$VERSION
 cp -av COPYING.txt README.md COPYING.GPL.txt COPYING.LGPL.txt COPYING.modifiedLGPL.txt $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 find $PKG/usr/doc/$PRGNAM-$VERSION -type f -exec chmod -v 0644 {} \+
 find $PKG/usr/doc/$PRGNAM-$VERSION -type f -exec chown -c -v root:root {} \+
 

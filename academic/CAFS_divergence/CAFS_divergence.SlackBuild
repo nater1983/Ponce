@@ -29,8 +29,8 @@ BINNAM=cafs
 SYSTOS=linux
 VERSION=${VERSION:-1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   ARCH=$( uname -m )
@@ -50,7 +50,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -82,7 +82,6 @@ cp -a \
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a ${BINNAM}_user_manual.pdf $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/References > $PKG/usr/doc/$PRGNAM-$VERSION/References
 
 mkdir -p $PKG/install

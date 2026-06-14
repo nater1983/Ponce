@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=vul
 VERSION=${VERSION:-20230314_10d9d61}
 COMMIT="10d9d6191dd81f110a9788e66b4818483f32d31d"
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -38,7 +38,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -58,7 +58,6 @@ make install PREFIX=/usr DESTDIR=$PKG
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README.md \
  $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

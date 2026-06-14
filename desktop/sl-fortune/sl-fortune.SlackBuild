@@ -27,13 +27,13 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=sl-fortune
 VERSION=${VERSION:-0.11}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_rdlnx}
 ARCH=noarch
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what
 # the name of the created package would be, and then exit. This information
@@ -52,7 +52,6 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 chown -R root:root $PRGNAM
 mv $PRGNAM/* $PKG && rmdir $PRGNAM
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

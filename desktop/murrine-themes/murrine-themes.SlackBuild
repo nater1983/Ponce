@@ -39,8 +39,8 @@ DEBIVER=${DEBIVER:-0.98.11} # Version of Debian's package
 ROSAVER=${ROSAVER:-2.0} # Version of ROSA's package
 CUSTVER=${CUSTVER:-0.01} # Custom themes version
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -52,7 +52,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -97,7 +97,6 @@ cp -a usr/share/themes/* $PKG/usr/share/themes
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a debian/{changelog,copyright,README} $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=findpkg
 VERSION=${VERSION:-20160817}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # It is not arch spesific.
 ARCH="noarch"
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -68,7 +68,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION/gpl.txt > $PKG/usr/doc/$PRGNAM-$VERSION/gpl.txt
 cat $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION/changelog.txt > $PKG/usr/doc/$PRGNAM-$VERSION/changelog.txt
 cat $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION/README.txt > $PKG/usr/doc/$PRGNAM-$VERSION/README.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/usr/man/man8
 cat $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION/$PRGNAM.8.gz > $PKG/usr/man/man8/$PRGNAM.8.gz

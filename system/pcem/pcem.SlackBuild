@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pcem
 VERSION=${VERSION:-b8ad941.20230304}
 SRCVERSION=${SRCVERSION:-b8ad9416bc1d3acd8b384a83b753ddf2282bd091}
-BUILD=${BUILD:-4}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Use ALSA=yes to output MIDI with ALSA.
 unset USE_ALSA
@@ -64,7 +64,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -155,7 +155,6 @@ cp -a \
   README.md \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat COPYING > $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README.sw
 
 mkdir -p $PKG/install

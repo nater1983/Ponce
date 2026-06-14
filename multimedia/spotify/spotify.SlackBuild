@@ -36,8 +36,8 @@ RELVER=${RELVER:-g3be53afe}
 VERSION32=${VERSION32:-1.0.72.117}
 RELVER32=${RELVER32:-g6bd7cc73-35}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Modified since Spotify has diferent versions for each architecture
 case "$(uname -m)" in
@@ -51,7 +51,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -81,7 +81,6 @@ for res in 16 22 24 32 48 64 128 256 512; do
 "$PKG/usr/share/icons/hicolor/${res}x${res}/apps/$SRCNAM.png"
 done
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # remove dirs.
 rm -rf $PKG/usr/share/{doc,spotify/apt-keys}

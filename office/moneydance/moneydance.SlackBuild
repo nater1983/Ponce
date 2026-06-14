@@ -35,8 +35,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=moneydance
 VERSION=${VERSION:-2024.5253}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in
   i?86) ARCH=i586 ;;
@@ -49,7 +49,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,7 +86,6 @@ ln -s /opt/Moneydance/resources/moneydance_icon32.png \
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 ln -s /opt/Moneydance/resources/license.txt \
       $PKG/usr/doc/$PRGNAM-$VERSION/license.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

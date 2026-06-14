@@ -24,8 +24,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=sfarkxtc
 VERSION=${VERSION:-20181208}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=${COMMIT:-4ed577d5779a68422b816f96a40e8e4abe65894a}
 LIBNAM=sfArkLib
@@ -44,7 +44,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 

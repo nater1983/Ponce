@@ -28,8 +28,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=caddy
 VERSION=${VERSION:-2.11.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 DIST=dist
 
 CADDYUSER=${CADDYUSER:-caddy}
@@ -58,7 +58,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -98,7 +98,6 @@ mkdir -p $PKG/usr/share/$PRGNAM
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cd $TMP/$PRGNAM-$VERSION
 cp -a LICENSE AUTHORS README.md $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README.SLACKWARE > $PKG/usr/doc/$PRGNAM-$VERSION/README.SLACKWARE
 
 cd $TMP/$DIST-$VERSION

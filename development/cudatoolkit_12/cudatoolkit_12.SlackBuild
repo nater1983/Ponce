@@ -49,7 +49,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -202,7 +202,6 @@ fi
 chown root:root $PKG/usr/share/applications
 chmod 0644 $PKG/usr/share/applications/*
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 chown root:root $PKG/usr/doc/$PRGNAM-$VERSION/*
 chmod 0644 $PKG/usr/doc/$PRGNAM-$VERSION/*
 

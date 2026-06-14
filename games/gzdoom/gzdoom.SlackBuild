@@ -47,8 +47,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gzdoom
 VERSION=${VERSION:-4.14.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -63,7 +63,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -149,7 +149,6 @@ done
 mkdir -p $PKG/usr/share/pixmaps
 ln -s ../icons/hicolor/64x64/apps/$PRGNAM.png $PKG/usr/share/pixmaps/$PRGNAM.png
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README_SBo.txt > $PKG/usr/doc/$PRGNAM-$VERSION/README_SBo.txt
 
 # Fix DOS CRLF line endings. The stuff in licenses/ is already OK, for 2.3.2.

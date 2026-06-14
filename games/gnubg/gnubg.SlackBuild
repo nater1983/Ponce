@@ -27,10 +27,10 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gnubg
 VERSION=${VERSION:-1.06.002}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -55,6 +55,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -93,7 +96,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 ln -s /usr/doc/$PRGNAM-$VERSION $PKG/usr/doc/gnubg
 cp -a AUTHORS COPYING ChangeLog INSTALL NEWS README TODO \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/usr/share/applications
 cat $CWD/gnubg.desktop > $PKG/usr/share/applications/gnubg.desktop

@@ -42,9 +42,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=xdman
 VERSION=${VERSION:-8.0.29}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 sys_arch=${sys_arch:-$(uname -m)}
 SRCNAM=${SRCNAM:-xdman_gtk_}
 
@@ -62,7 +62,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}"  ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -111,7 +111,6 @@ rm -rvf $PKG/usr/share/applications/xdm-app.destop
 install -m0644 $CWD/xdm-app.desktop -t $PKG/usr/share/applications/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/gpl-2.0.txt > $PKG/usr/doc/$PRGNAM-$VERSION/GPL
 
 mkdir -p $PKG/install

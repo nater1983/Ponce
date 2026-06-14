@@ -27,10 +27,10 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pulse-sms
 VERSION=${VERSION:-4.5.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -71,7 +71,6 @@ ln -sf /opt/Pulse\ SMS/$PRGNAM $PKG/usr/bin/$PRGNAM
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp $PKG/usr/share/doc/$PRGNAM/* $PKG/opt/Pulse\ SMS/LICENSE* $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

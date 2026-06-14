@@ -27,10 +27,10 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ttf-bitstream-vera
 VERSION=${VERSION:-1.10}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -62,7 +62,6 @@ cp -a *.ttf $PKG/usr/share/fonts/TTF
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYRIGHT.TXT README.TXT RELEASENOTES.TXT local.conf \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

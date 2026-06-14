@@ -29,8 +29,8 @@ PRGNAM=vst3sdk
 VERSION=${VERSION:-3.8.0}
 SDK_BUILD=${SDK_BUILD:-_build_66}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 # git submodules
@@ -51,7 +51,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,7 +86,6 @@ cp -a \
   VST3_Usage_Guidelines.pdf \
   index.html \
 $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 chmod 755 $PKG/usr/include/vst3sdk
 find $PKG/usr/include/vst3sdk -type d -exec chmod 755 {} +

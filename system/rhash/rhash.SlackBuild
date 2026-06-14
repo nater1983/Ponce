@@ -37,8 +37,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=rhash
 VERSION=${VERSION:-1.4.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Shall we compile with OpenSSL support?
 OPENSSL=${OPENSSL:-yes}
@@ -55,7 +55,7 @@ if [ "$STATICLIB" = "yes" ]; then
   ENABLESTATICLIB="--enable-lib-static"
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -82,6 +82,9 @@ elif [ "$ARCH" = "s390" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -128,7 +131,6 @@ mv -v $PKG/etc/rhashrc $PKG/etc/rhashrc.new
 # Copy docs
 mkdir -pv $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a ChangeLog COPYING README.md $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

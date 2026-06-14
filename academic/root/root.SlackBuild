@@ -22,8 +22,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=root
 VERSION=${VERSION:-6.34.08}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -38,7 +38,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -217,7 +217,6 @@ cp -a README/ LICENSE \
 find $PKG$PREFIX/README -type d -exec chmod 755 {} \;
 find $PKG$PREFIX/README -type f -exec chmod 644 {} \;
 chmod -R 644 $PKG$PREFIX/LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Install some profile.d scripts to use the right paths
 mkdir -p $PKG/etc/profile.d

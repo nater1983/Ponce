@@ -26,8 +26,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="rocmtoolkit_6"
 VERSION=${VERSION:-6.4.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}
 [ "$ARCH" = "x86_64" ] || {
@@ -49,7 +49,7 @@ EOF
   exit 1
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -97,7 +97,6 @@ find $PKG/usr/man -name \*.[15] -exec gzip -9 {} \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv ${PKG}/opt/rocm-$VERSION/share/doc/* ${PKG}/usr/doc/$PRGNAM-$VERSION && rmdir ${PKG}/opt/rocm-$VERSION/share/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p ${PKG}/etc/ld.so.conf.d
 echo /opt/rocm-$VERSION/lib > "$PKG/etc/ld.so.conf.d/$PRGNAM.conf"

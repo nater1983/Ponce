@@ -24,8 +24,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=rtirq
 VERSION=${VERSION:-20240816_6ce7525}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -34,7 +34,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -64,7 +64,6 @@ fi
 sed 's/\r//' LICENSE > $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
 
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README_SBo.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

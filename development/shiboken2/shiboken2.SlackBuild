@@ -30,8 +30,8 @@ SRCNAM=pyside-setup-opensource-src
 SRCNAM_PATCHES=pyside2
 SRCNAM_PATCHES_VERSION=5.15.18-1
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 PYTHON_VERSION=${PYTHON_VERSION:-$(python3 -c 'import sys; print("{}.{}".format(sys.version_info.major, sys.version_info.minor))')}
 PYTHON_LIB_PATH=$(python3 -c "from sysconfig import get_path; print(get_path('platlib'))")
@@ -49,7 +49,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -61,6 +61,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -124,7 +127,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   sources/$PRGNAM/{AUTHORS,COPYING*,doc} \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

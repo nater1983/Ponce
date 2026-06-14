@@ -9,8 +9,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=nant
 VERSION=${VERSION:-0.92}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -28,7 +28,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -55,7 +55,6 @@ echo '/usr/bin/mono /usr/share/NAnt/bin/NAnt.exe "$@"' > $PKG/usr/bin/nant
 chmod +x $PKG/usr/bin/nant
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 mv $PKG/usr/share/NAnt/*.txt $PKG/usr/doc/$PRGNAM-$VERSION/
 mv $PKG/usr/share/NAnt/doc/* $PKG/usr/doc/$PRGNAM-$VERSION/
 mv $PKG/usr/share/NAnt/examples $PKG/usr/doc/$PRGNAM-$VERSION/

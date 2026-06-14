@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=fmit
 VERSION=${VERSION:-1.2.14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # 20220218 bkw: always include qt (aka PulseAudio) and ALSA support.
 CONFIG="acs_qt acs_alsa"
@@ -62,7 +62,7 @@ fi
 
 echo "=== CONFIG='$CONFIG'"
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -89,7 +89,6 @@ make install INSTALL_ROOT=$PKG
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING* README.txt $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@CONFIG@,$CONFIG," < $CWD/slack-desc > $PKG/install/slack-desc

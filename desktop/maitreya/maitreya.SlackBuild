@@ -13,10 +13,10 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=maitreya
 VERSION=${VERSION:-7.0.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -41,6 +41,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 fi
 
@@ -82,7 +85,6 @@ make install \
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a INSTALL README $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 ( cd $PKG/usr/doc/$PRGNAM-$VERSION
   ln -s ../../share/maitreya6/COPYING
   ln -s ../../share/maitreya6/changelog

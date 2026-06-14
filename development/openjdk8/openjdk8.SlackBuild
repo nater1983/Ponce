@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=openjdk8
 VERSION=${VERSION:-8u442}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 DVER=1.8.0_$(printf $VERSION | cut -du -f2)
 ICEDTEA=icedtea-3.34.0
@@ -46,7 +46,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 BUILD_DIR=$TMP/$PRGNAM
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
@@ -119,7 +119,6 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $PKG/usr/lib${LIBDIRSUFFIX}/$PRGNAM/{THIRD_PARTY_README,LICENSE,ASSEMBLY_EXCEPTION} \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

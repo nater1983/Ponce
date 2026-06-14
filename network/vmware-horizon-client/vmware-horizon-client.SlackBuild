@@ -30,10 +30,10 @@ SRCNAM=VMware-Horizon-Client
 VERSION=${VERSION:-2312.1_8.12.1_23543969}
 DEBVERSION=${VERSION//_/-}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -111,7 +111,6 @@ chmod +755 $PKG/usr/lib64/vmware/view/vdpService/webrtcRedir/libwebrtc_sharedlib
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/doc/vmware-horizon-client/* $PKG/usr/doc/$PRGNAM-$VERSION/
 rm -rf $PKG/usr/share/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

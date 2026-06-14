@@ -12,9 +12,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=clonekeen
 VERSION=${VERSION:-8.4}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -29,7 +29,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -80,7 +80,6 @@ cp -r bin/* $PKG/usr/share/games/$PRGNAM
 # shareware release
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/story.txt README src/*.txt $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Optional shareware data. It's compressed in an oddball format,
 # you need libdynamite to build the extractor.

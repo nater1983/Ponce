@@ -28,8 +28,8 @@ PRGNAM=sqldeveloper
 VERSION=${VERSION:-23.1.1.345.2114}
 ARCH=${ARCH:-noarch}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what
 # the name of the created package would be, and then exit. This information
@@ -39,7 +39,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -72,7 +72,6 @@ cp $CWD/sqldeveloper.desktop $PKG/usr/share/applications
 sed -i -e "s#$PKG##" $PKG/opt/$PRGNAM/sqldeveloper.sh
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/usr/bin
 ln -sf /opt/sqldeveloper/sqldeveloper/bin/sqldeveloper $PKG/usr/bin/sqldeveloper

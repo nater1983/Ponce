@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=PeaZip
 VERSION=${VERSION:-11.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 # gtk2 (default), gtk3 (alpha stage) or qt6 (requires installation of Qt6 bindings)
 WIDGET=${WIDGET:-gtk2}
 
@@ -47,7 +47,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -138,7 +138,6 @@ cp -a $SRC/*.pdf                       $PKG/usr/share/$PRGNAM/
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp $TMP/$PRGNAM-$VERSION/LICENSE $PKG/usr/doc/$PRGNAM-$VERSION/
 cp -a $TMP/$PRGNAM-$VERSION/peazip-sources/res/share/copying $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # permissions
 chown -R root:root $PKG/

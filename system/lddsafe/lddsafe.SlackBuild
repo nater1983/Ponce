@@ -16,8 +16,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=lddsafe
 VERSION=${VERSION:-20110819_02842ba}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -26,7 +26,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -38,7 +38,6 @@ mkdir -p $OUTPUT \
 install -m0755 -oroot -groot $CWD/$PRGNAM $PKG/usr/bin/$PRGNAM
 gzip -9c < $CWD/$PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
 install -m0644 -oroot -groot $CWD/README.textile $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG

@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=clojure
 VERSION=${VERSION:-1.12.3.1577}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=$PRGNAM-tools
 
@@ -47,7 +47,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,7 +86,6 @@ mkdir -p $PKG/usr/man/man1
 gzip -9c < clojure.1 > $PKG/usr/man/man1/clojure.1.gz
 gzip -9c < clj.1 > $PKG/usr/man/man1/clj.1.gz
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat install.sh > $PKG/usr/doc/$PRGNAM-$VERSION/install.sh
 
 mkdir -p $PKG/install

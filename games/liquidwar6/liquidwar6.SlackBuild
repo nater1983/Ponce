@@ -20,9 +20,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=liquidwar6
 VERSION=${VERSION:-0.6.3902}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 MAPVER=${MAPVER:-0.0.13beta}
 SHORTNAM=${PRGNAM/[0-9]*/}
@@ -40,7 +40,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -52,6 +52,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -134,7 +137,6 @@ rm -rf $PKG/usr/share/doc
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README NEWS ChangeLog COPYING AUTHORS $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@MAPVER@,$MAPVER," $CWD/slack-desc > $PKG/install/slack-desc

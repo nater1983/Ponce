@@ -24,9 +24,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=univga-font
 VERSION=${VERSION:-20021031}
-BUILD=${BUILD:-4}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -35,7 +35,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -114,7 +114,6 @@ install -m0755 bdf2psf.pl $PKG/usr/bin
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a *.lsm $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # 20230306 bkw: douninst.sh makes package removal cleaner. it rebuilds
 # fonts.{dir|scale} after our fonts get removed, removes the "univga"

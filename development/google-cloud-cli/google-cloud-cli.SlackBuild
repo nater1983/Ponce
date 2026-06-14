@@ -25,11 +25,11 @@ cd $(dirname $0) ;CWD=$(pwd)
 PRGNAM=google-cloud-cli
 VERSION=${VERSION:-540.0.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SRCNAM=${PRGNAM}-${VERSION}-linux-x86_64
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -98,7 +98,6 @@ chmod +x $PKG/etc/profile.d/$PRGNAM.csh
 # Docs
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 [ -f LICENSE ] && cp -a LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
-[ -f $CWD/$PRGNAM.SlackBuild ] && cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Slack-desc
 mkdir -p $PKG/install

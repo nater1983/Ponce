@@ -29,8 +29,8 @@ PRGNAM2=nDPI
 VERSION=${VERSION:-6.0}
 VERSION2=${VERSION2:-4.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 DISTCOMMIT=db8397e321a2216196004f4a245d956bd4a442ac
 
@@ -63,7 +63,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -75,6 +75,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O0 -fPIC -ggdb"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -179,7 +182,6 @@ cp -a *.md COPYING LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 
 ( cd $TMP/$PRGNAM2-$VERSION2
   cp -a *.md COPYING $PKG/usr/doc/$PRGNAM-$VERSION/nDPI )
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

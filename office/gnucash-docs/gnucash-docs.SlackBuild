@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gnucash-docs
 VERSION=${VERSION:-5.12}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Docs only, no binaries
 ARCH=noarch
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -126,7 +126,6 @@ cd build
 # Let's move this to satisfy sbopkglint:
   mv $PKG/usr/share/doc/HTML $PKG/usr/doc
   rm -rf $PKG/usr/share/doc
-  cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cd ..
 
 mkdir -p $PKG/install

@@ -30,10 +30,10 @@ PRGNAM=texlive-extra
 TEXMFVERSION=${TEXMFVERSION:-240409}
 VERSION=${VERSION:-2024.240409}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -67,7 +67,6 @@ rmdir $PKG$TEXMFROOT/texmf-dist/linked_scripts
 # Install index of provided tex packages to the docs
 mv $PKG$TEXMFROOT/texmf-dist/packages.extra.gz $PKG/usr/doc/texlive-$VERSION
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

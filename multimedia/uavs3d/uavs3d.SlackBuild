@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=uavs3d
 VERSION=${VERSION:-1fd0491_20230223}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 sys_arch=${sys_arch:-$(uname -m)}
 COMMIT=${COMMIT:-1fd04917cff50fac72ae23e45f82ca6fd9130bd8}
 COMMITDATE=${COMMITDATE:-20230223}
@@ -40,7 +40,7 @@ case "$sys_arch" in
 	     *) echo "This SlackBuild will not build on $sys_arch platform" && exit 1 ;;
 esac
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -52,6 +52,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   echo "This SlackBuild will not build on $sys_arch platform" && exit 1
@@ -108,7 +111,6 @@ rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
 mkdir -pv  $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING README.md    $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

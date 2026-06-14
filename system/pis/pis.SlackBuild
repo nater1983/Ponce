@@ -25,9 +25,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=pis
 VERSION=${VERSION:-0.2}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
@@ -35,7 +35,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -59,7 +59,6 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp doc/README $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/usr/man/man1
 gzip -9 -c manpage/$PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz

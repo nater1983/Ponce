@@ -26,9 +26,9 @@
 cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=openjdk7
 VERSION=${VERSION:-7u321}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 DVER=1.7.0_$(printf $VERSION | cut -du -f2)
 
 if [ -z "$ARCH" ]; then
@@ -44,7 +44,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 BUILD_DIR=$TMP/$PRGNAM
 SBO_PATCH_DIR="${BUILD_DIR}/jdk-archive-patch"
 PKG=$TMP/package-$PRGNAM
@@ -181,7 +181,6 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $PKG/usr/lib${LIBDIRSUFFIX}/$PRGNAM/{THIRD_PARTY_README,LICENSE,ASSEMBLY_EXCEPTION} \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

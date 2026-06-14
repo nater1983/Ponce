@@ -29,8 +29,8 @@ IFS=$'\n\t'
 PRGNAM=mblaze
 VERSION=${VERSION:-1.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=${ARCH:-}
 PRINT_PACKAGE_NAME=${PRINT_PACKAGE_NAME:-}
 
@@ -57,7 +57,7 @@ else
   LIBDIRSUFFIX=""
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -99,7 +99,6 @@ done
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION || exit 1
 cp -a *.md COPYING README VERSION $PKG/usr/doc/$PRGNAM-$VERSION
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

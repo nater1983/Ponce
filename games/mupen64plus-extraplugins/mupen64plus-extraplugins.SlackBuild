@@ -32,8 +32,8 @@ VIDEOARACHNOID=${VIDEOARACHNOID:-8187d1135ced0102f99d8305b52e0e75b01ef917}
 VIDEOGLIDE64=${VIDEOGLIDE64:-bdf9f5ca8e381e6c1c824aa70b26ad34f4eeb132}
 VIDEOZ64=${VIDEOZ64:-e8023148574d44fbabd1bb9d0ded7192869ec2ce}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -48,7 +48,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 M64PCOMPONENTS="rsp-cxd4 rsp-z64 video-arachnoid video-glide64 video-z64"
@@ -61,6 +61,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -125,7 +128,6 @@ for COMPONENT in $M64PCOMPONENTS; do
   cp -a mupen64plus-$COMPONENT/{COPYING,README,README.md} \
      $PKG/usr/doc/$PRGNAM-$VERSION/mupen64plus-$COMPONENT 2>/dev/null || :
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

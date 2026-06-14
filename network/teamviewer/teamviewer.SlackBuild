@@ -31,8 +31,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=teamviewer
 VERSION=${VERSION:-15.76.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -50,7 +50,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -112,7 +112,6 @@ mkdir -p $PKG/usr/share/pixmaps
 ln -s ../../../opt/teamviewer/tv_bin/desktop/teamviewer_256.png  $PKG/usr/share/pixmaps/TeamViewer.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mv $PKG/usr/share/applications/com.teamviewer.TeamViewer.desktop $PKG/usr/share/applications/TeamViewer.desktop
 

@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=g15daemon
 VERSION=${VERSION:-1.9.5.3}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -47,7 +47,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -60,6 +60,9 @@ elif [ "$ARCH" = "s390" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -110,7 +113,6 @@ mkdir -p $PKG/usr/lib${LIBDIRSUFFIX}/pm-utils/sleep.d
 cat $CWD/51g15hook.sh > $PKG/usr/lib${LIBDIRSUFFIX}/pm-utils/sleep.d/51g15hook
 chmod 0755 $PKG/usr/lib${LIBDIRSUFFIX}/pm-utils/sleep.d/51g15hook
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README.SLACKWARE > $PKG/usr/doc/$PRGNAM-$VERSION/README.SLACKWARE
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;

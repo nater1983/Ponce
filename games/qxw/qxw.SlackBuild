@@ -9,8 +9,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=qxw
 VERSION=${VERSION:-20200708}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 QXWGUIDE=${QXWGUIDE:-qxw-guide}
 
 if [ -z "$ARCH" ]; then
@@ -30,7 +30,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -68,7 +68,6 @@ then
   cp $CWD/$QXWGUIDE-$VERSION.pdf $PKG/usr/doc/$PRGNAM-$VERSION
 fi
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

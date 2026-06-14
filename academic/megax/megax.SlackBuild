@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=megax
 VERSION=${VERSION:-11.0.11_1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=mega
 DEBVER=$(echo $VERSION | tr _ -)
@@ -61,7 +61,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -113,7 +113,6 @@ cp $CWD/$PRGNAM.desktop $PKG/usr/share/applications
 cp usr/share/pixmaps/mega.png $PKG/usr/share/pixmaps/megax.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/References > $PKG/usr/doc/$PRGNAM-$VERSION/References
 
 mkdir -p $PKG/install

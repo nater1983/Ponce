@@ -29,9 +29,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=tauonmb
 VERSION=${VERSION:-7.8.0}
 SRCNAM=Tauon
-BUILD=${BUILD:-4}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SLACKVER=$(awk 'NR {print $2}' "/etc/slackware-version" | sed 's/[^+]//g')
 
 if [ -z "$ARCH" ]; then
@@ -52,7 +52,7 @@ fi
 
 KFVER=${KFVER:-131.1.0}
 MATAG=${MATAG:-4a5b74bef029b3592c54b6048650ee5f972c1a48}
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 RPC=${RPC:-no}
@@ -130,7 +130,6 @@ rm -fR extra
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv *.md CHANGELOG LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

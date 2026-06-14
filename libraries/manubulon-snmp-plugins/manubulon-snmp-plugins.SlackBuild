@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=manubulon-snmp-plugins
 VERSION=${VERSION:-20151112}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=manubulon-snmp
 ARCH=noarch
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -74,7 +74,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp README.md plugins/{Changelog,INSTALL,LICENSE} $PKG/usr/doc/$PRGNAM-$VERSION
 cp -r --no-preserve=all plugins/doc $PKG/usr/doc/$PRGNAM-$VERSION/html
 cat plugins/README > $PKG/usr/doc/$PRGNAM-$VERSION/README.old
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

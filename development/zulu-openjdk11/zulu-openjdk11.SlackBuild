@@ -29,8 +29,8 @@ PRGNAM=zulu-openjdk11
 VERSION=${VERSION:-11.0.31}
 ZULUVERSION=${ZULUVERSION:-11.88.17}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -45,7 +45,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=${TMP}/package-${PRGNAM}
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -54,6 +54,9 @@ if [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   ZULU_ARCH=x64
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 elif  [ "$ARCH" = "arm" ]; then
   ZULU_ARCH=aarch32hf

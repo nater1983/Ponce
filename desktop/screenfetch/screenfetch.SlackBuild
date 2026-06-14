@@ -55,7 +55,7 @@ SRCNAM="screenFetch"
 VERSION="${VERSION:-3.9.9}"
 BUILD="${BUILD:-1}"
 TAG="${TAG:-_SBo}"
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH="noarch"
 DOCS="CHANGELOG COPYING README.mkdn TODO update-manpage.sh"
 

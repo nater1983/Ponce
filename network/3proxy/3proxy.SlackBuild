@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=3proxy
 VERSION=${VERSION:-0.9.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -45,7 +45,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -128,7 +128,6 @@ cp -aR \
   $PKG/usr/doc/$PRGNAM-$VERSION
 iconv -f koi8-r -t utf-8 -o $PKG/usr/doc/$PRGNAM-$VERSION/ru/example1.txt doc/ru/example1.txt
 iconv -f koi8-r -t utf-8 -o $PKG/usr/doc/$PRGNAM-$VERSION/ru/iodbc.txt doc/ru/iodbc.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -32,8 +32,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=scite
 VERSION=${VERSION:-5.6.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -53,7 +53,7 @@ if [ -n "${TRANSLATION}" ] && [ ! -e ${CWD}/locale.${TRANSLATION}.properties ]; 
   exit 1
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 HELPBROWSER=mozilla
@@ -64,6 +64,9 @@ if [ "$ARCH" = "i586" ]; then
 elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   LIBDIRSUFFIX=""
@@ -113,7 +116,6 @@ for i in $PKG/usr/share/scite/*.html $PKG/usr/share/scite/*.png ; do
   ln -s /usr/share/scite/$(basename $i) \
     $PKG/usr/doc/$PRGNAM-$VERSION/html/$(basename $i) ;
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

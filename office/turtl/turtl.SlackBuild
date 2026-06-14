@@ -28,8 +28,8 @@ PRGNAM=turtl
 VERSION=${VERSION:-0.7.2.6}
 SUFFIX=-pre-sync-fix
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in
   x86_64)
@@ -50,7 +50,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -124,7 +124,6 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 echo "Docs"
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat ${HERE}/turtl/LICENSE > $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 echo "Install files"
 mkdir -p $PKG/install

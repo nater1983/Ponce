@@ -26,9 +26,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=fcron
 VERSION=${VERSION:-3.4.0}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Select fcron's default user/group
 FCRON_USER=${FCRON_USER:-fcron}
@@ -65,7 +65,7 @@ if ! getent passwd $FCRON_USER >/dev/null; then
   exit 1
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -77,6 +77,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC -Wall"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2 -Wall"
@@ -127,7 +130,6 @@ install -D -m 0644 $CWD/rc.fcron $PKG/etc/rc.d/rc.fcron.new
 
 cp -a README.md               $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/README                $PKG/usr/doc/$PRGNAM-$VERSION/README.slackware
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cp $CWD/sample-root-fcrontab.txt $PKG/usr/doc/$PRGNAM-$VERSION
 
 mv $PKG/etc/fcron.conf $PKG/etc/fcron.conf.new

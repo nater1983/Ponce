@@ -30,9 +30,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="clamav-unofficial-sigs"
 VERSION=${VERSION:-5.6.2}
 ARCH="noarch"	# hardcode ARCH
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what
 # the name of the created package would be, and then exit. This information
@@ -42,7 +42,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -76,7 +76,6 @@ install -m 0755 -D $PRGNAM.sh $PKG/usr/bin/$PRGNAM.sh
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 install -m 0644 INSTALL README.md LICENSE $CWD/UPGRADE_NOTICE \
     $CWD/$PRGNAM.cron $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 ### install logrotate script
 install -m 0644 $CWD/$PRGNAM.logrotate $PKG/etc/logrotate.d/$PRGNAM.new

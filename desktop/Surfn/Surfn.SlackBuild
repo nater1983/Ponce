@@ -31,8 +31,8 @@ PRGNAM=Surfn
 VERSION=${VERSION:-20.12_7}
 SRCVER=${SRCVER:-$( echo $VERSION | tr _ -)}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -72,7 +72,6 @@ find $PKG/usr/share/icons -type f -exec chmod 644 {} \;
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a surfn-icons/Surfn/{changelog,CREDITS,LICENSE.txt} README.md \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=catclock
 VERSION=${VERSION:-20251128_256f96f}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_rdlnx}
 ARCH=${ARCH:-}
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case $(uname -m) in
@@ -58,7 +58,7 @@ if [ -n "$PRINT_PACKAGE_NAME" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -106,7 +106,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING* NEWS* README* TODO* readme_original \
   $PKG/usr/doc/$PRGNAM-$VERSION 2>/dev/null || true
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cp $CWD/slack-desc $PKG/install/slack-desc

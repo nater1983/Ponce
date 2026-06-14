@@ -21,8 +21,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=archivemount
 VERSION=${VERSION:-1b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # 20241126 bkw: directory name inside the tarball doesn't match the
 # name of the tarball; unusual.
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -81,7 +81,6 @@ gzip -9 $PKG/usr/man/man1/$PRGNAM.1
 # script, which we don't ship. The actual C++ code is LGPL.
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSES/LGPL*.txt README $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

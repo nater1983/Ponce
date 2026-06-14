@@ -12,9 +12,9 @@ PRGNAM=pcem-roms
 SRCNAM=PCem-ROMs
 VERSION=${VERSION:-17.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_rdlnx}
 ARCH=noarch
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what
 # the name of the created package would be, and then exit. This information
@@ -24,7 +24,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -93,7 +93,6 @@ mv Pci_sg.rom pci_sg.rom
 cd $TMP/$SRCNAM-$VERSION
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README.sw
 mv $PKG/usr/share/pcem/roms/{CONTRIBUTING.md,README.md} \
   $PKG/usr/doc/$PRGNAM-$VERSION

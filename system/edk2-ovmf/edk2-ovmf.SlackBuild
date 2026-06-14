@@ -28,8 +28,8 @@ PRGNAM=edk2-ovmf
 VERSION=${VERSION:-202408}
 FEDVER=${FEDVER:-13-1.fc42}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -41,7 +41,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -71,7 +71,6 @@ sed -i 's|edk2/ovmf|edk2-ovmf-x64|g' $PKG/usr/share/qemu/firmware/*x64*
 sed -i 's|edk2/ovmf|edk2-ovmf|g' $PKG/usr/share/qemu/firmware/*ia32*
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cp usr/share/licenses/edk2-ovmf/* $PKG/usr/doc/$PRGNAM-$VERSION
 cp usr/share/doc/edk2-ovmf/* $PKG/usr/doc/$PRGNAM-$VERSION
 

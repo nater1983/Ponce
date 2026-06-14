@@ -9,8 +9,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=grub4dos
 VERSION=${VERSION:-0.4.5b_2011_02_20}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 TARVERSION=$(echo $VERSION | tr '_' '-')
 SRCVERSION=$(echo $VERSION | cut -f1 -d_ )
@@ -25,7 +25,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -72,7 +72,6 @@ cp -a \
   COPYING README_GRUB4DOS.txt ChangeLog_GRUB4DOS.txt ChangeLog_chenall.txt \
   Get_Source_of_This_Build.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat menu.lst > $PKG/usr/doc/$PRGNAM-$VERSION/menu.lst.SAMPLE
 
 mkdir -p $PKG/install

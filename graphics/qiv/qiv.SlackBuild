@@ -66,8 +66,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=qiv
 VERSION=${VERSION:-3.0.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -82,7 +82,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -149,7 +149,6 @@ rm -f README.INSTALL  # don't need this in a binary package
 chmod 644 contrib/*   # docs shouldn't be executable even if they're scripts
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a Changelog README* intro.jpg contrib/ $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@WITHFILT@,$WITHFILT," < $CWD/slack-desc > $PKG/install/slack-desc

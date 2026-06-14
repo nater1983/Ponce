@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=oracle-instantclient-devel
 VERSION=${VERSION:-21.5.0.0.0}
 RELEASE=${RELEASE:-1}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ORAVER="21"
 # 2023-05-16 DW: this doesn't contain any binaries
 ARCH="noarch"
@@ -43,7 +43,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -84,7 +84,6 @@ cat $PKG/usr/share/oracle/21/client64/doc/SDK_README \
   > $PKG/usr/doc/$PRGNAM-$VERSION/SDK_README
 cat $PKG/usr/share/oracle/21/client64/doc/SDK_LICENSE \
   > $PKG/usr/doc/$PRGNAM-$VERSION/SDK_LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

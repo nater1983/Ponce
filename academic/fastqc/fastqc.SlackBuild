@@ -29,9 +29,9 @@ SRCNAM=FastQC
 VERSION=${VERSION:-0.12.1}
 SRCVER=${SRCVER:-v0.12.1}
 
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -48,7 +48,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,7 +86,6 @@ cd $PKG/usr/doc/$PRGNAM-$VERSION
 ln -s ../../share/java/$PRGNAM/Help
 cd -
 cp -a *.txt $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Menu item and icon
 mkdir -p $PKG/usr/share/{applications,pixmaps}

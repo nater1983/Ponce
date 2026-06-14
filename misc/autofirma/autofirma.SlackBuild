@@ -28,8 +28,8 @@ PRGNAM=autofirma
 VERSION=${VERSION:-1.9}
 BUILD=${BUILD:-1}
 AFBUILD=${AFBUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -44,7 +44,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -67,7 +67,6 @@ rpm2archive < $PRGNAM-$VERSION-$AFBUILD.noarch_FEDORA.rpm | tar --one-top-level=
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 install -m0644 $PKG/usr/share/licenses/autofirma/LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 rm -rf $PKG/usr/share/licenses
 chown root:root $PKG/usr/share/applications/autofirma.desktop
 chmod 644 $PKG/usr/share/applications/autofirma.desktop

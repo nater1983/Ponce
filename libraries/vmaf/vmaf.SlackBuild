@@ -42,7 +42,7 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -51,6 +51,9 @@ if [ "$ARCH" = "i586" -o "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-march=x86-64 -mtune=generic -pipe -O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
    echo "This SlackBuild will not run on $ARCH" && exit 1
@@ -131,7 +134,6 @@ rm -f $PKG/usr/lib${LIBDIRSUFFIX}/*.la
 
 mkdir -pv  $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a CHANGELOG.md LICENSE README.md    $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -pv $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

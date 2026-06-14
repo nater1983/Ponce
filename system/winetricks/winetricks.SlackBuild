@@ -32,8 +32,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=winetricks
 VERSION=${VERSION:-20260125}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -42,7 +42,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -76,7 +76,6 @@ cp src/$PRGNAM.1 $PKG/usr/man/man1/
 find $PKG/usr/man -type f -exec gzip -9 '{}' \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cp -a $DOCS $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir $PKG/install

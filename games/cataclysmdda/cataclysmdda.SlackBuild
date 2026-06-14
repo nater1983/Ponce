@@ -29,8 +29,8 @@ PRGNAM=cataclysmdda
 VERSION=${VERSION:-0.G}
 PKG_BUILD=${PKG_BUILD:-2023-03-01-0054}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}
 if [ "$ARCH" != "x86_64" ]
@@ -44,7 +44,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -87,7 +87,6 @@ rmdir $PKG/opt/$PRGNAM/doc
 rm JSON_LOADING_ORDER.md
 ln -s ../../../opt/$PRGNAM/data/json/LOADING_ORDER.md JSON_LOADING_ORDER.md
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

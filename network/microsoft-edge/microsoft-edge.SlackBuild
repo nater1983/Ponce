@@ -31,8 +31,8 @@ BRANCH=stable
 VERSION=${VERSION:-148.0.3967.96}
 BUILD=${BUILD:-1}
 DEBBUILD=${DEBBUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -50,7 +50,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -101,7 +101,6 @@ cp -a opt/microsoft/msedge/product_logo_32.png \
    $PKG/usr/share/pixmaps/microsoft-edge.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cp -a usr/share/doc/microsoft-edge-stable/* $PKG/usr/doc/$PRGNAM-$VERSION/
 
 mkdir -p $PKG/install

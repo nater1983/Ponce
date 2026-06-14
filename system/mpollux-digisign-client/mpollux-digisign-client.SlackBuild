@@ -28,8 +28,8 @@ PRGNAM=mpollux-digisign-client
 DEBNAM=mpollux-digisign-client-for-dvv
 VERSION=${VERSION:-4.3.4_8933}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -49,7 +49,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -60,6 +60,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
   DEBARCH=i386
 elif [ "$ARCH" = "x86_64" ]; then
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
   DEBARCH=amd64
 else
@@ -91,7 +94,6 @@ sed -i 's:^\(\s\+documentFolder\s\+=\s\+\)".\+",\r$:\1"/usr/doc/mpollux-digisign
 mv -v "${PKG}/etc/xdg/Fujitsu/CCryptoLib.conf" "${PKG}/etc/xdg/Fujitsu/CCryptoLib.conf.new"
 chmod 644 $PKG/usr/share/applications/*.desktop
 chmod 644 $PKG/usr/share/pixmaps/mpollux-digisign-client.*
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

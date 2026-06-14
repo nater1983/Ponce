@@ -28,8 +28,8 @@ PRGNAM=python-fido2
 TARNAM=fido2
 VERSION=${VERSION:-1.2.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -47,7 +47,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -77,7 +77,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -aR \
   COPYING COPYING.MPLv2 COPYING.APLv2 NEWS README.adoc examples/\
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Fix permissions
 chmod 644 $PKG/usr/doc/$PRGNAM-$VERSION/examples/server/poetry.lock

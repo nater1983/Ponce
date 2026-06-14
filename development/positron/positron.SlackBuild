@@ -28,8 +28,8 @@ PRGNAM=positron
 DEB_PRGNAM=Positron
 VERSION=${VERSION:-2026.06.0_211}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -50,7 +50,7 @@ if [ "$ARCH" != "x86_64" ]; then
   exit 1
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -101,7 +101,6 @@ chmod +x $POSITRON_EXT_DIR/microsoft-authentication/dist/libmsalruntime.so
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

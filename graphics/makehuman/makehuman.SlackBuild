@@ -30,8 +30,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=makehuman
 VERSION=${VERSION:-1.2.0+20201105183027}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -40,7 +40,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -62,7 +62,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/$SRCNAM/licenses $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/doc/$SRCNAM/* $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

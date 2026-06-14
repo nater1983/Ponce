@@ -28,9 +28,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=nyx
 VERSION=${VERSION:-2.1.0}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -45,7 +45,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -69,7 +69,6 @@ python3 setup.py install --root=$PKG
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION $PKG/usr/man/man1
 cp -a web/ LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 gzip -9c < nyx.1 > $PKG/usr/man/man1/nyx.1.gz
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

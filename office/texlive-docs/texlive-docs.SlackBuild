@@ -30,10 +30,10 @@ PRGNAM=texlive-docs
 TEXMFVERSION=${TEXMFVERSION:-230322}
 VERSION=${VERSION:-2023.230322}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 ARCH=noarch
@@ -58,7 +58,6 @@ rm -rf $PKG$TEXMFROOT/texmf-dist/doc/man
 # Install index of provided tex packages to the docs
 mv $PKG$TEXMFROOT/texmf-dist/packages.docs.gz $PKG/usr/doc/texlive-$VERSION
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

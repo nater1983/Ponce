@@ -24,9 +24,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=FSPViewer
 VERSION=${VERSION:-2.1.0}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in
   i?86) ARCH=i586 ;;
@@ -48,7 +48,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -64,7 +64,6 @@ mv $PKG/FSPViewer$SRCSUFFIX $PKG/usr/bin
 strip --strip-unneeded $PKG/usr/bin/FSPViewer$SRCSUFFIX
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

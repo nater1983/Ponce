@@ -37,8 +37,8 @@ cd "$(dirname "$0")" ; CWD=$(pwd)
 PRGNAM=deltachat
 VERSION=${VERSION:-1.42.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH="${ARCH:-$(uname -m)}"
 if [ "$ARCH" != "x86_64" ]; then

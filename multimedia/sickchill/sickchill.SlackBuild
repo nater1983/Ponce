@@ -25,9 +25,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=sickchill
 VERSION=${VERSION:-2024.3.1}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -78,7 +78,7 @@ elif ! grep -q ^$SICKUSER: /etc/passwd ; then
   exit 1
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -121,7 +121,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   COPYING.txt LICENSE.md README.md SECURITY.md \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/etc/rc.d/
 install -m 0644 $CWD/rc.sickchill $PKG/etc/rc.d/rc.sickchill.new

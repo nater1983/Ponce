@@ -33,8 +33,8 @@ VERSION=${VERSION:-0.4.1}
 LIBGOGIT=${LIBGOGIT:-gitb84fdd7}
 GOWHATSGIT=${GOWHATSGIT:-git64cc8cf}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -50,7 +50,7 @@ fi
 
 set -e
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -74,7 +74,6 @@ mkdir -p $PKG/usr/lib64/pidgin
 cp $CWD/'libgowhatsapp_'$VERSION'~'$LIBGOGIT'+gowhatsapp~'$GOWHATSGIT'_amd64_ubuntu18.04.so' $PKG/usr/lib64/pidgin/libgowhatsapp.so
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

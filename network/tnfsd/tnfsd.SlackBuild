@@ -25,8 +25,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=tnfsd
 VERSION=${VERSION:-24.0522.1+20260108_bac37dc}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -66,7 +66,7 @@ chkgrp  tnfsd
 chkgrp  tnfs-files
 chkuser tnfsd
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 

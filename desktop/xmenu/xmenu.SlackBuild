@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xmenu
 VERSION=${VERSION:-4.6.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_rdlnx}
 ARCH=${ARCH:-}
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -n "$PRINT_PACKAGE_NAME" ]; then
   echo $PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
@@ -58,7 +58,7 @@ else
   LIBDIRSUFFIX=""
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -94,7 +94,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README.md LICENSE \
  $PKG/usr/doc/$PRGNAM-$VERSION
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cp $CWD/slack-desc $PKG/install/slack-desc

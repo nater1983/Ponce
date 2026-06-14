@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=lammps
 VERSION=${VERSION:-2025.07.22_update2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SRCNAM=lammps-stable
 SRCVERSION=${SRCVERSION:-22Jul2025_update2}
 PACEVERSION=v.2023.11.25.fix2
@@ -255,7 +255,7 @@ $manybody$mc$mdi$meam$mesont$mgpt$misc$mlhdnnp$mliap$mlpod$mlrann$mlsnap$mofff$m
 $netcdf$openmp$opt$orient$peri$phonon$plugin$plumed$poems$ptm$qeq$qtb$reaction\
 $reaxff$replica$rigid$shock$smtbq$sph$spin$srd$tally$uef$yaff
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -267,6 +267,9 @@ elif [ "$ARCH" = "i686" ]; then
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
@@ -385,7 +388,6 @@ mv -v $PKG/usr/etc $PKG
 cd $TMP/${SRCNAM}_${SRCVERSION}
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSE README $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

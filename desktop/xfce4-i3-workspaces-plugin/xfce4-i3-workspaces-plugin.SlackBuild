@@ -26,8 +26,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xfce4-i3-workspaces-plugin
 VERSION=${VERSION:-1.4.2.20250530}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=d7c2d978e736a5e07f96142a31fac3bb7d0806b4
 
@@ -56,6 +56,9 @@ elif [ "$ARCH" = "s390" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC -Wno-error -Wno-error=deprecated-declarations"
   LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
@@ -63,7 +66,7 @@ fi
 
 set -e
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -116,7 +119,6 @@ make install DESTDIR=$PKG || exit 1
 
 mkdir -p $PKG/usr/doc/${PRGNAM}-$VERSION
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat "$CWD/slack-desc"  > $PKG/usr/doc/$PRGNAM-$VERSION/slack-desc
 cat "$CWD/README"  > $PKG/usr/doc/$PRGNAM-$VERSION/README
 

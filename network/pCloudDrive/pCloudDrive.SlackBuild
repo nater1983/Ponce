@@ -28,9 +28,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=pCloudDrive
 VERSION=${VERSION:-1.8.2}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   ARCH=$(uname -m)
@@ -55,7 +55,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -86,7 +86,6 @@ find . -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep 
 ln -s ../../opt/$PRGNAM/$APPIMGNAM usr/bin/$PRGNAM
 ln -s ../../../opt/$PRGNAM/LICENSE.electron.txt usr/doc/$PRGNAM-$VERSION
 ln -s ../../../opt/$PRGNAM/LICENSES.chromium.html usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

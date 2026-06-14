@@ -28,8 +28,8 @@ PRGNAM=bisq
 SRCNAM=Bisq
 VERSION=${VERSION:-1.9.12}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 DEBBUILD=${DEBBUILD:-1}
 
 if [ -z "$ARCH" ]; then
@@ -48,7 +48,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -89,7 +89,6 @@ chmod +x $PKG/usr/bin/$PRGNAM
 mkdir -p $PKG/usr/share/applications
 mv $PKG/opt/bisq/lib/bisq-Bisq.desktop $PKG/usr/share/applications/Bisq.desktop
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

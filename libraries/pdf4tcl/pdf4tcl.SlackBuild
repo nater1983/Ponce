@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pdf4tcl
 VERSION=${VERSION:-0.9.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 TARBALL_VERSION=$( echo $VERSION | sed "s,\.,,g" )
 
@@ -39,7 +39,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -67,7 +67,6 @@ gzip -9c $CWD/pdf4tcl.n > $PKG/usr/man/mann/pdf4tcl.n.gz
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 install -m644 licence.terms $PKG/usr/doc/$PRGNAM-$VERSION
 install -m644 pdf4tcl.html  $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=kasp_updater
 TARNAME=updater
 VERSION=${VERSION:-2.0.1.2015.1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 BUILD=${BUILD:-1}
 
 if [ -z "$ARCH" ]; then
@@ -46,7 +46,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -73,7 +73,6 @@ ln -s $PRGDIR/updater.ini $PKG/etc/kasp_updater.ini
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG$PRGDIR/*.txt $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README
 cat $CWD/kasp_update.sh > $PKG/etc/cron.hourly/kasp_update.sh
 
