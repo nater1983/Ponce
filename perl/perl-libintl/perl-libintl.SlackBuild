@@ -77,7 +77,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING Changes FAQ MANIFEST NEWS README{,-old*,.md} \
       REFERENCES THANKS TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

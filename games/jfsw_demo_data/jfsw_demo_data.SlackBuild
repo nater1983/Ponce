@@ -56,7 +56,6 @@ chmod 644 *
 cp -a $GRPFILE $GAMEDIR/$GRPDEST
 cp -a *.txt $PKGDOC
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

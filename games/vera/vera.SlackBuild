@@ -95,7 +95,6 @@ install -m0755 contrib/$PRGNAM.pl $PKG/usr/games/$PRGNAM
 gzip -9c < $CWD/$PRGNAM.6 > $PKG/usr/man/man6/$PRGNAM.6.gz
 
 cp -a changelog README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

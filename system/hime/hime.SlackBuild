@@ -122,7 +122,6 @@ sed -i '/^Icon=/s,=,=/usr/share/pixmaps/hime.png,' \
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS ChangeLog README *.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install $PKG/etc/profile.d
 cat $CWD/hime.sh > $PKG/etc/profile.d/hime.sh

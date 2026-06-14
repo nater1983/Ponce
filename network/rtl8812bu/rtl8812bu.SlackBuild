@@ -69,7 +69,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$PKGVER
 mkdir -p $PKGDOC
 cp -a LICENSE $PKGDOC
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

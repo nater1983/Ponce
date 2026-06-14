@@ -124,7 +124,6 @@ cp -a AUTHORS Changelog COPYING COPYING.GPLv? README.md $PKGDOC
 # 20230630 bkw: use cat instead of "cp -a" to install files from $CWD,
 # there's no way to tell what the $CWD ownership/permission is.
 cat $CWD/README.SBo > $PKGDOC/README.SBo
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

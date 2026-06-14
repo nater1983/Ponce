@@ -84,7 +84,6 @@ rmdir $PKG/opt/cosmocc/libexec/gcc/{x86_64,aarch64}-linux-cosmo/*/install-tools 
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a LICENSE.*gpl* README.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20251116 bkw: 'cosmocc --help' just pipes this file thru less.
 ln -s ../../usr/doc/$PRGNAM-$VERSION/README.md $PKG/opt/cosmocc

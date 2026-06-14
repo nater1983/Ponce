@@ -85,7 +85,6 @@ gzip -9 -c resources/sioyek.1 > $PKG/usr/man/man1/sioyek.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 ln -s /usr/share/sioyek/tutorial.pdf $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

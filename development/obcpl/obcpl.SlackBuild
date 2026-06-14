@@ -135,7 +135,6 @@ cp -a C* README doc/*.txt util $PKGDOC
 for i in $CWD/examples/*; do
   cat $i > $PKGDOC/examples/$( basename $i )
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20230103 bkw: fix broken symlink in util.
 rm -f $PKGDOC/util/LIBHDR

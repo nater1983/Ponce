@@ -104,7 +104,6 @@ tic -o $PKG/usr/share/terminfo doc/etc/wterm.terminfo
 
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20230613 bkw: don't install everything from doc/, some of it's
 # Makefiles and the source for the HTML, etc. Don't install anything

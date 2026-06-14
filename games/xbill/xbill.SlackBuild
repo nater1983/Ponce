@@ -118,7 +118,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a README README.Ports ChangeLog $PKGDOC
 cat $CWD/xbill-wrapper.c > $PKGDOC/xbill-wrapper.c
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

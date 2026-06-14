@@ -361,7 +361,6 @@ if [ -d $PKG/usr/lib${LIBDIRSUFFIX}/qt4/doc/html ]; then
   )
 fi
 cat $CWD/README_SBo.txt > $PKGDOC/README_SBo.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

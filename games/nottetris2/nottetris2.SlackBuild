@@ -60,7 +60,6 @@ chmod 755 $PKG/usr/games/$PRGNAM
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 install -m0644 -oroot -groot "$README" $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # .desktop written for this build
 mkdir -p $PKG/usr/share/applications

@@ -236,7 +236,6 @@ mv $PKG/etc/$PRGNAM.cfg $PKGDOC/$PRGNAM.cfg.sample
 rmdir $PKG/etc
 rm -f doc/ReadMe.MFC.txt # this is for Windows only
 cp -a *.md doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20211117 bkw: actually look at what we just built, to see what's
 # enabled (instead of trusting that everything got included correctly).

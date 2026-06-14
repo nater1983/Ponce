@@ -105,7 +105,6 @@ gzip -9 $PKG/usr/info/*.info* $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS BUGS COPYING ChangeLog* FAQ HACKING NEWS README THANKS TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

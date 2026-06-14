@@ -140,7 +140,6 @@ ln -s ../icons/hicolor/48x48/apps/$PRGNAM.png $PKG/usr/share/pixmaps/$PRGNAM.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a config.h FAQ LEGACY LICENSE README TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 if [ -n "$PATCHES" ]; then
   echo "This package was built with the following patch(es):" > $PKGDOC/patches.txt

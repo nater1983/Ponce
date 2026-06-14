@@ -140,7 +140,6 @@ cp -v docs/docs.pdf $PKGDOC/docs.pdf
 cp -v AUTHOR CHANGELOG HISTORY README.md LICENSE \
       database/usenet.db_struct database/mysql_db_struct.sql \
       $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20230515 bkw: duplicate file, use symlink
 rm -f $PKGDOC/docs/index.html

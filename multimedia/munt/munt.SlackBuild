@@ -222,7 +222,6 @@ rm -rf $PKG/usr/share/doc
 cp -a README* $PKGDOC
 mkdir -p $PKGDOC/mt32emu_alsadrv
 cp -a mt32emu_alsadrv/*.txt $PKGDOC/mt32emu_alsadrv
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

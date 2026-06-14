@@ -67,7 +67,6 @@ if type -p sphinx-build &>/dev/null; then
 fi
 
 cp -a README* WHATS* VERS* examples $SRCNAM/COPY* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Now the extensions (xsge).
 cd $TMP

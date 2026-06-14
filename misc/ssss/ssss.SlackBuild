@@ -124,7 +124,6 @@ ln -s ssss.1.gz $PKGMAN1/ssss-split.1.gz
 ln -s ssss.1.gz $PKGMAN1/ssss-combine.1.gz
 
 cp -a README* HISTORY* LICENSE* THANKS* doc.html $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -44,7 +44,6 @@ install -m0644 HEXEN.WAD $PKG/usr/share/games/doom/hexdemo.wad
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cat README.TXT > $PKGDOC/README.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

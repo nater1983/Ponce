@@ -112,7 +112,6 @@ ln -s ../icons/hicolor/64x64/apps/$SRCNAM.png $P
 mkdir -p ${PKGDOC:=$PKG/usr/doc/$PRGNAM-$VERSION}
 rm -f doc/$SRCNAM.1 # man page installed elsewhere
 cp -a COPYRIGHT Changelog IPv6-support README doc $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -104,7 +104,6 @@ mkdir -p $PKGDOC
 cp -a LICENSE $PKGDOC
 ln -s ../../share/games/scrabbleai/ScrabbleAI/Backend/ospd.txt $PKGDOC
 ln -s ../../share/games/scrabbleai/ScrabbleAI/Backend/enable.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

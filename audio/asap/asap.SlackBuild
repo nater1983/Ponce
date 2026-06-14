@@ -231,7 +231,6 @@ cd $PKGDOC/examples
   chmod 644 *
 cd -
 cp -a README COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@PLUGINS@,$PLUGINS," < $CWD/slack-desc > $PKG/install/slack-desc

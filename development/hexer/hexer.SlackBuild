@@ -82,7 +82,6 @@ else
   # exists. So, include a copy of the one from v1.0.6.
   cat $CWD/COPYRIGHT > $PKGDOC/COPYRIGHT
 fi
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # The default color scheme is hard for me to read, so I include a few
 # sample rc files with various color schemes.

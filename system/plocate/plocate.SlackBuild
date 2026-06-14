@@ -112,7 +112,6 @@ install -oroot -groot -m0755 $CWD/updatedb.conf $PKG/etc/updatedb.conf.new
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

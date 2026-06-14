@@ -71,7 +71,6 @@ install -s -m0755 $PRGNAM $PKGBIN
 cp -a LICENSE README.md atmas2-manual/*.pdf $PKGDOC
 cp -a tst/*.SRC $PKGDOC/examples
 cp -a atmas2-manual/README.md $PKGDOC/README-manual.md
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # man page written by the SlackBuild author
 gzip -9c < $CWD/$PRGNAM.1 > $PKGMAN1/$PRGNAM.1.gz

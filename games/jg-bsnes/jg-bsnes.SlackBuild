@@ -78,7 +78,6 @@ make install-strip \
   LIBDIR=/usr/lib$LIBDIRSUFFIX \
   DOCDIR=$DOCDIR
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -71,7 +71,6 @@ sed -n '2,18p' $PRGNAM.c > $PKGDOC/LICENSE
 # Include our own README, it may be helpful.
 cat $CWD/README > $PKGDOC/README
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

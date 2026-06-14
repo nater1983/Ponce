@@ -142,7 +142,6 @@ gzip -9 $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a ChangeLog COPYING README THEMES TODO xinitrc.sample $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/README.SLACKWARE > $PKGDOC/README.SLACKWARE
 
 mkdir -p $PKG/install

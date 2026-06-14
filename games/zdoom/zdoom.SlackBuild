@@ -197,7 +197,6 @@ mkdir -p $PKGDOC
 for i in docs/*; do
   sed 's,\r,,' $i > $PKGDOC/$( basename $i )
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Make slack-desc tell us whether OpenAL was built in or not.
 mkdir -p $PKG/install

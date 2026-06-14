@@ -149,7 +149,6 @@ cat $CWD/csh.login > $PKG/etc/csh.login.new
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a USD.doc/paper.* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/README_Slackware.txt > $PKGDOC/README_Slackware.txt
 
 mkdir -p $PKG/install

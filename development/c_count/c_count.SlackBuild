@@ -101,7 +101,6 @@ gzip $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a CHANGES COPYING README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@BIN@,$BIN,g" < $CWD/slack-desc > $PKG/install/slack-desc

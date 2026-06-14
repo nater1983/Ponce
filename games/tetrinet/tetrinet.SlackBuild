@@ -116,7 +116,6 @@ ln -s $PRGNAM $PKG/usr/games/$PRGNAM-client
 ln -s $PRGNAM.6.gz $PKG/usr/man/man6/$PRGNAM-client.6.gz
 
 cp -a AUTHORS Change* README TODO $PRGNAM.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

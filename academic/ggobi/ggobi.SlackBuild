@@ -92,7 +92,6 @@ mkdir -p $PKGDOC
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC
 rm -rf $PKG/usr/share/doc
 cp -a AUTHORS COPYING CPLicense.txt ChangeLog NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

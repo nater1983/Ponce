@@ -107,7 +107,6 @@ cp -a Changes LICENSE README* VERSION $PKGDOC
 cd $PKGDOC
 tar -xvf $CWD/ocaml-$MANVER-refman-html.tar.gz --no-same-owner
 fixperms
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

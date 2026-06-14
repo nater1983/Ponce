@@ -66,7 +66,6 @@ make -j1 all install \
 
 # binary already stripped, man page already gzipped, all is well.
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -86,7 +86,6 @@ gzip -9 $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 cp -a Changelog COPYING README.txt $PKGDOC
 find $PKGDOC -type d -exec chmod 755 {} +
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

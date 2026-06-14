@@ -35,7 +35,6 @@ install -m0644 -oroot -groot $CWD/U4-Recreated.mod $SHARE
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

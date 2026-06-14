@@ -89,7 +89,6 @@ mkdir -p $PKG/usr/share/applications
 install -oroot -groot -m0644 $CWD/desktop/*.desktop $PKG/usr/share/applications
 
 cp -a docs/index.{html,txt} docs/images $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

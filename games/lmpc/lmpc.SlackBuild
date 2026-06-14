@@ -142,7 +142,6 @@ chmod -x spec/misc/*
 # files were copied).
 cp -a spec/misc/{cd.,ers,mulder,procdm2.,qfont.}* $PKGDOC/spec/misc
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -118,7 +118,6 @@ find support -type f | \
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a README* LICENSE doc examples support $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20240322 bkw: stuff's getting installed to the doc dir with wrong owner.
 find $PKGDOC -exec chown root:root {} +

@@ -101,7 +101,6 @@ mkdir -p $PKG/etc/profile.d/
 install -m0755 -oroot -groot \
         $CWD/$PRGNAM.sh $CWD/$PRGNAM.csh $PKG/etc/profile.d/
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 rm -f $PKGDOC/{INSTALL,UNIX}.txt # remove compile instructions (useless)
 
 mkdir -p $PKG/install

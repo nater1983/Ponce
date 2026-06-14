@@ -89,7 +89,6 @@ ln -s ../icons/hicolor/32x32/apps/$PRGNAM.png $PKG/usr/share/pixmaps/$PRGNAM.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 ln -s ../../share/$PRGNAM/$PRGNAM-$VERSION.dist-info/licenses/LICENSE.md $PKGDOC
 ln -s ../../share/$PRGNAM/$PRGNAM/data/programs $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

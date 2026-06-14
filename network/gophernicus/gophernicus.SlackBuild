@@ -108,7 +108,6 @@ rm -rf $PKG/etc/inetd.conf
 
 mkdir -p $PKGDOC
 cp -a LIC* README* change* gophermap.sample gophertag $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

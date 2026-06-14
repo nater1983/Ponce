@@ -72,7 +72,6 @@ rm -f $PKG/usr/info/dir
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS* COPYING* ChangeL* NEWS* README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 [ "${CHECK:-no}" = "yes" ] && make check 2>&1 | tee $PKGDOC/make_check.txt
 

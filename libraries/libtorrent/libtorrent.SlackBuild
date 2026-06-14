@@ -95,7 +95,6 @@ make install-strip DESTDIR=$PKG
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 install -m 0644 AUTHORS COPYING README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

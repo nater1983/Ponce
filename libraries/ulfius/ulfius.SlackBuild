@@ -100,7 +100,6 @@ DOCS="CHANGELOG.md LICENSE README.md"
 
 rm -f $PKGDOC/INSTALL.md
 cp -a $DOCS $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

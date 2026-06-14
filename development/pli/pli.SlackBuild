@@ -78,7 +78,6 @@ sh $CWD/plicl-$PLICLVER --man | gzip -9c > $PKGMAN/plicl.1.gz
 rm -f lib/lgpl.html
 cp -a *.gif *.pdf *.html lib/*.html samples $PKGDOC
 cat $CWD/README_SBo.txt > $PKGDOC/README_SBo.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

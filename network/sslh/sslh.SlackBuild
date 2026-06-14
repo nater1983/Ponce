@@ -119,7 +119,6 @@ rm -f doc/README.MacOSX doc/README.Windows.md doc/INSTALL.md
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING ChangeLog README* TODO doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed -e "s,@WITHBSD@,$WITHBSD," -e "s,@WITHEV@,$WITHEV," \

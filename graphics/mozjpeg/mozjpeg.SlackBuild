@@ -180,7 +180,6 @@ mv $PKG/opt/$PRGNAM/doc $PKGDOC
 rm -f CMakeLists.txt BUILDING.* jconfig.txt # do not want
 cp -a *.txt *.md tjexample.c doc/html $PKGDOC
 ln -s ../../usr/doc/$PRGNAM-$VERSION $PKG/opt/$PRGNAM/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 [ "$JAVA" = "yes" ] && cp -a java/doc $PKGDOC/javadoc
 

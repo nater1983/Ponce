@@ -119,7 +119,6 @@ rm -rf $PKG/usr/share/Ted/examples
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKG/usr/doc
 mv $PKG/usr/share/Ted/varia $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 mv $PKG/usr/share/Ted/config/ $PKGDOC/
 
 # 20251124 bkw: in case some(one|thing) depends on this:

@@ -91,7 +91,6 @@ install -m0644 -oroot -groot $CWD/grc.csh $PKG/etc/profile.d/grc.csh.new
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -r contrib debian/{changelog,copyright} CREDITS README* *.txt TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -118,7 +118,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 ln -s ../../share/$PRGNAM/$VERSION/doc $PKGDOC/html
 cp -a gpl.txt news.txt readme.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

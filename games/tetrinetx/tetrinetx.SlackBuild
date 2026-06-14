@@ -124,7 +124,6 @@ chown games:games $dirs
 
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING ChangeLog README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@IPVER@,$IPVER," < $CWD/slack-desc > $PKG/install/slack-desc

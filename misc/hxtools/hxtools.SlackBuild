@@ -201,7 +201,6 @@ gzip -9 $PKG/usr/man/man*/*
 ln -s ../LICENSE.GPL3 $LIBDOC/LICENSE.GPL3
 ln -s ../LICENSE.GPL3 $LEETDOC/LICENSE.GPL3
 ln -s ../LICENSE.MIT $LEETDOC/LICENSE.MIT
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

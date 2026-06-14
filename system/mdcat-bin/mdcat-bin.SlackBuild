@@ -104,7 +104,6 @@ $INST _mdcat _mdless $PKGZSHC
 $INST *.fish $PKGFISHC
 $INST *.ps1 $PKGPSHC
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

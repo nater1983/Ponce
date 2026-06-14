@@ -79,7 +79,6 @@ done
 # 20241007 bkw: since there's no documentation, add our README.
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/README > $PKGDOC/README
 
 mkdir -p $PKG/install

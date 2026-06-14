@@ -63,7 +63,6 @@ unzip -vjp $CWD/$PRGNAM.zip "Courier Prime/Read*txt" > $PKGDOC/readme-prime.txt
 unzip -vjp $CWD/courier-sans.zip "Courier*/README.md" > $PKGDOC/readme-sans.md
 unzip -vjp $CWD/courier-source.zip "Courier*/README.md" > $PKGDOC/readme-source.md
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

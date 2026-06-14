@@ -69,7 +69,6 @@ mkdir -p $PKG/usr/share/games/$PRGNAM \
          $PKG/install \
          $PKG/usr/games
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cp -a readme_linux.txt $PKGDOC
 cp -a typhoon $PKG/usr/libexec
 cp -a game *.mod *.dat $PKG/usr/share/games/$PRGNAM

@@ -85,7 +85,6 @@ gzip -9c $CWD/numlockx.1 > $PKG/usr/man/man1/numlockx.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS ChangeLog LICENSE README TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/README.SLACKWARE > $PKGDOC/README.SLACKWARE
 
 mkdir -p $PKG/install

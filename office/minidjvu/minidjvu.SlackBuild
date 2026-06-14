@@ -87,7 +87,6 @@ gzip $PKG/usr/man/{ru/,}/man1/*.1
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

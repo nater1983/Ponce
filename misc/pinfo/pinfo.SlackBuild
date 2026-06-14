@@ -130,7 +130,6 @@ ln -s $PRGNAM.1.gz $PKG/usr/man/man1/pman.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS Change[lL]og* COPYING NEWS README* TECHSTUFF $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

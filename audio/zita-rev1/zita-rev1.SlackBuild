@@ -75,7 +75,6 @@ gzip -9c < $CWD/$PRGNAM.fr.1 > $PKG/usr/man/fr_FR.UTF-8/man1/$PRGNAM.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20211129 bkw: redzita.png in the docdir isn't a png, it's a gif!
 mv $PKGDOC/redzita.png $PKGDOC/redzita.gif

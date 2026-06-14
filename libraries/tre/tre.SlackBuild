@@ -112,7 +112,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC/html
 cp -a AUTHORS ChangeLog* LICENSE NEWS README* THANKS TODO $PKGDOC
 cp -a doc/*.{html,css} $PKGDOC/html
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

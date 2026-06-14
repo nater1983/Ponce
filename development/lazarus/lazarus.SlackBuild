@@ -133,7 +133,6 @@ cat install/lazarus-mime.xml > $PKG/usr/share/mime/packages/lazarus-mime.xml
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -ra COPYING* README.md docs/* examples/ $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKGDOC/INSTALL.txt
 find $PKGDOC -depth -type d -empty -delete

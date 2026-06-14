@@ -139,7 +139,6 @@ for i in mksh lksh; do
   gzip -9c < $i.1 > $PKG/usr/man/man1/$i.1.gz
 done
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 cat $CWD/slack-desc > $PKG/install/slack-desc
 [ -n "$BUILDOPTS" ] && \

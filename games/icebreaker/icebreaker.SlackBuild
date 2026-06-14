@@ -104,7 +104,6 @@ gzip -9 $PKG/usr/man/man6/$PRGNAM.6
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a ChangeLog LICENSE README README.themes TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20241124 bkw: use upstream's .desktop intead of our own, but fix it
 # to handle the icon and path to the binary. Note that my old .desktop

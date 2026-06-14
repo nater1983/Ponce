@@ -56,7 +56,6 @@ mv $DATADIR/*/iconHD.png $PKG/usr/share/icons/hicolor/256x256/apps/$PRGNAM.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 mv $DATADIR/*/*.{html,pdf} $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

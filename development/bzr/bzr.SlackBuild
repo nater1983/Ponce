@@ -96,7 +96,6 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a BRANCH.TODO COPYING.txt NEWS README TODO doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20220404 bkw: this directory is empty and triggers sbopkglint
 # complaints. I have no idea why it's empty nor whether it would hurt

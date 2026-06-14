@@ -98,7 +98,6 @@ mv $PKG/usr/share/doc/$PRGNAM/html $PKGDOC
 rm -rf $PKG/usr/share/doc/
 find $PKGDOC/html -type f -a -empty | xargs rm
 cp -a CHANGELOG* CONTRIBUTING* README* LICENSE* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

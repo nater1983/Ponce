@@ -92,7 +92,6 @@ cat $CWD/$PRGNAM.desktop > $APPS/$PRGNAM.desktop
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING Change* BUGS README TODO HACKING LETTERS $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

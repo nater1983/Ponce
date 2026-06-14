@@ -98,7 +98,6 @@ ln -s ../icons/hicolor/48x48/apps/$APP.png $PKG/usr/share/pixmaps/$APP.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # The douninst.sh removes the gksu and gksudo symlinks on package
 # removal, but only if they're actually symlinks to gnsu.

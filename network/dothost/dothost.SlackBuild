@@ -70,7 +70,6 @@ mkdir -p $PKGDOC
 # no need for the man page in /usr/doc
 rm -f doc/*.1
 cp -a doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

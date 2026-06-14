@@ -114,7 +114,6 @@ install -D -m 644 $CWD/$PRGNAM.desktop $PKG/usr/share/applications/$PRGNAM.deskt
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS ChangeLog COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

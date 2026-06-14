@@ -123,7 +123,6 @@ cat $CWD/$PRGNAM.desktop > $PKG/usr/share/applications/$PRGNAM.desktop
 PKGDOC=$PKG/$DOC
 mkdir -p $PKGDOC
 cp -a README AUTHORS Bugs TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

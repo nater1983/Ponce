@@ -151,7 +151,6 @@ mkdir -p $PKGDOC
 cp -a README* CHANGES* $PKGDOC
 ln -s ../../share/BaCon/documentation $PKGDOC/documentation
 ln -s ../../share/BaCon/LICENSE $PKGDOC/LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # The encscript synax file (bacon.st) gets installed to the right place.
 # Move the others to the right places.

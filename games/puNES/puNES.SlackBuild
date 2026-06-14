@@ -117,7 +117,6 @@ ln -s punes.6.gz $PKG/usr/man/man6/$PRGNAM.6.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed -e "s,@WITHCG@,$WITHCG," \

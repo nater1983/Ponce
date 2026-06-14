@@ -84,7 +84,6 @@ rm -f $PKG/usr/lib*/*.la
 
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING* ChangeLog DEVNOTES NEWS README TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

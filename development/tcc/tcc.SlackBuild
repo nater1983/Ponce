@@ -130,7 +130,6 @@ gzip -9 $PKG/usr/man/man1/*
 gzip -9 $PKG/usr/info/*.info
 
 cp -a README* Changelog* COPYING RELICENSING TODO USES examples/ $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

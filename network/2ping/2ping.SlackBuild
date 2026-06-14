@@ -78,7 +78,6 @@ gzip -9c < doc/$PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
 
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC/wireshark
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cp -a README* COPYING* ChangeLog* doc/*.py doc/*.md $PKGDOC
 cp -a wireshark/*.pcap $PKGDOC/wireshark
 

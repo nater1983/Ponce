@@ -38,7 +38,6 @@ cd $PKG
 chmod +x $EXE
 $EXE --help > $PKGDOC/README
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

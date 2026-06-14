@@ -128,7 +128,6 @@ strings $PKG/usr/bin/ipcalc | grep -q libGeoIP.so && WITHGEO=WITH
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING NEWS README.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@WITHGEO@,$WITHGEO," \

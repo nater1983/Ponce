@@ -73,7 +73,6 @@ done
 
 # No docs in either zip file; include our own.
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

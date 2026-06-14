@@ -103,7 +103,6 @@ install -m0644 contrib/zsh_compl/_* $ZCOMP
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC/contrib
 cp -a CONTRIB* LICENSE* README* RELEASE* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # no idea if this stuff is useful, put it in the doc dir.
 install -m0644 contrib/*.bash $PKGDOC/contrib

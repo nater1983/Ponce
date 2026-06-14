@@ -94,7 +94,6 @@ make install \
 
 cp README $PKGDOC
 rm -f $PKGDOC/INSTALL
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Man page borrowed from Ubuntu and modified a bit.
 # rhapsody doesn't really need a man page,

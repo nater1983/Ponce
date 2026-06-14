@@ -170,7 +170,6 @@ elif [ -e AUTHORS.md ]; then
   cp -a *.md COPYING $PKGDOC
 fi
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@WITHLUA@,$WITHLUA," $CWD/slack-desc > $PKG/install/slack-desc

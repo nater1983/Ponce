@@ -90,7 +90,6 @@ make install \
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a LICENSE* *.md *.pdf examples $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20230911 bkw: the man and PDF docs claim that the generated man page
 # for md2roff.1 will be found in the documentation dir, so we'd better

@@ -132,7 +132,6 @@ for i in FAQ HISTORY LICENSES README TECHKNOW ToAdmin; do
    cp -a $i.eng $PKGDOC/$i.eng
 done
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

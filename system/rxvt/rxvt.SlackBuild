@@ -133,7 +133,6 @@ cp -a ChangeLog \
       *.lsm \
       doc/{etc/*.ad,menu,BUGS,FAQ,README.*,TODO,*.{txt,html,seq}} \
       rclock/*.html $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

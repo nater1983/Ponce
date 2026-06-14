@@ -115,7 +115,6 @@ mkdir -p $PKGDOC
 chmod 644 examples/*
 cp -a ACKNOWLEDGMENT CHANGES COPYING README examples $PKGDOC
 [ -e make_check.out ] && cp -a make_check.out $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@REGEX_DESC@,$REGEX_DESC," $CWD/slack-desc > $PKG/install/slack-desc

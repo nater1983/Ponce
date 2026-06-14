@@ -95,7 +95,6 @@ pkg-config --exists lua51 && runmake lua51
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a docs/*.* FIX LICENSE CHANGELOG.md README.md samples etc test $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm $PKGDOC/*.ppt
 

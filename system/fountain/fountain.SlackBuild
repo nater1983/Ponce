@@ -134,7 +134,6 @@ sed -i -e "s,\($PRGNAM \)l,\11,g" \
 gzip -9 $PKG/usr/man/man1/$PRGNAM.1
 
 cp -a COPYING ChangeLog NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

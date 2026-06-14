@@ -106,7 +106,6 @@ cp AUTHORS BUGS COPYING ChangeLog NEWS README TODO $PKGDOC
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC
 rm -rf $PKG/usr/share
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

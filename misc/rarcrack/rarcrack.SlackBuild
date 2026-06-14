@@ -104,7 +104,6 @@ make install PREFIX=$PKG/usr DOCDIR=$PKGDOC
 # 20200305 bkw: the test archives are small and may be useful (if nothing
 # else, useful to me for testing).
 cp -a test.* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -76,7 +76,6 @@ gzip -9 < $CWD/$PRGNAM.8 > $PKG/usr/man/man8/$PRGNAM.8.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a CHANGELOG COPYING README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

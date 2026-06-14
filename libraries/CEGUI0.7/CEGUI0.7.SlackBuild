@@ -121,7 +121,6 @@ sed -i "s/%LIBDIRSUFFIX%/$LIBDIRSUFFIX/g" $PKGOPTLIB/pkgconfig/*.pc
 
 mkdir -p $PKGDOC
 cp -a doc/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKGOPTLIB/*.la
 

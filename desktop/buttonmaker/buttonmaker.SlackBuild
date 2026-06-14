@@ -121,7 +121,6 @@ rm -rf $PKG/usr/doc/$PRGNAM
 mkdir -p $PKGDOC
 cp -a COPYING $PKGDOC
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

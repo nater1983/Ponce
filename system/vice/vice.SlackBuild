@@ -329,7 +329,6 @@ for i in x64 x64sc xscpu64 x64dtv x128 xvic xpet xplus4 xcbm2 xcbm5x0; do
 done
 
 cp -a NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Make the slack-desc reflect the build options.
 PA=no

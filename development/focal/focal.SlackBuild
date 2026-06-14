@@ -93,7 +93,6 @@ install -oroot -groot -m0644 *.foc $CWD/*.foc $PKG/usr/share/$PRGNAM
 mv focal.doc focal_doc.txt
 
 cp -a README focal_doc.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

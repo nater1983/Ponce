@@ -102,7 +102,6 @@ gzip -9c < $LD80/ld80.1 > $PKGMAN1/ld80.1.gz
 ./$ZMAC/zmac --doc > $PKGDOC/zmac.html
 
 cp -a $LD80/ld80.html $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

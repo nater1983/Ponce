@@ -101,7 +101,6 @@ cat $CWD/$PRGNAM-swing.desktop > $APPDIR/$PRGNAM-swing.desktop
 
 # no man pages, no command-line options.
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

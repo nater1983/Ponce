@@ -123,7 +123,6 @@ mkdir -p $PKGDOC/{extras,html}
 cp -a COPYRIGHT HISTORY README $PKGDOC
 cp -a doc/*.html doc/logo.gif doc/lua.css $PKGDOC/html
 cp -a etc test $PKGDOC/extras
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

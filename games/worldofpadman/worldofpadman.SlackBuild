@@ -118,7 +118,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 mv XTRAS/* $PKGDOC
 rm -rf XTRAS
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Install a .desktop launcher:
 mkdir -p $PKG/usr/share/applications

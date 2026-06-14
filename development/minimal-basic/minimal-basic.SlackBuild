@@ -117,7 +117,6 @@ cp -a COPYING ChangeLog CC0-1.0-Universal NEWS \
       README TESTING THANKS TODO GNU_FDL \
       *.pdf *.txt *.TXT *.dot BOOK/*.pdf \
       $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

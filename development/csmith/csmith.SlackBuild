@@ -109,7 +109,6 @@ cp -a doc/{pa,probabilities}.txt \
       AUTHORS BUGS_REPORTED.TXT COPYING \
       ChangeLog NEWS README TODO \
       $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Debian doesn't package the sample config, but it seems like a good idea.
 CONF=$PKGDOC/compiler_test.conf.sample

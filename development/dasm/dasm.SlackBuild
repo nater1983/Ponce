@@ -93,7 +93,6 @@ cat $CWD/vcs-old.txt > $PKGDOC/vcs-old.txt
 # This belongs in the doc dir, too:
 ln -s ../../share/$PRGNAM/machines/channel-f/README $PKGDOC/channel-f.txt
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

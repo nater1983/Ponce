@@ -111,7 +111,6 @@ cat $CWD/xhtml2ps.png > $PKG/usr/share/pixmaps/xhtml2ps.png
 cp -a COPYING README html2ps.ps $PKGDOC
 cp -a contrib/xhtml2ps/LICENSE $PKGXDOC
 cp -a contrib/xhtml2ps/README $PKGXDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Now filter out the "$PKG" strings:
 sed -i "s,$PKG,,g" $(find $PKG -type f -print)

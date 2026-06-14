@@ -87,7 +87,6 @@ ln -s /bin/$PRGNAM $PKG/usr/bin/$PRGNAM
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING debian/changelog $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20240830 bkw: not going to 'make test' by default.
 if [ "${MAKETEST:-no}" = "yes" ]; then

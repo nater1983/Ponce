@@ -60,7 +60,6 @@ make install KERNEL_MODULES=$PKG/lib/modules/$KERNEL
 PKGDOC=$PKG/usr/doc/$PRGNAM-$PKGVER
 mkdir -p $PKGDOC
 cp -a LICENSE README.rst $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

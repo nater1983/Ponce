@@ -109,7 +109,6 @@ done
 # are both "see git history at <url>", worth keeping one but not both.
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS ChangeLog $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

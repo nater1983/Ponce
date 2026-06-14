@@ -93,7 +93,6 @@ mkdir -p $PKGDOC
 [ "$TEST" = "yes" ] && runmake test | tee $PKGDOC/test_results.txt
 cp -a COPYING $PKGDOC
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

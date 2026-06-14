@@ -141,7 +141,6 @@ fi
 
 echo "This directory is empty on purpose" > examples/spacepat/genasm/.dontdelete
 cp -r *.txt doc examples rom misc $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/README > $PKGDOC/README_SBo.txt
 
 mkdir -p $PKG/install

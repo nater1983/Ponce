@@ -100,7 +100,6 @@ gzip $PKG/usr/man/man?/*
 
 # docs already installed in right place, we don't need this one:
 rm -f $PKGDOC/INSTALL
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

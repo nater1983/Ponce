@@ -127,7 +127,6 @@ mkdir -p $PKGDOC $PKGBIN $PKGMAN1 $PKGRCD $PKGVAR
 install -s -m0755 bin/tnfsd $PKGBIN/tnfsd
 rm -f BUILD.md
 cp -a *.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKGVAR
 chown root:tnfs-files $PKGVAR

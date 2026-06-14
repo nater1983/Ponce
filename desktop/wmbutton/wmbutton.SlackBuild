@@ -111,7 +111,6 @@ ln -s ../icons/hicolor/64x64/apps/$PRGNAM.png $PKG/usr/share/pixmaps/$PRGNAM.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING ChangeLog README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

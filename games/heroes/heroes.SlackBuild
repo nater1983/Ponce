@@ -152,7 +152,6 @@ install -m0644 -oroot -groot $XPM $PKG/usr/share/pixmaps/$PRGNAM.xpm
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

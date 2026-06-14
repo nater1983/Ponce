@@ -86,7 +86,6 @@ mkdir -p $PKGDOC
 cp -a $PRGNAM.txt $PRGNAM.blurb $PKGDOC
 cat $CWD/example.xfd > $PKGDOC/example.xfd
 cat $CWD/example.txt > $PKGDOC/example.txt
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

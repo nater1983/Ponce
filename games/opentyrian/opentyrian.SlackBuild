@@ -123,7 +123,6 @@ sed 's,Exec=,&/usr/games/,' linux/$PRGNAM.desktop \
     > $PKG/usr/share/applications/$PRGNAM.desktop
 
 cp -a COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

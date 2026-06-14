@@ -147,7 +147,6 @@ strip $PKG/usr/bin/* $PKG/usr/lib$LIBDIRSUFFIX/*.so
 
 cp -a html $PKGDOC
 cp -a examples $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 find $PKGDOC -type f -exec chmod 644 {} \+
 
 mkdir -p $PKG/install

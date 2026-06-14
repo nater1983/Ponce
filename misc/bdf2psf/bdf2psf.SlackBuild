@@ -61,7 +61,6 @@ mkdir -p $PKGDOC
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC
 rm -rf $PKG/usr/share/doc
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

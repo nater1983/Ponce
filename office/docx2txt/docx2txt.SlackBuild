@@ -51,7 +51,6 @@ install -D -m 0644 docx2txt.config $PKG/etc/docx2txt.config.new
 install -D -m 0644 $CWD/docx2txt.1.gz $PKG/usr/man/man1/docx2txt.1.gz
 install -m 0644 AUTHORS COPYING ChangeLog README ToDo $PKGDOC
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 

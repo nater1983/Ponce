@@ -93,7 +93,6 @@ gzip -9c < $PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING ChangeLog README TODO rawscancodes joy2keyrc.sample $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

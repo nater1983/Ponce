@@ -137,7 +137,6 @@ mkdir -p $PKGDOC/utilities
 cp -a ChangeLog README *.html $PKGDOC
 cp -a *.ccc *.cmd *.tgz *.jcl *.bas *.z80 xtrsemt.h *.hex *.README \
       $PKGDOC/utilities
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

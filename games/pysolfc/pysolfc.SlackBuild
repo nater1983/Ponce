@@ -121,7 +121,6 @@ ln -s ../icons/hicolor/48x48/apps/pysol.png $PKG/usr/share/pixmaps/pysol.png
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a contrib/*.asciidoc *.md NEWS.* COPYING docs/README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

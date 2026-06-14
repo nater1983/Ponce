@@ -111,7 +111,6 @@ cp -a \
   AUTHORS BUGS CHANGES COPYING ChangeLog HINTS \
   NEWS PLANS README TODO docs/FAQ.txt \
     $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

@@ -128,7 +128,6 @@ find $PKG -depth -type d -empty -delete || true
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changes LICENSE README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # the permissions in the final package are weird.
 find $PKG -type f -print0 | xargs -0 chmod 644

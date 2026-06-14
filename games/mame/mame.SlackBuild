@@ -374,7 +374,6 @@ mkdir -p $PKGDOC
 # 20240330 bkw: docs/swlist is gone in 0.264.
 cp docs/L* docs/*.* $PKGDOC
 cp -a docs/legal $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # in case someone finds these useful...
 cp -a ini/examples ini/presets $PKGDOC

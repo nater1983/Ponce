@@ -165,7 +165,6 @@ sed '/^Exec/s,=.*,=/usr/games/open-invaders,' debian/$PRGNAM.desktop > \
 rm -f $PKGDOC/{ChangeLog,INSTALL}
 sed -i 's,\r,,' $PKGDOC/*
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

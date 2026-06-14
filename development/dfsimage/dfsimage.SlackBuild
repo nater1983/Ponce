@@ -60,7 +60,6 @@ rst2man.py readme.rst | gzip -9c > $PKG/usr/man/man1/$PRGNAM.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 sed 's,\r,,' LICENSE > $PKGDOC/LICENSE
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

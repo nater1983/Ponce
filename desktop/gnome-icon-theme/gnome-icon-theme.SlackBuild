@@ -97,7 +97,6 @@ install_doc $PRGNAM
 install_doc $EXTRAS extras
 install_doc $SYMBOL symbolic
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

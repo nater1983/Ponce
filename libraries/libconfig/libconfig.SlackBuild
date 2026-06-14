@@ -129,7 +129,6 @@ mkdir -p $PKGDOC/examples/{c,c++}
 cp -a AUTHORS COPYING.LIB ChangeLog LICENSE README* TODO $PKGDOC
 cp -a examples/c/*.{cfg,c} $PKG/usr/doc/$PRGNAM-$VERSION/examples/c/
 cp -a examples/c++/*.{cfg,cpp} $PKG/usr/doc/$PRGNAM-$VERSION/examples/c++/
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20250705 bkw: upstream ships prebuilt docs, use them.
 cp -a docs/libconfig_manual.{html,pdf} $PKGDOC

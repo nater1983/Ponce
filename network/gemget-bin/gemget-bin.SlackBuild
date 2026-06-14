@@ -62,7 +62,6 @@ install -D -m0755 -oroot -groot $CWD/$EXE usr/bin/$SRCNAM
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 install -m0644 -oroot -groot $CWD/docs/* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

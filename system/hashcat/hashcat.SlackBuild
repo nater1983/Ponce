@@ -116,7 +116,6 @@ rmdir $PKG/usr/share || true
 
 chmod -x $PKGDOC/*.sh
 cp -a README.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

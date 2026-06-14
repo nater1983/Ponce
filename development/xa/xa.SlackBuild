@@ -105,7 +105,6 @@ gzip -9 $PKG/usr/man/man?/*.?
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a README* COPYING ChangeLog TODO attic/doc/* examples tests mkrom.sh $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # now build dxa
 tar xvf $CWD/dxa-$DXAVER.tar.gz

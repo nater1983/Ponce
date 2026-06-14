@@ -109,7 +109,6 @@ ln -s ../lib$LIBDIRSUFFIX/$PRGNAM/tnfs_client.py $PKG/usr/bin/tnfs-client
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a README.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # upstream didn't include a separate license, so copy/paste the comments.
 cat $CWD/COPYING > $PKGDOC/COPYING

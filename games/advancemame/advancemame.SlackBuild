@@ -131,7 +131,6 @@ ln -s advmame.6.gz $PKG/usr/man/man6/advmess.6.gz
 mv $PKGDOC/advance/* $PKGDOC
 rmdir $PKGDOC/advance
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # HISTORY, README, RELEASE are identical to history.txt, readme.txt,
 # release.txt which are already installed, but the license doesn't have

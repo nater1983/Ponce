@@ -140,7 +140,6 @@ mv $PKGDOC/samples $PKG/usr/share/$PRGNAM
 ln -s ../../share/$PRGNAM/samples $PKGDOC/samples
 chmod 644 $PKGDOC/samples/*
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cp -a AUTHORS ChangeLog COPYING NEWS README TODO THANKS $PKGDOC
 chmod 644 $PKGDOC/samples/*
 chown -R root:root $PKG/usr/doc

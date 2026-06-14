@@ -142,7 +142,6 @@ cat $CWD/lirc.logrotate > $PKG/etc/logrotate.d/lirc.new
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 
 cp -a AUTHORS COPYING ChangeLog NEWS README doc/irxevent.keys $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Fixup doc owner & mode
 chown -R root:root $PKGDOC

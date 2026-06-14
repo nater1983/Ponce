@@ -57,7 +57,6 @@ PKGDOC=$PKG/$DOCDIR
 
 make install DESTDIR=$PKG DOCDIR=$DOCDIR
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 cat $CWD/slack-desc > $PKG/install/slack-desc
 

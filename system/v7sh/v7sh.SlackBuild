@@ -84,7 +84,6 @@ mkdir -p $PKG/{bin,usr/man/man1} $PKGDOC
 install -s sh $PKG/bin/$PRGNAM
 gzip -9c < sh.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
 install -m0644 CHANGES NOTICE.pdf README Version changes_since_v7 $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

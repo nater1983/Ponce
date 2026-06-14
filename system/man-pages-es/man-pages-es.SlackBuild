@@ -63,7 +63,6 @@ find $PKG/usr/man -type f -print0 | xargs -0 gzip -9
 mv $EXTRAPRG-$EXTRAVER/README $EXTRAPRG-$EXTRAVER/README.extra
 
 cp -a */LEEME* */README* */CHANGES* */CAMBIOS* */P* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -105,7 +105,6 @@ done
 
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cp -a COPYING* ChangeLog README $PKGDOC
 
 # N.B. Remove stuff that clobbers existing files - thanks Arch Linux:

@@ -103,7 +103,6 @@ gzip -9c < src/asr_run.3 > $PKG/usr/man/man3/asr_run.3.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a ChangeLog LICENCE README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

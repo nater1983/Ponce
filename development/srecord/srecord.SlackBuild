@@ -105,7 +105,6 @@ gzip -9 $PKG/usr/man/man?/*
 
 mkdir -p $PKGDOC
 cp -a AUTHORS LICENSE README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # --docdir is ignored, too
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC

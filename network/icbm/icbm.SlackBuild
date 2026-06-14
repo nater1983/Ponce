@@ -68,7 +68,6 @@ gzip -9c < icbm.1 > $MANDIR/icbm.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changelog README.ENCRYPTION TODO gpl.txt sample_* colors $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

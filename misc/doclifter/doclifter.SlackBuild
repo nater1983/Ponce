@@ -73,7 +73,6 @@ done
 [ "$CHECK" = "yes" ] && make -j1 check 2>&1 | tee $PKGDOC/make-check.txt
 
 cp -a COPYING* README* TODO* PATCHES* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

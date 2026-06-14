@@ -247,7 +247,6 @@ cat README > $PKGDOC/README.firmware.txt
 # case it helps anyone.
 cat $CWD/tascam-us122-HOWTO > $PKGDOC/tascam-us122-HOWTO
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

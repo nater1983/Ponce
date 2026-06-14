@@ -144,7 +144,6 @@ cp -a README CHANGELOG LEGAL_NOTICE $PKGDOC
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC
 rm -rf $PKG/usr/share/doc
 ln -s ../../share/$PRGNAM/examples $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

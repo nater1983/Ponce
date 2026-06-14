@@ -153,7 +153,6 @@ for i in 96 1024; do
   ln -s ../../icons/hicolor/${i}x${i}/apps/$PRGNAM.png $f
 done
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

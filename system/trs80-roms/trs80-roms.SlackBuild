@@ -70,7 +70,6 @@ chown root:root *
 
 # No docs, include our own README (better than nothing).
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

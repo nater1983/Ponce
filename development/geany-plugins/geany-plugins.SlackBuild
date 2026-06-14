@@ -110,7 +110,6 @@ make install-strip DESTDIR=$PKG
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a NEWS README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20220308 bkw: bunch of placeholder NEWS and ChangeLog files:
 find $PKGDOC -type f -a -empty -delete

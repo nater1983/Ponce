@@ -107,7 +107,6 @@ mkdir -p $PKGDOC
 cp -a \
   AUTHORS BUGS COPYING ChangeLog NEWS README THANKS TODO WISHLIST \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

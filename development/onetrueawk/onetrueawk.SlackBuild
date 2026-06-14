@@ -75,7 +75,6 @@ ln -s ../../opt/$PRGNAM/bin/awk $PKG/usr/bin/otawk
 ln -s ../../../opt/$PRGNAM/man/man1/awk.1.gz $PKG/usr/man/man1/otawk.1.gz
 
 cp -a ChangeLog FIXES LICENSE README.md TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

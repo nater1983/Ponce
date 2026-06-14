@@ -44,7 +44,6 @@ install -D -m0644 $CWD/$PRGNAM-$VERSION.otf $PKG/usr/share/fonts/OTF/Quivira.otf
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

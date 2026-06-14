@@ -98,7 +98,6 @@ ln -s $PRGNAM-$VERSION $PRGNAM
 mkdir -p $PKG/usr/bin
 ln -s ../../opt/$PRGNAM-$VERSION/$PRGNAM $PKG/usr/bin/$PRGNAM
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

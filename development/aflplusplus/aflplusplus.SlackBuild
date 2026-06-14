@@ -129,7 +129,6 @@ chmod +x $PKG/usr/share/afl/testcases/others/elf/small_exec.elf
 gzip $PKG/usr/man/man8/*.8
 
 rm -f $PKGDOC/INSTALL*              # useless.
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@WITHQEMU@,$WITHQEMU," $CWD/slack-desc > $PKG/install/slack-desc

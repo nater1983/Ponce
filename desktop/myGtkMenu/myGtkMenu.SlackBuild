@@ -74,7 +74,6 @@ install -Dm0644 icons/$PRGNAM.svg \
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a License.txt README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20240903 bkw: the example menu expects to be run from the source dir,
 # massage it into working correctly as part of a package. It's

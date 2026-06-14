@@ -70,7 +70,6 @@ cat $CWD/ZorkII.inv > $PKGDOC/invisiclues/zork2.txt
 cat $CWD/ZorkIII.inv > $PKGDOC/invisiclues/zork3.txt
 
 cat $CWD/README.interpreters > $PKGDOC/README.interpreters
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Script wrapper and .desktop files written for this SlackBuild
 mkdir -p \

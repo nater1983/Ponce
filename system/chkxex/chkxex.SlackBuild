@@ -74,7 +74,6 @@ rm -f $PKGBIN/*.o
 gzip -9c < $CWD/$PRGNAM.1 > $PKGMAN1/$PRGNAM.1.gz
 
 cp -a README.md $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

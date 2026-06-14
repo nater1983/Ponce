@@ -208,7 +208,6 @@ gzip -9c $CWD/snes9x.6 > $PKG/usr/man/man6/snes9x.6.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a LICENSE README* docs/* unix/docs/* unix/snes9x.conf.default $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed -e "s,@PU@,$WITHPULSE," \

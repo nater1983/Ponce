@@ -107,7 +107,6 @@ mkdir -p $PKGDOC
 mv $PKG/usr/share/doc/libclaw1/html $PKGDOC/html || true
 rm -rf $PKG/usr/share/doc
 cp -a ChangeLog COPYING examples $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

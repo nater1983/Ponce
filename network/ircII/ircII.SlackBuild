@@ -176,7 +176,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 rm -f doc/*.1 doc/*.spec* doc/*.orig doc/*.pl
 mkdir -p $PKGDOC
 cp -a ChangeLog NEWS README doc/* contrib $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed -e "s,@para_opt@,$para_opt," \

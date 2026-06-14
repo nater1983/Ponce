@@ -114,7 +114,6 @@ gzip $PKG/usr/man/man?/$PRGNAM.*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING ChangeLog NEWS README TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 # These 2 have Cyrillic characters:
 iconv -f iso-8859-5 AUTHORS -t utf-8 > $PKGDOC/AUTHORS
 iconv -f iso-8859-5 README.russian -t utf-8 > $PKGDOC/README.russian

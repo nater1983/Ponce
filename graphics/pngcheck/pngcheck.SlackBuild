@@ -97,7 +97,6 @@ install -m0644 gpl/*.1 $PKGMAN1
 gzip -9 $PKGMAN1/*
 
 cp -a gpl/COPYING* $PKGDOC/gpl
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -89,7 +89,6 @@ for i in examples readme doc CHANGELOG README.md; do
   [ -e "$i" ] && cp -a "$i" $PKGDOC
 done
 cat $CWD/README > $PKGDOC/README
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

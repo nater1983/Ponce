@@ -148,7 +148,6 @@ mkdir -p $PKGDOC $PKGDOC2
 cp -a LICENSE *.md $PKGDOC2
 cd $TOPDIR
 cp -a AUTHORS COPYING* README.md TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 
