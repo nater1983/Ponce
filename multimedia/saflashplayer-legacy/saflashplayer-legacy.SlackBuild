@@ -79,7 +79,6 @@ install -Dm644 $CWD/saflashplayer-legacy.desktop $PKG/usr/share/applications/com
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -aR LGPL $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

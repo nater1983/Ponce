@@ -31,8 +31,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=catgirl
 VERSION=${VERSION:-2.2a}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

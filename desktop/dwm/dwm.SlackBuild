@@ -152,7 +152,6 @@ gzip -9 $PKG/usr/man/man?/*.?
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSE README $CWD/README.CONFIG \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install

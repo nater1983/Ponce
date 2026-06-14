@@ -81,7 +81,6 @@ cp claude $PKG/usr/bin/
 # without breaking it. This is why sbopkglint's 20-arch test fails here.
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

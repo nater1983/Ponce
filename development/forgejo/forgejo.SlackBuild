@@ -11,11 +11,11 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=forgejo
 VERSION=${VERSION:-15.0.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 

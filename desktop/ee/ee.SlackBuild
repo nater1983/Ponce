@@ -90,7 +90,6 @@ make install \
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a examples Changes ee.i18n.guide README.* $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

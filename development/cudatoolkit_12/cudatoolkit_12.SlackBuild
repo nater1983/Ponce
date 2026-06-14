@@ -31,9 +31,9 @@ PRGNAM=cudatoolkit_12
 FILENAME=cuda
 VERSION=${VERSION:-12.9.1}
 DRIVER=${DRIVER:-575.57.08}
-BUILD=${BUILD:-4}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   ARCH=$( uname -m )

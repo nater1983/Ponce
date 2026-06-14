@@ -26,9 +26,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=fonts-redhat
 VERSION=${VERSION:-4.1.0}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SRCA=${SRCA:-RedHatFont}
 SRCB=${SRCB:-Overpass}
 SRCBVER=${SRCBVER:-3.0.5}

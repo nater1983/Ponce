@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=cudnn
 VERSION=${VERSION:-9.22.0.52_13}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 CUDNN_VERSION=${VERSION%_*}
 CUDA_VERSION=${VERSION#*_}
@@ -90,7 +90,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -p LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/cudnn_test.c $PKG/usr/doc/$PRGNAM-$VERSION
 cp $CWD/README.slackware $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mv cudnn_samples-source-$CUDNN_VERSION-archive/src/cudnn_samples_v9 $PKG/usr/doc/$PRGNAM-$VERSION
 cp -p cudnn_samples-source-$CUDNN_VERSION-archive/LICENSE $PKG/usr/doc/$PRGNAM-$VERSION/cudnn_samples_v9

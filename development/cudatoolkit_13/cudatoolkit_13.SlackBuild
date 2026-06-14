@@ -31,9 +31,9 @@ PRGNAM=cudatoolkit_13
 FILENAME=cuda
 VERSION=${VERSION:-13.2.1}
 DRIVER=${DRIVER:-595.58.03}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   ARCH=$( uname -m )
@@ -148,7 +148,6 @@ rm -rf $PKG/opt/"${CPREFIX}"/gds-tools
 # Put docs in the standard place
 mv "$PKG"/opt/"${CPREFIX}"/usr/share/doc/* "$PKG"/usr/doc/"$PRGNAM"-"$VERSION"/
 rm -rf "$PKG"/opt/"${CPREFIX}"/usr/share
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 echo
 
 echo -n "Installing profile.d and pkgconfig files ... "

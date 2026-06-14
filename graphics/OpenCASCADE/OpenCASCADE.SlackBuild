@@ -32,9 +32,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=OpenCASCADE
 VERSION=${VERSION:-7.7.0}
-BUILD=${BUILD:-7}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=opencascade
 

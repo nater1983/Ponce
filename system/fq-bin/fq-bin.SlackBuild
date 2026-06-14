@@ -22,8 +22,8 @@ VERSION="${VERSION:-0.17.0}"
 SRCNAM=fq_"$VERSION"_linux_amd64
 ARCH="${ARCH:-$(uname -m)}"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 # Only x86_64 is supported (pre-built binary)
 case "$ARCH" in
@@ -36,7 +36,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -53,7 +53,6 @@ chmod 0755 fq
 
 # Docs (not in binary tarball)
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/LICENSE > $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

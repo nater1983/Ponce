@@ -102,7 +102,6 @@ mv $PKG/etc/mpdscribble.conf $PKG/etc/mpdscribble.conf.new
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp AUTHORS COPYING NEWS README.rst $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 rm -rf $PKG/usr/share
 
 mkdir -p $PKG/install

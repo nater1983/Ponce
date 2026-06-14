@@ -33,9 +33,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=foxtrotgps
 VERSION=${VERSION:-1.2.2}
-BUILD=${BUILD:-3}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -123,7 +123,6 @@ cp -a \
   AUTHORS COPYING ChangeLog HACKING NEWS README \
   $PKG/usr/doc/$PRGNAM-$VERSION
 rm -f $PKG/usr/doc/$PRGNAM-$VERSION/{TODO,INSTALL}
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

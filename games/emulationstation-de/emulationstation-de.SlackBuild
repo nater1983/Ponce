@@ -116,7 +116,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 for f in CHANGELOG.md CONTRIBUTING.md LICENSE README.md; do
   [ -f "$f" ] && cp -a "$f" $PKG/usr/doc/$PRGNAM-$VERSION/
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -32,8 +32,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=goaccess
 VERSION=${VERSION:-1.10.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

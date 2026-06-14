@@ -26,9 +26,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libgta
 VERSION=${VERSION:-1.2.1}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
