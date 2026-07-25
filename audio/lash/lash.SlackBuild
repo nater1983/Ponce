@@ -115,7 +115,6 @@ mkdir -p $PKGDOC
 cp AUTHORS README.SECURITY COPYING ChangeLog ChangeLog.old NEWS README \
     $manual \
     $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

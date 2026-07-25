@@ -96,7 +96,6 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   -t $PKG/usr/doc/$PRGNAM-$VERSION \
   Changelog Credits README.md
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 >>>>>>>> current:games/hearts/hearts.SlackBuild
 
 #compile

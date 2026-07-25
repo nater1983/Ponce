@@ -121,7 +121,6 @@ chmod 644 $PKGDOC/examples/klu/Circuits/libraries/*.lib
 chmod 644 $PKGDOC/examples/shared/t.shx
 chmod 644 $PKGDOC/examples/xspice/ghdl/build
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

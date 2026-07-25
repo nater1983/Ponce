@@ -33,8 +33,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-Image-Info
 VERSION=${VERSION:-1.45}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH="noarch"
 
 SRCNAM=Image-Info

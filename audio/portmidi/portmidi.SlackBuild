@@ -117,7 +117,6 @@ install -m 0644 -D pm_common/pmutil.h $PKG/usr/include
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a CHANGELOG.txt README.txt license.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 chmod 0644 $PKGDOC/README.txt
 
 mkdir -p $PKG/install

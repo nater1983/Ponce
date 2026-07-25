@@ -88,7 +88,6 @@ make DESTDIR=$PKG \
 
 cp -aLt $PKG/usr/doc/$PRGNAM-$VERSION \
   CHANGELOG CONTRIBUTING UNLICENSE VIMTOKAK
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

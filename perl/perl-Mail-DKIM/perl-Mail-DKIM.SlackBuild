@@ -31,8 +31,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="perl-Mail-DKIM"
 VERSION=${VERSION:-1.20240923}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH="noarch"
 
 SRCNAM="$(printf $PRGNAM | cut -f2- -d-)"

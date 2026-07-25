@@ -190,7 +190,6 @@ cp -a \
   AUTHORS BUGS COPYING NEWS README SITES THANKS TODO ChangeLog contrib \
   doc/*txt doc/manual.html-chunked \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # don't need these
 find $PKG \( -name ".gitignore" -o -name "manual.proc" \) -delete

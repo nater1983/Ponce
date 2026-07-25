@@ -105,7 +105,6 @@ gzip -9 $PKG/usr/info/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING NEWS $PKG/usr/share/cgdb/cgdb.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 cat $CWD/$PRGNAM.pdf > $PKGDOC/$PRGNAM.pdf
 
 rm -rf $PKG/usr/share

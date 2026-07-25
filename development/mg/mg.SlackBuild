@@ -128,7 +128,6 @@ cp -a AUTHORS COPYING* HACKING MAINTAINERS NEWS README \
 >>>>>>> origin/current
 ========
 cp -a ChangeLog.md UNLICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 >>>>>>>> current:development/mg/mg.SlackBuild
 
 mkdir -p $PKG/install

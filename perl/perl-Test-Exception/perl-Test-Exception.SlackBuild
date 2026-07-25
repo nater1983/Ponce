@@ -76,7 +76,6 @@ gzip -9 $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changes $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 find $PKG -name "perllocal.pod" -o -name ".packlist"  -o -name "*.bs"  | xargs rm -f
 find $PKG -depth -type d -empty -exec rm -rf {} \;

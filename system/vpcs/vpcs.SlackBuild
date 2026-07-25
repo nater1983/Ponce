@@ -127,7 +127,6 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING README.md SECURITY.md readme.txt readme_cn.txt man/vpcs.pdf $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 >>>>>>>> current:system/vpcs/vpcs.SlackBuild
 
 mkdir -p $PKG/install

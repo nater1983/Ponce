@@ -191,7 +191,6 @@ cp -a \
   AUTHORS BUGS COPYING NEWS README* SITES THANKS TODO \
   ChangeLog doc/*txt contrib \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Remove any .git remnants
 find $PKG -name ".git*" -exec rm -vrf {} +

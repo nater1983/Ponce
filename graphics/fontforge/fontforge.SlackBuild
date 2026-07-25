@@ -153,7 +153,6 @@ if [ -d $PKG/usr/share/doc/$PRGNAM/ ]; then
 fi
 
 cp -a AUTHORS LICENSE $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 find $PKG/usr/doc -type f -exec chmod 644 {} \+
 
 mkdir -p $PKG/install

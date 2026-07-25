@@ -110,7 +110,6 @@ PKGMAN1=$PKG/usr/man/man1
 mkdir -p $PKGDOC $PKGMAN1
 gzip -9c < $PRGNAM.1 > $PKGMAN1/$PRGNAM.1.gz
 cp -a COPYRIGHT debian/changelog $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
