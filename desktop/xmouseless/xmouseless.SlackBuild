@@ -28,7 +28,7 @@ PRGNAM=xmouseless
 VERSION=${VERSION:-20230624_ef4987e}
 COMMIT="ef4987e6358bcf956e0add652032e4e430d363a1"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

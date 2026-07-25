@@ -27,7 +27,7 @@ PRGNAM=nootka
 VERSION=${VERSION:-2.0.2}
 SRC=nootka-2.0.2-x86_64.AppImage
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

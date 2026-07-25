@@ -29,7 +29,7 @@ PRGNAM=postgresql16
 SRCNAM=postgresql
 VERSION=${VERSION:-16.14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 PG_VERSION=${PG_VERSION:-16}

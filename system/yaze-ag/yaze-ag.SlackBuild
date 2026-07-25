@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=yaze-ag
 VERSION=${VERSION:-2.51.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=early-ssh
 VERSION=${VERSION:-git15791d2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 GITREV=15791d22ace74011486c299aa29c22f31b3364f6

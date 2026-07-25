@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=modules
 VERSION=${VERSION:-5.6.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DOCS="CODE_OF_CONDUCT.md COPYING.GPLv2 GOVERNANCE.rst SECURITY.md"

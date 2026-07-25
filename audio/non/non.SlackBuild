@@ -17,7 +17,7 @@ PRGNAM=non
 VERSION=${VERSION:-257ec59}
 COMMIT=${COMMIT:-257ec5951e7d4086344d98c99ebbe569f7c31211}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=perlprimer
 VERSION=${VERSION:-1.2.4}
 COMMIT=${COMMIT:-f415ea6d0170f2f62f10c678adac8fdc69a3298f}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

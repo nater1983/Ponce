@@ -28,7 +28,7 @@ PRGNAM=aspnetcore-runtime-5.0
 SRCNAM=aspnetcore-runtime
 VERSION=${VERSION:-5.0.17}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

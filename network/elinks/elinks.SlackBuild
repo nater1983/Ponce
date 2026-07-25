@@ -31,7 +31,7 @@ PRGNAM=elinks
 VERSION=${VERSION:-20170723_f86be65}
 COMMIT=${VERSION#*_}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

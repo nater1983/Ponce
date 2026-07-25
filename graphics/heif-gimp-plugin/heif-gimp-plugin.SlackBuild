@@ -31,7 +31,7 @@ PRGNAM=heif-gimp-plugin
 VERSION=${VERSION:-1.1.0+20241010_510a9f5}
 COMMIT=510a9f517114fd602b540fb1bbe006707fede6c4
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

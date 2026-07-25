@@ -25,7 +25,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=utfcpp
 VERSION=${VERSION:-2012.02.10}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 GITHUBVERS="2233ec933f5661c7050b94d3b14f5f9f51ae3d55"
 

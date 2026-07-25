@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=glow
 VERSION=${VERSION:-2.1.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 sys_arch=${sys_arch:-$(uname -m)}
 

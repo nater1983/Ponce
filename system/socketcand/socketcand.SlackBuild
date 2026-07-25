@@ -32,7 +32,7 @@ PRGNAM=socketcand
 VERSION=${VERSION:-0.4.2}
 COMMIT=${COMMIT:-ae0af080058a576d62c72ffc011d644d0b4dcb98}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

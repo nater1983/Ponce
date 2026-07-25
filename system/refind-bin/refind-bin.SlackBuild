@@ -28,7 +28,7 @@ PRGNAM=refind-bin
 SRCNAM=refind
 VERSION=${VERSION:-0.14.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -32,7 +32,7 @@ PRGNAM=python3-rpyc
 SRCNAM=${PRGNAM#python3-*}
 VERSION=${VERSION:-6.0.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

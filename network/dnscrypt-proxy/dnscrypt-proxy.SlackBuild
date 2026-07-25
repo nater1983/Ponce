@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=dnscrypt-proxy
 VERSION=${VERSION:-2.1.15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DNSCRYPT_USER=${DNSCRYPT_USER:-dnscrypt}

@@ -28,7 +28,7 @@ PRGNAM=GMT
 SRCNAM=gmt
 VERSION=${VERSION:-6.6.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 GSHHG=gshhg

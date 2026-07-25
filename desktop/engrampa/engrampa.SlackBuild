@@ -30,7 +30,7 @@ PRGNAM=engrampa
 VERSION=${VERSION:-1.28.2}
 COMMIT_MATE_SUBMODULES=4074560e3642a53ace07b31baaf3f04c060dcd0b
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

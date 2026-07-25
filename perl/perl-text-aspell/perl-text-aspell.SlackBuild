@@ -30,7 +30,7 @@ PRGNAM=perl-text-aspell
 SRCNAM=Text-Aspell
 VERSION=${VERSION:-0.09}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

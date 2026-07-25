@@ -30,7 +30,7 @@ PRGNAM=libmodi
 VERSION=${VERSION:-20221023}
 STATUS=${STATUS:-experimental}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

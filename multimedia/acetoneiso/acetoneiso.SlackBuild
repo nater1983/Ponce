@@ -33,7 +33,7 @@ PRGNAM=acetoneiso
 VERSION=${VERSION:-2.4.7}
 SRCNAM=${SRCNAM:-$PRGNAM-debian-2.4-7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 sys_arch=${sys_arch:-$(uname -m)}
 

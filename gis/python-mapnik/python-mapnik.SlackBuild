@@ -30,7 +30,7 @@ PRGNAM=python-mapnik
 GITREV=${GITREV:-7da019cf9eb12af8f8aa88b7d75789dfcd1e901b}
 VERSION=${VERSION:-git7da019c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

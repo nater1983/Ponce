@@ -7,7 +7,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=wxX11
 VERSION=${VERSION:-2.8.7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -16,7 +16,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=heretic_shareware_data
 VERSION=${VERSION:-1.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -31,7 +31,7 @@ PRGNAM=OTB-legacy
 SRCNAM=OTB
 VERSION=${VERSION:-8.1.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

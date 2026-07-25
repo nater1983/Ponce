@@ -31,7 +31,7 @@ PRGNAM=python3-pycrypto
 SRCNAM=pycrypto
 VERSION=${VERSION:-2.7a1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

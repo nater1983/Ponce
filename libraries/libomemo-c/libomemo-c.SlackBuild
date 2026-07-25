@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=libomemo-c
 VERSION=${VERSION:-0.5.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=8b6f2ebfe16c27e1037c9a3f4fcbb78ad9da10ea

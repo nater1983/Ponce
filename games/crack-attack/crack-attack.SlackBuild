@@ -30,7 +30,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=crack-attack
 VERSION=${VERSION:-1.1.15_cvs_01}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCVER=$(echo $VERSION | tr _ -)

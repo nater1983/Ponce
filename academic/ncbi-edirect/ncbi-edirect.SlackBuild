@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ncbi-edirect
 VERSION=${VERSION:-20.5.20231007}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 MANPG=ncbi-entrez-direct_19.0.20230216+dfsg-2.debian.tar.xz

@@ -30,7 +30,7 @@ PRGNAM=texlive-docs
 TEXMFVERSION=${TEXMFVERSION:-230322}
 VERSION=${VERSION:-2023.230322}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

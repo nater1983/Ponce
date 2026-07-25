@@ -28,7 +28,7 @@ PRGNAM=sqlcl
 VERSION=${VERSION:-24.1.0.087.0929}
 ARCH=${ARCH:-noarch}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what

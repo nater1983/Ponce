@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-Class-Inspector
 VERSION=${VERSION:-1.36}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=Class-Inspector

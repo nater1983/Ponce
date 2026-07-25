@@ -29,7 +29,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=remind
 VERSION=${VERSION:-06.01.06}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

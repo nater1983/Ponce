@@ -29,7 +29,7 @@ PRGNAM=dsniff
 VERSION=${VERSION:-2.4b1}
 SRCVER=${SRCVER:-2.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

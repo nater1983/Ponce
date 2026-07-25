@@ -28,7 +28,7 @@ PRGNAM=samtools
 VERSION=${VERSION:-1.23.1}
 HTSLIBV=${HTSLIBV:-1.23.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Some applications still rely on the legacy samtools API instead of using htslib 

@@ -27,7 +27,7 @@ PRGNAM=python3-PyGithub
 VERSION=${VERSION:-2.9.1}
 SRCNAM=${SRCNAM:-PyGithub}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

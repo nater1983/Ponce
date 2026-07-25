@@ -29,7 +29,7 @@ PRGNAM=brave-browser
 PRCNAM=amd64
 VERSION=${VERSION:-1.92.144}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 DEBBUILD=${DEBBUILD:-1}
 

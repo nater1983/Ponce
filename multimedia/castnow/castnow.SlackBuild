@@ -29,7 +29,7 @@ PRGNAM=castnow
 VERSION=${VERSION:-20170309}
 COMMIT="248921bda1a737b41bb96374f80b26e800b3d276"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

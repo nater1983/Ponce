@@ -41,7 +41,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=html2ps
 VERSION=${VERSION:-1.0b7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

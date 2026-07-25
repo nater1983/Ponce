@@ -31,7 +31,7 @@ PRGNAM=tora
 GITREV=${GITREV:-5859a97cb25f4ead879ac866d1427609602c08e6}
 VERSION=${VERSION:-git5859a97}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

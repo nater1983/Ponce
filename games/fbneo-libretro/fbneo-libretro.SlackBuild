@@ -30,7 +30,7 @@ LIBNAM=${PRGNAM/-/_}
 VERSION=${VERSION:-2024.06.30_004f20a}
 COMMIT=004f20a3111839bf8b0e740e3deaca9328af5df0
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

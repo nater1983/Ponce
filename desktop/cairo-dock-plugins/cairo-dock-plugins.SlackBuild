@@ -28,7 +28,7 @@ PRGNAM=cairo-dock-plugins
 SRCNAM=cairo-dock-plug-ins
 VERSION=${VERSION:-20201022_a0d3415}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

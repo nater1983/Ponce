@@ -28,7 +28,7 @@ PRGNAM=libindi-drivers
 SRCNAM="indi-3rdparty"
 VERSION=${VERSION:-2.0.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

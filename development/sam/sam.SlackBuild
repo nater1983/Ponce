@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=sam
 VERSION=${VERSION:-20241024_5d8acb35}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMIT=5d8acb35d78c327d76f00a54857cbd566ed9bc11
 

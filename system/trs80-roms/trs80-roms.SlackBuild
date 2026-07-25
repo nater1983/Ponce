@@ -13,7 +13,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=trs80-roms
 VERSION=${VERSION:-20230516}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

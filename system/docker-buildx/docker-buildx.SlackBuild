@@ -28,7 +28,7 @@ PRGNAM=docker-buildx
 VERSION=${VERSION:-0.35.0}
 GITHASH=${GITHASH:-a319e5b15052cf6557ceb666eb8ff6e32380b782}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=buildx

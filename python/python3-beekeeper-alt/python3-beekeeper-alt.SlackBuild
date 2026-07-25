@@ -27,7 +27,7 @@ PRGNAM=python3-beekeeper-alt
 VERSION=${VERSION:-2022.9.3}
 SRCNAM=${SRCNAM:-beekeeper-alt}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

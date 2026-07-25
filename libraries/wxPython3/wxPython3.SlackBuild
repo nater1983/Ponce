@@ -36,7 +36,7 @@ PRGNAM=wxPython3
 SRCNAM=wxPython
 VERSION=${VERSION:-3.0.2.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

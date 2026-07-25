@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=fehlstart
 VERSION=${VERSION:-20160523git}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT_ID=${COMMIT_ID:-9f4342d75ec5e2a46c13c99c34894bc275798441}

@@ -28,7 +28,7 @@ PRGNAM=amide
 VERSION=${VERSION:-1.0.6+20231009_c02babd}
 COMMIT=c02babd6b660a8d83c7f90eab69bbff34253923d
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

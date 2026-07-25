@@ -28,7 +28,7 @@ PRGNAM=anydesk
 VERSION=${VERSION:-8.0.4}
 BUILD=${BUILD:-1}
 RPMBUILD=${RPMBUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

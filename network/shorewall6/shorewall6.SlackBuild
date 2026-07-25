@@ -28,7 +28,7 @@ PRGNAM=shorewall6
 VERSION=${VERSION:-5.2.8}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 BASEVERS=$VERSION

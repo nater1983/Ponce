@@ -29,7 +29,7 @@ APPNAME=jellyfin
 ARCHFIX=amd64
 VERSION=${VERSION:-10.11.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

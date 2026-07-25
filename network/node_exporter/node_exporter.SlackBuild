@@ -29,7 +29,7 @@ PRGNAM=node_exporter
 VERSION=${VERSION:-1.8.2}
 GITHASH=${GITHASH:-f1e0e8360aa60b6cb5e5cc1560bed348fc2c1895}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=node_exporter

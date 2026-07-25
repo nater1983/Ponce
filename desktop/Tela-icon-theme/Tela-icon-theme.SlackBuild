@@ -29,7 +29,7 @@ PRGNAM="Tela-icon-theme"
 SRCVER=${SRCVER:-2026-07-07}
 VERSION=${VERSION:-2026_07_07}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

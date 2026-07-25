@@ -28,7 +28,7 @@ PRGNAM=keynav
 VERSION=${VERSION:-20150730+4ae486d}
 COMMIT="4ae486db6697877e84b66583a0502afc7301ba16"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

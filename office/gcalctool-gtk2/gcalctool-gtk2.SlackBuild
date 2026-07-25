@@ -30,7 +30,7 @@ PRGNAM=gcalctool-gtk2
 SRCNAM=gcalctool
 VERSION=${VERSION:-5.32.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

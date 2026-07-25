@@ -27,7 +27,7 @@ PRGNAM=denemo
 VERSION=${VERSION:-2.5.1}
 SRC=denemo_2.5.1.AppImage
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

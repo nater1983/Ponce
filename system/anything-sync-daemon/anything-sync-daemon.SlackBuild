@@ -34,7 +34,7 @@ PRGNAM=anything-sync-daemon
 VERSION=${VERSION:-5.76}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

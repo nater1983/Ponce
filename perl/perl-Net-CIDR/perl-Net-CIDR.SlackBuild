@@ -52,7 +52,7 @@ fi
 
 TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 OUTPUT=${OUTPUT:-/tmp}
 
 set -e

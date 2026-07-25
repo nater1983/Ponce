@@ -16,7 +16,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=mari0
 VERSION=${VERSION:-1.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # *.love files are just zip files full of lua code, they're cross-platform

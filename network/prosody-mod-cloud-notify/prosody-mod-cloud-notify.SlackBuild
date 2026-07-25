@@ -30,7 +30,7 @@ MDLNAM=$(echo $PRGNAM | sed 's/prosody-//' | tr '-' '_')
 VERSION=${VERSION:-hg6262}
 REVISION=${REVISION:-fe0a58b863db}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

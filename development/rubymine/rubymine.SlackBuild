@@ -10,7 +10,7 @@ ARCHIVENAME=RubyMine
 PRGNAM=rubymine
 VERSION=${VERSION:-2025.3.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=${ARCH:-x86_64}
 

@@ -31,7 +31,7 @@ PRGNAM=mimi
 VERSION=${VERSION:-d85ea825}
 SRCVER=d85ea8256ed627e93b387cd42e4ab39bfab9504c
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

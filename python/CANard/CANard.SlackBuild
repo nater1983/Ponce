@@ -28,7 +28,7 @@ PRGNAM=CANard
 VERSION=${VERSION:-65d48d83}
 COMMIT=65d48d8382dc0e76ee9c350e8be5d86d8044730a
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

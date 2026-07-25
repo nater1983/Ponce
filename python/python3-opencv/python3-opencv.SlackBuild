@@ -29,7 +29,7 @@ VERSION=${VERSION:-4.5.5.64}
 ADEVERSION=${ADEVERSION:-0.1.1f}
 SRCNAM=opencv-python
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

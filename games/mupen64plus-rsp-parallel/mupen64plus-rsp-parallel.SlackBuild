@@ -29,7 +29,7 @@ SRCNAM=parallel-rsp
 VERSION=${VERSION:-20221126_4cf680b}
 SRCVER=${SRCVER:-4cf680bbbda082b32723ef9f8da6a8120803c19c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

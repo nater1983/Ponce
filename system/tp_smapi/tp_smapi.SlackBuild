@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=tp_smapi
 VERSION=${VERSION:-0.45}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 KERNEL=${KERNEL:-"$(uname -r)"}

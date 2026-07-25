@@ -28,7 +28,7 @@ PRGNAM=tixati
 VERSION=${VERSION:-3.42_1}
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

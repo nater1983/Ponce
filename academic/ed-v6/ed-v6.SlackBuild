@@ -32,7 +32,7 @@ PRGNAM=ed-v6
 VERSION=${VERSION:-20180309_c72c0e9}
 SRCVERSION=${SRCVERSION:-c72c0e9445af26bd9fde2d39da5628e6dabf36dd}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

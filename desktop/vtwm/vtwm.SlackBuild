@@ -11,7 +11,7 @@ VERSION=${VERSION:-5.5.0_rc8}
 SRCVERSION=$(echo $VERSION | tr '_' '-')
 SRCVERSION2=20120316
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

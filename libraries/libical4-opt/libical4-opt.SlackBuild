@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=libical4-opt
 VERSION=${VERSION:-0.0.0.20250531}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=9023b22671ae059c0cbc19a955f62bcffe5feeca

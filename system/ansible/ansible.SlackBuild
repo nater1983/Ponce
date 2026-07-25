@@ -29,7 +29,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ansible
 VERSION=${VERSION:-8.7.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

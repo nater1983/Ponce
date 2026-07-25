@@ -28,7 +28,7 @@ PRGNAM=stm32cubeprog
 VERSION=${VERSION:-2.22.0}
 SRCNAM=en.stm32cubeprg-lin-v$(echo $VERSION | tr . -).zip
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

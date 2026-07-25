@@ -40,7 +40,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=strongswan
 VERSION=${VERSION:-6.0.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DEFAULT_CONFIG_OPTS="\

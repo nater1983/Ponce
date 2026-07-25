@@ -28,7 +28,7 @@ PRGNAM=memtest86+
 SRCNAM=memtest86plus
 VERSION=${VERSION:-7.00}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # i586 or x86_64 only.  Modify the Makefile at your own risk :-)

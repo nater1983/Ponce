@@ -35,7 +35,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=openlierox
 VERSION=${VERSION:-20200424_d316c14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

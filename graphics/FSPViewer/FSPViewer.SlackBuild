@@ -25,7 +25,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=FSPViewer
 VERSION=${VERSION:-2.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in

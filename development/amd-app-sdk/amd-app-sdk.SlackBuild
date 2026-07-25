@@ -36,7 +36,7 @@ PRGNAM=amd-app-sdk
 INT_NAME=AMD-APP-SDK
 VERSION=${VERSION:-2.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 SAMPLES=${SAMPLES:-no}
 

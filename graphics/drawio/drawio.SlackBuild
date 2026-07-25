@@ -36,7 +36,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=drawio
 VERSION=${VERSION:-29.0.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

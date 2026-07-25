@@ -19,7 +19,7 @@ PRGNAM=irssi-icb
 VERSION=${VERSION:-0.17+20220616_4fd6aff}
 IRSSIVER=${IRSSIVER:-1.4.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=ansible-core
 SRCNAM=$(echo $PRGNAM|tr '-' '_')
 VERSION=${VERSION:-2.15.12}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

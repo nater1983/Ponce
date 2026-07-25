@@ -22,7 +22,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=raku-Readline
 VERSION=${VERSION:-0.1.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=perl6-readline

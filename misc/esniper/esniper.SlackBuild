@@ -28,7 +28,7 @@ PRGNAM=esniper
 VERSION=${VERSION:-2.35.0}
 SRCVER=$(printf %s "$VERSION" | tr . -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

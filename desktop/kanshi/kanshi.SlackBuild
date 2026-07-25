@@ -28,7 +28,7 @@ PRGNAM=kanshi
 VERSION=${VERSION:-20250224_00a653a}
 GITHASH="$(echo "$VERSION" | cut -d_ -f2)"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

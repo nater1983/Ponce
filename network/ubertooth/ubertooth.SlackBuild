@@ -28,7 +28,7 @@ PRGNAM=ubertooth
 VERSION=${VERSION:-2020.12.R1}
 SRCVERSION=$(echo $VERSION |tr . -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

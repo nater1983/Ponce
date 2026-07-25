@@ -28,7 +28,7 @@ PRGNAM=tclsoap
 VERSION=${VERSION:-1.6.7}
 TARNAM=TclSOAP
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

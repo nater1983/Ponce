@@ -32,7 +32,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=LDView
 VERSION=${VERSION:-4.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 SRCNAM=$(echo $PRGNAM|tr '[A-Z]' '[a-z]')
 

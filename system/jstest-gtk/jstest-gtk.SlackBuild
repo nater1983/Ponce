@@ -28,7 +28,7 @@ PRGNAM=jstest-gtk
 VERSION=${VERSION:-20231205_60fe6eb}
 SRCVER=${SRCVER:-60fe6ebdbc6719945be3f04988667dea569085be}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

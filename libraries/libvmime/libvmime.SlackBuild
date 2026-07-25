@@ -32,7 +32,7 @@ SRCNAM=vmime
 VERSION=${VERSION:-5617460}
 GITVER=${GITVER:-561746081f633245b326e31e6ef0f2ef20b48ef6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

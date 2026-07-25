@@ -29,7 +29,7 @@ NAME=SceneBuilder
 PNAME=scenebuilder
 VERSION=${VERSION:-21.0.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -38,7 +38,7 @@ PRGNAM=vpcs
 VERSION=${VERSION:-0.8.3}
 >>>>>>>> current:system/vpcs/vpcs.SlackBuild
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

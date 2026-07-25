@@ -29,7 +29,7 @@ SRCNAM=dMagnetic
 VERSION=${VERSION:-0.37}
 MANVER=${MANVER:-$VERSION}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

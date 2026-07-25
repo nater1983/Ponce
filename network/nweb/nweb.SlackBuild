@@ -31,7 +31,7 @@ PRGNAM=nweb
 COMMIT=${COMMIT:-867a6dd46298c882501f5c26d31ee821177542ab}
 VERSION=${VERSION:-23_867a6dd}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

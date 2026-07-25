@@ -29,7 +29,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=PeaZip
 VERSION=${VERSION:-11.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 # gtk2 (default), gtk3 (alpha stage) or qt6 (requires installation of Qt6 bindings)
 WIDGET=${WIDGET:-gtk2}

@@ -31,7 +31,7 @@ PRGNAM=supertuxkart
 SRCNAM=SuperTuxKart
 VERSION=${VERSION:-1.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

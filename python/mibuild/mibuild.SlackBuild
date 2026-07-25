@@ -28,7 +28,7 @@ PRGNAM=mibuild
 VERSION=${VERSION:-20130601}
 COMMIT=${COMMIT:-953e603915cddfc9d887912391e8fe85b31d3699}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

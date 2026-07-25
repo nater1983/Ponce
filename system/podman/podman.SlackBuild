@@ -30,7 +30,7 @@ REPONAME=libpod
 VERSION=${VERSION:-4.7.2}
 GIT_COMMIT="750b4c3a7c31f6573350f0b3f1b787f26e0fe1e3"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # The domain part of the go package name, usually the hosting platform

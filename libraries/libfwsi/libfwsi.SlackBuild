@@ -30,7 +30,7 @@ PRGNAM=libfwsi
 VERSION=${VERSION:-20230114}
 STATUS=${STATUS:-experimental}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

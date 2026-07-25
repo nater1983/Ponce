@@ -28,7 +28,7 @@ PRGNAM=qt-dab
 VERSION=${VERSION:-5.4}
 TARVERSION=6
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # wsr BUILD:-2 Fix against new qwt (20250125)

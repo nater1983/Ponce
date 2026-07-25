@@ -33,7 +33,7 @@ PRGNAM=eclipse-php
 VERSION=${VERSION:-4.38}
 SRCVERSION=${SRCVERSION:-2025-12-R}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

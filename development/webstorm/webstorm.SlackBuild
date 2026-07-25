@@ -10,7 +10,7 @@ PRGNAM=webstorm
 ARCNAM=WebStorm
 VERSION=${VERSION:-2025.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ICONO=webide

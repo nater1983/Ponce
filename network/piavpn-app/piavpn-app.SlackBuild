@@ -29,7 +29,7 @@ SRCNAM=pia-linux
 SRCVER=3.7.2-08420
 VERSION=${VERSION:-3.7.2_08420}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -29,7 +29,7 @@ PRGNAM=kubectl-bin
 PRGSOURCE=kubectl
 VERSION=${VERSION:-1.36.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

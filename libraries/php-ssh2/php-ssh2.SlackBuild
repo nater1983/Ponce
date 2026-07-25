@@ -28,7 +28,7 @@ PRGNAM=php-ssh2
 SRCNAM=ssh2
 VERSION=${VERSION:-1.4.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

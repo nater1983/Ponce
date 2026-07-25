@@ -36,7 +36,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=rtl8188eu
 VERSION=${VERSION:-20220203_775137f}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 KERNEL=${KERNEL:-$(uname -r)}

@@ -9,7 +9,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=kompozer
 VERSION=${VERSION:-0.8b3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # No flags/configure needed as it is just a binary repackaging.

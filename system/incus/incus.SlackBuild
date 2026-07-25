@@ -28,7 +28,7 @@ PRGNAM=incus
 VERSION=${VERSION:-7.2}
 PATCH_VERSION=${PATCH_VERSION:-0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}

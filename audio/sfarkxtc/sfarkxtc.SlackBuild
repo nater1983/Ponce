@@ -24,7 +24,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=sfarkxtc
 VERSION=${VERSION:-20181208}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=${COMMIT:-4ed577d5779a68422b816f96a40e8e4abe65894a}

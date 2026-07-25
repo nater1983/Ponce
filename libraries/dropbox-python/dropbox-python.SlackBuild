@@ -28,7 +28,7 @@ PRGNAM=dropbox-python
 SCRNAM=$(printf $PRGNAM | cut -c1-7)
 VERSION=${VERSION:-11.36.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

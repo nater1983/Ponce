@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=MetaPhlAn2
 VERSION=${VERSION:-20201202_git4e4416}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=4e4416321c75828ac8ea55d36f5a65ebd39058c5

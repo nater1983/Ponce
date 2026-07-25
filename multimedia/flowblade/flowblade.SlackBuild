@@ -14,7 +14,7 @@ PRGNAM=flowblade
 VERSION=${VERSION:-24564a}
 SRCVERSION=${SRCVERSION:-24564ae0899af9ee92ad31bd884ba804a3137d3b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -27,7 +27,7 @@ PRGNAM=python3-tmdbsimple
 VERSION=${VERSION:-2.9.1}
 SRCNAM=${SRCNAM:-tmdbsimple}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

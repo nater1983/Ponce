@@ -35,7 +35,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=moneydance
 VERSION=${VERSION:-2024.5253}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in

@@ -28,7 +28,7 @@ PRGNAM=android-studio-for-platform
 VERSION=${VERSION:-2025.1.3.7}
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-$(uname -m)}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 PKGNAM="asfp-*-$VERSION-linux.deb"

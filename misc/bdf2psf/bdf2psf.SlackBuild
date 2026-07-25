@@ -29,7 +29,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=bdf2psf
 VERSION=${VERSION:-1.207}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # perl script

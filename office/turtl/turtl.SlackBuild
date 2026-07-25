@@ -28,7 +28,7 @@ PRGNAM=turtl
 VERSION=${VERSION:-0.7.2.6}
 SUFFIX=-pre-sync-fix
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in

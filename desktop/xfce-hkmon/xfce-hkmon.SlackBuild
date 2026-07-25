@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xfce-hkmon
 VERSION=${VERSION:-20180315git}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=${COMMIT:-6862a03e9ca7d2b0e96bece4cb88dfc9b3518987}

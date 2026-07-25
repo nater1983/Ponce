@@ -28,7 +28,7 @@ PRGNAM=libccd
 COMMIT=f658f88f3d86a4069e1f7229156810c8bb2e10ad
 VERSION=${VERSION:-git_f658f88}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

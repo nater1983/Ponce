@@ -21,7 +21,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-CPANPLUS-Dist-Slackware
 VERSION=${VERSION:-1.029}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$(printf $PRGNAM | cut -d- -f2-)"

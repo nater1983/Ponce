@@ -38,7 +38,7 @@ PRGNAM=firestorm-opensim
 VERSION=${VERSION:-4.4.2.34167}
 EXTRAVERSION=${EXTRAVERSION:-OS}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

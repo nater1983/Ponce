@@ -32,7 +32,7 @@ FILENAME=cuda
 VERSION=${VERSION:-13.2.1}
 DRIVER=${DRIVER:-595.58.03}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

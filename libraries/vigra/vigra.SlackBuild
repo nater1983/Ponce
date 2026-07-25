@@ -34,7 +34,7 @@ PRGNAM="vigra"
 VERSION=${VERSION:-1.12.2}
 SRCVER=Version-$(echo $VERSION | tr . - )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -8,7 +8,7 @@ PRGNAM=xpdf3
 SRCNAM=xpdf
 VERSION=${VERSION:-3.04}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

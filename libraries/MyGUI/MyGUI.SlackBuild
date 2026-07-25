@@ -29,7 +29,7 @@ PRGNAM=MyGUI
 SRCNAM=mygui-MyGUI  # Yes, really (github)
 VERSION=${VERSION:-3.4.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

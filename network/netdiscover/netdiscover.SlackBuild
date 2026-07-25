@@ -24,7 +24,7 @@ PRGNAM=netdiscover
 VERSION=${VERSION:-053dda2}
 COMMIT=${COMMIT:-053dda2f3a8cdb749f8100735d78af427aa417b0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

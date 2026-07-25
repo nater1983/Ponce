@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=atari_8bit_utils
 VERSION=${VERSION:-20260104_bb7b488}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL=${TARBALL:-bb7b4887f57314d0236596569f8a76232dd9c037}
 

@@ -24,7 +24,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=unaesgcm
 VERSION=${VERSION:-0.4.1.20220827_0cf9cb}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=0cf9cb6e37c5944b1f441cb6295ecf35329d821f

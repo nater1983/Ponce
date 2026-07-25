@@ -28,7 +28,7 @@ PRGNAM=megatools
 VERSION=${VERSION:-1.11.5}
 EXTRAVER=${EXTRAVER:-20250706}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

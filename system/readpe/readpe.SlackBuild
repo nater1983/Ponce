@@ -28,7 +28,7 @@ PRGNAM=readpe
 VERSION=${VERSION:-20260312_d9a4c7a}
 GITHASH=${GITHASH:-d9a4c7a55698f38dba68a206f92d310d68c31aef}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

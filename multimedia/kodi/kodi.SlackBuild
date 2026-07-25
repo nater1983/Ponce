@@ -30,7 +30,7 @@ SRCNAM=xbmc
 CODNAM=Omega
 VERSION=${VERSION:-21.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Versions used below

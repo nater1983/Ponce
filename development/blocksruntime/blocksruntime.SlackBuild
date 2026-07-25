@@ -29,7 +29,7 @@ PRGNAM=blocksruntime
 MSTPRGNAM=compiler-rt
 VERSION=${VERSION:-3.8.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

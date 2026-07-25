@@ -29,7 +29,7 @@ PRGNAM=fmodapi
 VERSION=${VERSION:-4.44.61}
 SRCVER=$( echo $VERSION | sed 's/\.//g' )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

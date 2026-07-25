@@ -24,7 +24,7 @@ PRGNAM=xchm
 SRCNAM=xCHM
 VERSION=${VERSION:-1.39}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

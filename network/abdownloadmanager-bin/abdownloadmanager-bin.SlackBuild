@@ -29,7 +29,7 @@ VERSION=${VERSION:-1.8.7}
 SRCNAM=ABDownloadManager_"$VERSION"_linux_x64
 PKGNAM=ABDownloadManager
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

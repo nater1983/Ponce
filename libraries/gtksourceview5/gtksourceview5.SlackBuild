@@ -29,7 +29,7 @@ SRCNAM=gtksourceview
 VERSION=${VERSION:-5.4.2}
 DOCS=${DOCS:-false}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

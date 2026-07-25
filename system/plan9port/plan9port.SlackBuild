@@ -32,7 +32,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=plan9port
 VERSION=${VERSION:-20241024_61e362ad}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMIT=61e362add9e1485bec1ab8261d729016850ec270
 

@@ -31,7 +31,7 @@ PRGNAM=picard-plugins
 VERSION=${VERSION:-277aa4d}
 COMMIT=${COMMIT:-277aa4dddfe61b2a205f3088aa042e7178057e12}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -27,7 +27,7 @@ PRGNAM=python3-pdm-build-locked
 VERSION=${VERSION:-0.3.7}
 SRCNAM=${SRCNAM:-pdm-build-locked}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

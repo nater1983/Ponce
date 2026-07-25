@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=homm3_shareware_data
 VERSION=${VERSION:-4.0} # This is the version stated in the ReadMe
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DEMO=heroes_3_complete_demo.sit

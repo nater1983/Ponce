@@ -39,7 +39,7 @@ if [ -z "$ARCH" ]; then
 fi
 
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TARNAM=JMRI

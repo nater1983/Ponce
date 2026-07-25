@@ -29,7 +29,7 @@ SRCNAM=JSMin
 VERSION=${VERSION:-20130329}
 SRCVERSION=${SRCVERSION:-1bf6ce5f74a9f8752ac7f5d115b8d7ccb31cfe1b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

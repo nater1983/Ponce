@@ -28,7 +28,7 @@ PRGNAM=python2-lockfile
 SRCNAM=lockfile
 VERSION=${VERSION:-0.12.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -32,7 +32,7 @@ PRGNAM=bashdb
 VERSION=${VERSION:-5.1_20210713}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCVER=$(printf $VERSION | tr _ -)

@@ -29,7 +29,7 @@ VERSION=${VERSION:-aed906ef}
 COMMITVER="aed906ef107eb684e18d8889c9bf383cc7b77b84"
 LIBNAM=${LIBNAM:-vitaquake2_libretro}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

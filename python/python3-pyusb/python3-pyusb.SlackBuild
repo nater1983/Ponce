@@ -16,7 +16,7 @@ PRGNAM=python3-pyusb
 SRCNAM=pyusb
 VERSION=${VERSION:-1.2.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

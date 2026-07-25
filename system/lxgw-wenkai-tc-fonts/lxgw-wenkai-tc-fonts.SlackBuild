@@ -28,7 +28,7 @@ PRGNAM=lxgw-wenkai-tc-fonts
 VERSION=${VERSION:-1.520}
 SRCNAM="lxgw-wenkai-tc-v$VERSION"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

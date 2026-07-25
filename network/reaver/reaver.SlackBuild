@@ -28,7 +28,7 @@ PRGNAM=reaver
 SRCNAM=reaver-wps-fork-t6x
 VERSION=${VERSION:-1.6.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

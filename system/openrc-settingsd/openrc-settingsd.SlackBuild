@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=openrc-settingsd
 VERSION=${VERSION:-2024.08.31}
 GITBRANCH=main
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 BUILD=${BUILD:-1}
 PKGTYPE=${PKGTYPE:-txz}
 

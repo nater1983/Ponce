@@ -31,7 +31,7 @@ PRGNAM=nedit
 VERSION=${VERSION:-5.8}
 NUMVER=$(echo $VERSION | tr -d '[:alpha:]')
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=pathtools
 SRCPKG=${SRCPKG-pathtools}
 VERSION=${VERSION:-0.1.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$(printf $SRCPKG | cut -d- -f2-)"

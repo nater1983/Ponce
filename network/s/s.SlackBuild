@@ -29,7 +29,7 @@ VERSION=${VERSION:-0.8.0}
 SRCNAM32="s-linux_386"
 SRCNAM64="s-linux_amd64"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=UASM
 VERSION=${VERSION:-2.57}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 SRC_DIR="UASM-2.57"
 PKGTYPE=${PKGTYPE:-txz}
 

@@ -27,7 +27,7 @@ PRGNAM=onkyo-eiscp
 SRCNAM=dannytrigo_onkyo_eiscp
 VERSION=${VERSION:-1.2.14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -27,7 +27,7 @@ PRGNAM=novelWriter
 VERSION=${VERSION:-2.8.2}
 SRC=novelwriter-2.8.2-x86_64.AppImage
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -29,7 +29,7 @@ PRGNAM=csbooks-bin
 VERSION=${VERSION:-9.0.0}
 SRCNAM=csBooks_"$VERSION"_amd64
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

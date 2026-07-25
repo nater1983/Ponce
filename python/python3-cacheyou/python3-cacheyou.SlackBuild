@@ -27,7 +27,7 @@ PRGNAM=python3-cacheyou
 VERSION=${VERSION:-23.3}
 SRCNAM=${SRCNAM:-cacheyou}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

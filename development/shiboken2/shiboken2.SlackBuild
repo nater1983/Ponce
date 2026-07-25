@@ -30,7 +30,7 @@ SRCNAM=pyside-setup-opensource-src
 SRCNAM_PATCHES=pyside2
 SRCNAM_PATCHES_VERSION=5.15.18-1
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 PYTHON_VERSION=${PYTHON_VERSION:-$(python3 -c 'import sys; print("{}.{}".format(sys.version_info.major, sys.version_info.minor))')}

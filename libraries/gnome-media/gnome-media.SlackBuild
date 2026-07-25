@@ -9,7 +9,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gnome-media
 VERSION=${VERSION:-2.32.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 USE_GRECORD=${USE_GRECORD:-no}

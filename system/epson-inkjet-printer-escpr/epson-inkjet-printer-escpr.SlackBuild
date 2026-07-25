@@ -30,7 +30,7 @@ PRGNAM=epson-inkjet-printer-escpr
 VERSION=${VERSION:-1.8.8}
 TARNAM=$PRGNAM-$VERSION-1.tar.gz
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=smu
 VERSION=${VERSION:-20250202_4fe5afa}
 COMMIT=4fe5afa28033ba9afb19f2c2c907196273587595
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

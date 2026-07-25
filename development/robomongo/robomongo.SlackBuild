@@ -8,7 +8,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="robomongo"
 VERSION=${VERSION:-0.8.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in

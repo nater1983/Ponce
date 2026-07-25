@@ -27,7 +27,7 @@ PRGNAM=python3-validators
 VERSION=${VERSION:-0.35.0}
 SRCNAM=${SRCNAM:-validators}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

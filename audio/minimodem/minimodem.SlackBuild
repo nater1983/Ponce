@@ -39,7 +39,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=minimodem
 VERSION=${VERSION:-0.24+20210717_bb2f34c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

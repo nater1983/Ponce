@@ -28,7 +28,7 @@ PRGNAM=amplifx
 SRCNAM=AmplifX_Lin_Latest
 VERSION=${VERSION:-1.7.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # 2023-05-16 DW: do a proper test for ARCH

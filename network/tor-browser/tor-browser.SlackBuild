@@ -28,7 +28,7 @@ PRGNAM=tor-browser
 VERSION=${VERSION:-15.0.19}
 PRGLANG=${PRGLANG:-ALL}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

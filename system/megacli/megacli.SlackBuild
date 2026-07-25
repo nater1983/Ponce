@@ -31,7 +31,7 @@ VERSION=${VERSION:-8.07.14}
 ZIPVER="$(echo $VERSION | sed -e 's/\./\-/g')"
 BUILD=${BUILD:-1}
 RPMBUILD=${RPMBUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

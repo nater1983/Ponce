@@ -14,7 +14,7 @@ PRGNAM=nekobee
 VERSION=${VERSION:-c953a8d}
 SRCVERSION=${SRCVERSION:-c953a8d350219eed9c566cb104987a858b59c9fe}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=purple-telegram
 VERSION=${VERSION:-1.4.1}
 SRCNAM=${PRGNAM/*-/}-${PRGNAM/-*}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

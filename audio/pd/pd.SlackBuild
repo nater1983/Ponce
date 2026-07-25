@@ -21,7 +21,7 @@ PRGNAM=pd
 VERSION=${VERSION:-0.50_2}
 SRCVERSION=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

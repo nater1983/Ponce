@@ -29,7 +29,7 @@ BINNAM=ircd
 VERSION=${VERSION:-20240506_e813b4f}
 GITHASH=${GITHASH:-e813b4f4352586db6b42bafb6e10e4bb113e62d4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

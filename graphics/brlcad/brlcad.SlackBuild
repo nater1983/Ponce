@@ -18,7 +18,7 @@ PRGNAM=brlcad
 VERSION=${VERSION:-7.38.2}
 SRCVER=rel-${VERSION//./-}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -29,7 +29,7 @@ PRGNAM=cacti
 VERSION=${VERSION:-1.2.26}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DOCROOT=${DOCROOT:-/var/www/htdocs}

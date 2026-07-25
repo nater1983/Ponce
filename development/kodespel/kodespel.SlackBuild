@@ -18,7 +18,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=kodespel
 VERSION=${VERSION:-0.1.1+20220227_e0095c7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

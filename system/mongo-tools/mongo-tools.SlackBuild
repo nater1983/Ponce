@@ -27,7 +27,7 @@ PRGNAM=mongo-tools
 VERSION=${VERSION:-100.17.0}
 COMMITVER="0b142f65e139525881b6a343bc56d8d98e5a1f90"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=incus-ui
 SRCNAM=incus-ui-canonical
 VERSION=${VERSION:-20260706_64d46e71}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}

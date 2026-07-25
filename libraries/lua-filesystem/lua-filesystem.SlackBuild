@@ -32,7 +32,7 @@ SRCNAM=luafilesystem
 VERSION=${VERSION:-1.6.3}
 SRCVER=v_$(echo $VERSION | tr . _)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

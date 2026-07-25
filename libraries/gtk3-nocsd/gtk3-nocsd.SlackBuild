@@ -30,7 +30,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gtk3-nocsd
 VERSION=${VERSION:-20160617git}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT_ID=${COMMIT_ID:-82ff5a0da54aa6da27232b55eb93e5f4b5de22f2}

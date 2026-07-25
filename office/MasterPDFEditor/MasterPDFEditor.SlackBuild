@@ -29,7 +29,7 @@ SRCNAM=master-pdf-editor
 VERSION=${VERSION:-5.9.98}
 MAJVER=${MAJVER:-5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

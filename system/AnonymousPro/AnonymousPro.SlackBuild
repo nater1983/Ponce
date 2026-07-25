@@ -28,7 +28,7 @@ PRGNAM=AnonymousPro
 VERSION=${VERSION:-1_002}
 DIR_NAME=${DIR_NAME:-1.002.001}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

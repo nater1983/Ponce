@@ -31,7 +31,7 @@ PRGNAM=rakarrack
 VERSION=${VERSION:-0.6.2+20150813_a620840}
 COMMIT=${COMMIT:-a6208406d94a1da978f435605072ee5caefe1491}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -33,7 +33,7 @@ CORENAM=KITScenaristCore
 COREVER=${COREVER:-a777107fb3058887630ad13a3e85a3118e42a51e}
 VERSION=${VERSION:-0.7.2.rc15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

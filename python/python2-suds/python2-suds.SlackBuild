@@ -9,7 +9,7 @@ PRGNAM=python2-suds
 SRCNAM=python-suds
 VERSION=${VERSION:-0.3.9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

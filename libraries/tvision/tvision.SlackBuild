@@ -28,7 +28,7 @@ PRGNAM=tvision
 SRC_VER=${SRC_VER:-85aaeca0999c8b53006c556ccda063f143d259ca}
 VERSION=${VERSION:-20260111_85aaeca}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

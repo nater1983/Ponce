@@ -22,7 +22,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=scrabbleai
 VERSION=${VERSION:-20150324_6f8db6b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

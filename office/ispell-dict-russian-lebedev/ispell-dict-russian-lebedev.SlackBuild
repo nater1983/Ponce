@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ispell-dict-russian-lebedev
 VERSION=${VERSION:-0.99f9.20250716}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=eec49d21bf69ee18830a3923e11a6691fc046cb8

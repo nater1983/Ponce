@@ -20,7 +20,7 @@ PRGNAM=MasterPDFEditor4
 SRCNAM=master-pdf-editor
 VERSION=${VERSION:-4.3.89}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

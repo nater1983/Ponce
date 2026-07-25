@@ -28,7 +28,7 @@ PRGNAM=Microsoft-Fonts
 VERSION=${VERSION:-20211205}
 SRCVERSION=ae52d80fedcac1a18df43728f9fc4d8bf3c31663
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -26,7 +26,7 @@ cd "$(dirname "$0")" ; CWD=$(pwd)
 PRGNAM=psi-plus-plugins
 VERSION=${VERSION:-1.5.1600}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 SRCNAM=psi-plus-snapshots-${VERSION}
 PKGTYPE=${PKGTYPE:-txz}
 

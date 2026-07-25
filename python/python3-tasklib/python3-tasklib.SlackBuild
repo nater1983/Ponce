@@ -8,7 +8,7 @@ PRGNAM=python3-tasklib
 DIRNAM=tasklib
 VERSION=${VERSION:-2.5.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

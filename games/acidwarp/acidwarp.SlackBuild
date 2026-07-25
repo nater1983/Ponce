@@ -12,7 +12,7 @@ PRGNAM=acidwarp
 VERSION=${VERSION:-4.10+20221127_cf5e52f}
 COMMIT=${COMMIT:-cf5e52ff7793df1cb2dffaf693b672b66cca3049}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

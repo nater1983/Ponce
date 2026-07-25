@@ -8,7 +8,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-Tidy
 VERSION=${VERSION:-20130922}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRC_PRGNAM=Perl-Tidy

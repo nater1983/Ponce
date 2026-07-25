@@ -49,7 +49,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=imlib2_loaders
 VERSION=${VERSION:-1.12.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

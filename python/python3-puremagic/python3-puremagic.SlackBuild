@@ -28,7 +28,7 @@ PRGNAM=python3-puremagic
 SRCNAM=puremagic
 VERSION=${VERSION:-1.15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

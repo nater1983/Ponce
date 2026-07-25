@@ -28,7 +28,7 @@ PRGNAM=i3expo-ng
 VERSION=${VERSION:-20221012_b55a74b}
 COMMIT=${COMMIT:-b55a74bf367475db5b9e21213ced684b50607fe2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

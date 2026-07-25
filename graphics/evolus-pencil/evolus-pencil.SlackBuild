@@ -31,7 +31,7 @@ SRCNAM=pencil
 VERSION=${VERSION:-2.0.5}
 BUILD=${BUILD:-1}
 APPBUILD=${APPBUILD:-1.fc19}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

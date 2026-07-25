@@ -42,7 +42,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=mhsetroot
 VERSION=${VERSION:-1.6.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -30,7 +30,7 @@ PRGNAM=mkvserver_mk2
 VERSION=${VERSION:-20201203_c62abc3}
 COMMIT=${COMMIT:-c62abc30f4cca6147ddc732570b30fcb4bee30ec}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

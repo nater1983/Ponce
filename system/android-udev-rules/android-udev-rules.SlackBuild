@@ -29,7 +29,7 @@ PRGNAM=android-udev-rules
 SRCNAM=51-android.rules
 VERSION=${VERSION:-2026.04.23}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

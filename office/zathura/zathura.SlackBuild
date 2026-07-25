@@ -58,7 +58,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=zathura
 VERSION=${VERSION:-0.5.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # zathura no longer includes PDF support in the core. Instead it uses

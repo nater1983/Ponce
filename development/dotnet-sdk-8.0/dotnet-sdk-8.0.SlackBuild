@@ -28,7 +28,7 @@ PRGNAM=dotnet-sdk-8.0
 SRCNAM=dotnet-sdk
 VERSION=${VERSION:-8.0.423}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -16,7 +16,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=courier-prime
 VERSION=${VERSION:-03142015}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

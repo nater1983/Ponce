@@ -16,7 +16,7 @@ PRGNAM=aigaion
 VERSION=${VERSION:-2.2.b}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 MAJORVERSION=2

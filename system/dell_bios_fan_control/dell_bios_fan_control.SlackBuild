@@ -29,7 +29,7 @@ PRGNAM=dell_bios_fan_control
 TGZNAM=dell-bios-fan-control
 VERSION=${VERSION:-20220119_270061}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=27006106595bccd6c309da4d1499f93d38903f9a

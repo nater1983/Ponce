@@ -30,7 +30,7 @@ PRGNAM=ambiance-radiance-flat-colors-gtk-theme
 PRGNAMTAR=Ambiance_Radiance-Flat-Colors-16-04-1-LTS-GTK-3-18Theme
 VERSION=${VERSION:-16.04.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

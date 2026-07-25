@@ -21,7 +21,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pom1
 VERSION=${VERSION:-1.0.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

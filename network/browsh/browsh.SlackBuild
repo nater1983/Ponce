@@ -27,7 +27,7 @@ cd "$(dirname "$0")" ; CWD=$(pwd)
 PRGNAM=browsh
 VERSION=${VERSION:-1.8.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 GOTARBALL=go1.25.1.linux-amd64
 

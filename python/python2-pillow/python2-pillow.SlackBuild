@@ -28,7 +28,7 @@ PRGNAM=python2-pillow
 SRCNAM=Pillow
 VERSION=${VERSION:-6.2.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

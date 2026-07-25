@@ -38,7 +38,7 @@ VERSION=${VERSION:-9.5.5}
 SRCARCH=i486	# Leave this alone for acroread
 ARCH=i586
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Use ADOBE_LANG for installing a different language version of acroread

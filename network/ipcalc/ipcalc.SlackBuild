@@ -28,7 +28,7 @@ PRGNAM=ipcalc
 VERSION=${VERSION:-0.41}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 CGIBINDIR=${CGIBINDIR:-/var/www/cgi-bin}

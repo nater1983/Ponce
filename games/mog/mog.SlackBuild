@@ -28,7 +28,7 @@ PRGNAM=mog
 VERSION=${VERSION:-0.63.1548}
 SRCVER=$(echo $VERSION | sed "s/.1548/-1548/")
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=$PRGNAM.src

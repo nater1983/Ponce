@@ -30,7 +30,7 @@ PRGNAM=php-memcached
 SRCNAM=memcached
 VERSION=${VERSION:-3.1.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

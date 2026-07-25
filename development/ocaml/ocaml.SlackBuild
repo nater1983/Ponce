@@ -33,7 +33,7 @@ PRGNAM=ocaml
 VERSION=${VERSION:-4.13.1}
 MANVER=${MANVER:-4.13}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

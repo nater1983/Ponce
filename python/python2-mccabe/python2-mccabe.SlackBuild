@@ -28,7 +28,7 @@ PRGNAM=python2-mccabe
 SRCNAM=$( echo $PRGNAM | cut -d- -f2- )
 VERSION=${VERSION:-0.6.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

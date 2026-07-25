@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=asm6809
 VERSION=${VERSION:-2.17}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

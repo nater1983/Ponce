@@ -32,7 +32,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=nuvie
 VERSION=${VERSION:-20250312_759cc0c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL="759cc0c33bb1a555d6935976c467e52007c3aea1"
 

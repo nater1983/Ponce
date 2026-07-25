@@ -32,7 +32,7 @@ PRGNAM=kashmir
 VERSION=${VERSION:-20150805}
 COMMIT=${COMMIT:-2f3913f49c4ac7f9bff9224db5178f6f8f0ff3ee}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

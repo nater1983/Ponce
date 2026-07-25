@@ -29,7 +29,7 @@ PRGNAM=FreeOffice
 SRCNAM=softmaker-freeoffice
 VERSION=${VERSION:-2024_1234}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 case "$( uname -m )" in

@@ -30,7 +30,7 @@ PRGNAM=cld2
 VERSION=${VERSION:-20150820}
 SRCREV=b56fa78a2fe44ac2851bae5bf4f4693a0644da7b
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -7,7 +7,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=p4api
 VERSION=${VERSION:-2010.1.260003}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ###sbolint off (because VERSION is being redefined)

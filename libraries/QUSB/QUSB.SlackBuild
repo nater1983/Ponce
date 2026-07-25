@@ -28,7 +28,7 @@ PRGNAM=QUSB
 VERSION=${VERSION:-0ec83acc}
 GITVER=0ec83acc541e4469a7f425b2579fcc029583fe02
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

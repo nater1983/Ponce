@@ -9,7 +9,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=FreeImage
 VERSION=${VERSION:-3.18.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DOCS="README.linux license-*.txt Whatsnew.txt Examples/ TestAPI/"

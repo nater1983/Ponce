@@ -31,7 +31,7 @@ PRGNAM=foobillardplus
 VERSION=${VERSION:-3.43beta}
 SRCVERSION=${SRCVERSION:-170}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

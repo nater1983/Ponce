@@ -28,7 +28,7 @@ PRGNAM=victor-mono-fonts
 SRCNAM=VictorMonoAll
 VERSION=${VERSION:-1.5.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

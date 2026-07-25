@@ -32,7 +32,7 @@ PRGNAM=wxHexEditor
 VERSION=${VERSION:-20231108_f439d8f}
 SRCVERSION=f439d8f3bfbccbf7f7ec587b548a7d7421978b2f
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

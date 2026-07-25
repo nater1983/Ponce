@@ -30,7 +30,7 @@ SRCVER=${SRCVER:-480572054518112647c8fae5d7ea7046a6d6ecfb}
 ATBRIDGE=${ATBRIDGE:-OFF}
 NET=${NET:-OFF}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

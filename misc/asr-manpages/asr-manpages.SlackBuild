@@ -34,7 +34,7 @@ DEB_VERSION=6
 # Hard code the ARCH as this is truly architecture independent
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

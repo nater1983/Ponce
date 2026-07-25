@@ -22,7 +22,7 @@ VERSION="${VERSION:-0.17.0}"
 SRCNAM=fq_"$VERSION"_linux_amd64
 ARCH="${ARCH:-$(uname -m)}"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Only x86_64 is supported (pre-built binary)

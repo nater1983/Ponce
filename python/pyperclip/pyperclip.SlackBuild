@@ -28,7 +28,7 @@ PRGNAM=pyperclip
 VERSION=${VERSION:-1.7.0}
 SRCVERSION=${SRCVERSION:-943372e295764e18ea2069e1c0615ad286089bda}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

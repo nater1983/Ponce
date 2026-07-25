@@ -28,7 +28,7 @@ PRGNAM=fuse-emulator-utils
 SRCNAM=fuse-utils
 VERSION=${VERSION:-1.4.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

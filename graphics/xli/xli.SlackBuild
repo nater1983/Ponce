@@ -44,7 +44,7 @@ PRGNAM=xli
 VERSION=${VERSION:-1.17}
 SRCVER=${SRCVER:-2005-02-27}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

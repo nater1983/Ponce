@@ -30,7 +30,7 @@ PRGNAM=ddnet
 SRCNAM=DDNet
 VERSION=${VERSION:-19.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # These variables are for proper matching version of source and package.

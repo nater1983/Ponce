@@ -30,7 +30,7 @@ REPONAME=conmon
 VERSION=${VERSION:-2.1.8}
 GIT_COMMIT="00e08f4a9ca5420de733bf542b930ad58e1a7e7d"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # The domain part of the go package name, usually the hosting platform

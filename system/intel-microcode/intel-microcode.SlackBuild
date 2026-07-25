@@ -29,7 +29,7 @@ SRCNAM=Intel-Linux-Processor-Microcode-Data-Files-microcode
 VERSION=${VERSION:-20260512}
 SRCVER=$(printf "%s" "${VERSION}" | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

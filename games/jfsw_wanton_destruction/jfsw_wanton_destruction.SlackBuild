@@ -22,7 +22,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=jfsw_wanton_destruction
 VERSION=${VERSION:-20050909}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

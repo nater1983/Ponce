@@ -29,7 +29,7 @@ SRCNAM=gse-sound-output-device-chooser
 COMMIT=9af403cf79c4d27ae3b1aadcda063eeb6b7ecb9f
 VERSION=${VERSION:-43}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

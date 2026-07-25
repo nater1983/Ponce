@@ -19,7 +19,7 @@ PRGNAM=marathon-eternal-data
 VERSION=${VERSION:-1.2.1}
 SRCVER=$(printf %s "$VERSION" | tr -d .)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

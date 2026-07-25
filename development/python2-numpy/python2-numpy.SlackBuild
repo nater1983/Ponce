@@ -47,7 +47,7 @@ PRGNAM=python2-numpy
 SRCNAM=numpy
 VERSION=${VERSION:-1.16.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

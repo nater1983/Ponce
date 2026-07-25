@@ -28,7 +28,7 @@ PRGNAM=python-sphinx-lv2-theme
 SRCNAM=sphinx_lv2_theme
 VERSION=${VERSION:-1.4.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

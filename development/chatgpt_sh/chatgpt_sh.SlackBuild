@@ -31,7 +31,7 @@ SRCNAM=shellchatgpt
 VERSION=${VERSION:-0.116.3}
 _COMMIT=7863c702a104846fda0d6502fe2f5c72845b5c71
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-noarch}

@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ucs-miscfixed-opentype-fonts
 VERSION=${VERSION:-0.3_29alma}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TARNAM=$PRGNAM-0.3-29.el9.noarch.rpm

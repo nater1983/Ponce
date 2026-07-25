@@ -28,7 +28,7 @@ PRGNAM=rclone-browser
 TARNAM=RcloneBrowser
 VERSION=${VERSION:-1.8.0.20221231}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=45bf7411839b0919c488a3e3a0a5272b50c9fc7b

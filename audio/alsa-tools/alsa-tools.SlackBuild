@@ -49,7 +49,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=alsa-tools
 VERSION=${VERSION:-1.2.11}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 FIRMVER=${FIRMVER:-1.2.4}

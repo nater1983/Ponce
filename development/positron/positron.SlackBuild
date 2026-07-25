@@ -28,7 +28,7 @@ PRGNAM=positron
 DEB_PRGNAM=Positron
 VERSION=${VERSION:-2026.07.1_5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

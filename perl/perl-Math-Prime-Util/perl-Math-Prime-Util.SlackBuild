@@ -27,7 +27,7 @@ PRGNAM=perl-Math-Prime-Util
 SRCNAM=Math-Prime-Util
 VERSION=${VERSION:-0.73}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

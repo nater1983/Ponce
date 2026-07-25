@@ -29,7 +29,7 @@ TARNAM=scutiger
 CMDNAM=git-lfs-transfer
 VERSION=${VERSION:-0.2.0.20240108}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMIT=614a4f01cfbe6aafa355ca92ed6d1581b5cfc088
 

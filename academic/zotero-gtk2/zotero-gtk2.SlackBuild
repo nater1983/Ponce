@@ -29,7 +29,7 @@ PRGNAM=zotero-gtk2
 SRCNAM=Zotero
 VERSION=${VERSION:-4.0.28}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

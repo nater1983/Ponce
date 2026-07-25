@@ -30,7 +30,7 @@ PRGNAM=subtitleripper
 VERSION=${VERSION:-0.3_4}
 SRCVER=$(printf $VERSION |sed 's/_/-/')
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

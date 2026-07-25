@@ -39,7 +39,7 @@ VERSION=${VERSION:-1.2.26}
 EXTRABIT=1
 TARNAM=$PRGNAM-$VERSION-$EXTRABIT.tar.gz
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -31,7 +31,7 @@ PRGNAM=python3-jaraco.collections
 SRCNAM=jaraco_collections
 VERSION=${VERSION:-5.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

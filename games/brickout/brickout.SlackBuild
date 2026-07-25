@@ -15,7 +15,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=brickout
 VERSION=${VERSION:-20020609}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCVER=$( echo $VERSION | sed 's,\(....\)\(..\)\(..\),\1.\2.\3,' )

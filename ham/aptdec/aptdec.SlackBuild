@@ -28,7 +28,7 @@ PRGNAM=aptdec
 VERSION=${VERSION:-1.8.0}
 VERSION_argparse=${VERSION_argparse:-c612dc03958cdbd538ca306d61853b643a435933}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=jaraco-packaging
 SRCPKG=${SRCPKG-jaraco.packaging}
 VERSION=${VERSION:-8.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$(printf $SRCPKG | cut -d- -f2-)"

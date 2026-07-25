@@ -28,7 +28,7 @@ PRGNAM=llvm-opt
 SRCNAM=llvm
 VERSION=${VERSION:-20.1.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

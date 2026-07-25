@@ -34,7 +34,7 @@ PRGNAM=mdcat-bin
 SRCNAM=mdcat
 VERSION=${VERSION:-2.5.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

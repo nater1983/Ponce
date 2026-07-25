@@ -28,7 +28,7 @@ PRGNAM=pcg-c
 VERSION=${VERSION:-0.94.2}
 SOURCEARCHIVE=$PRGNAM-$VERSION.tar.gz
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Set TEST=yes to build and run the test suite; results are shipped in the

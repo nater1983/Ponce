@@ -21,7 +21,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=archivemount
 VERSION=${VERSION:-1b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # 20241126 bkw: directory name inside the tarball doesn't match the

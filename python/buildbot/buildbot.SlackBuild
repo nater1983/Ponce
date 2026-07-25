@@ -30,7 +30,7 @@ SRCNAM=${PRGNAM#python-*}
 PACKAGES="pkg www console_view grid_view waterfall_view wsgi_dashboards"
 VERSION=${VERSION:-4.3.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

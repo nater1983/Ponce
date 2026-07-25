@@ -29,7 +29,7 @@ CODNAM=Omega
 VERSION=${VERSION:-21.5.22}
 BENTO4VER=${BENTO4VER:-1.6.0-641-3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

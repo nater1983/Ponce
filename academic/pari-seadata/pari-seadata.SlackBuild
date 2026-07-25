@@ -34,7 +34,7 @@ VERSION=${VERSION:-18.06.2009}
 SRCNAM=seadata
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

@@ -28,7 +28,7 @@ PRGNAM=amneziawg-tools
 TARVER=1.0.20260618-2
 VERSION=${VERSION:-1.0.20260618.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

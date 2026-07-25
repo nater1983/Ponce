@@ -11,7 +11,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=imgcurses
 VERSION=${VERSION:-20151107_de613ca}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

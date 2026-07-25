@@ -30,7 +30,7 @@ PRGNAM=pipewire-native-jack
 PRGNAM_SOURCE=pipewire
 VERSION=${VERSION:-0.3.44}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

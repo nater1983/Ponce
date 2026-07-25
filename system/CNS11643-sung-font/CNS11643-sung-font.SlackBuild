@@ -29,7 +29,7 @@ PRGNAM=CNS11643-sung-font
 VERSION=${VERSION:-20250325}
 SRCNAM=Fonts_Sung
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

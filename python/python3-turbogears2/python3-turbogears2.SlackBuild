@@ -26,7 +26,7 @@ PRGNAM=python3-turbogears2
 SRCNAM=turbogears2
 VERSION=${VERSION:-2.5.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

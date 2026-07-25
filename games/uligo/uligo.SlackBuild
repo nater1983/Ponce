@@ -28,7 +28,7 @@ PRGNAM=uligo
 VERSION=${VERSION:-0.3}
 _VERSION=$(echo "$VERSION" | sed 's/\.//g')  # because they use weird tarball names
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH="noarch"

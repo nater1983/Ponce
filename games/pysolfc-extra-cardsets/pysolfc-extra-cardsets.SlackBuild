@@ -17,7 +17,7 @@ PRGNAM=pysolfc-extra-cardsets
 SRCNAM=PySolFC-Cardsets
 VERSION=${VERSION:-3.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

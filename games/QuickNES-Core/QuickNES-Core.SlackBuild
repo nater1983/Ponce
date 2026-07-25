@@ -29,7 +29,7 @@ LIBNAM=quicknes_libretro
 VERSION=${VERSION:-2022.07.25.1b88a09}
 COMMIT=1b88a09f1c386ff9ee46bb371583ae04c5cb5dd0
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

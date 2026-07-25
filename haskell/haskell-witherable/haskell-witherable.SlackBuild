@@ -29,7 +29,7 @@ PRGNAM=haskell-witherable
 VERSION=${VERSION:-0.4.2}
 CABAL_REVISION=${CABAL_REVISION:-2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$( echo $PRGNAM | cut -d- -f2- )"

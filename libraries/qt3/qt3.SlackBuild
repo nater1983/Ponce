@@ -56,7 +56,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=qt3
 VERSION=${VERSION:-3.3.8b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=qt-x11-free

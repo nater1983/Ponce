@@ -28,7 +28,7 @@ PRGNAM=libg7221
 VERSION=${VERSION:-20170711_e7db1cc}
 FULLCOMMIT=${FULLCOMMIT:-e7db1cc39e3fe37d8dda328a69eb523115f0fd32}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

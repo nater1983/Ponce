@@ -28,7 +28,7 @@ PRGNAM=inkscape
 VERSION=${VERSION:-1.4.4}
 EXTRAVER=${EXTRAVER:-2026-05-05_dcaf3e7d9e}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

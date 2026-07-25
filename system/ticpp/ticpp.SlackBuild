@@ -35,7 +35,7 @@ PRGNAM=ticpp
 VERSION=${VERSION:-0.1}
 COMVER=eb79120ea16b847ce9f483a298a394050f463d6b
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

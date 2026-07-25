@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=spandsp
 VERSION=${VERSION:-0.0.6_0d2e6a}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMIT=0d2e6ac65e0e8f53d652665a743015a88bf048d4
 

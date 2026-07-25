@@ -33,7 +33,7 @@ PRGNAM=openclipart
 VERSION=${VERSION:-0.19}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what

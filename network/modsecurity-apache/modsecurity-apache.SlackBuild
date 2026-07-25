@@ -27,7 +27,7 @@ PRGNAM=modsecurity-apache
 SRCNAM=modsecurity
 VERSION=${VERSION:-2.9.12}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 CRS_VERSION="4.17.1"

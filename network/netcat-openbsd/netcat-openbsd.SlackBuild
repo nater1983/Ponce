@@ -30,7 +30,7 @@ PRGNAM=netcat-openbsd
 VERSION=${VERSION:-7.4_2}
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

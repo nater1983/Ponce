@@ -28,7 +28,7 @@ PRGNAM=nerdctl
 VERSION=${VERSION:-2.3.3}
 GITHASH=${GITHASH:-b4c5feb4f63eae3e0247c3a354ae11556b9c41ab}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

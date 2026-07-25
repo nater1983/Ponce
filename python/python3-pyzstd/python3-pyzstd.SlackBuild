@@ -29,7 +29,7 @@ PRGNAM=python3-pyzstd
 TARNAM=pyzstd
 VERSION=${VERSION:-0.15.9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

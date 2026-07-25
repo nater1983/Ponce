@@ -28,7 +28,7 @@ PRGNAM=sphinx-autobuild
 SRCNAM=sphinx_autobuild
 VERSION=${VERSION:-2024.10.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

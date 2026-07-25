@@ -31,7 +31,7 @@ PRGNAM=python2-lxml
 SRCNAM=lxml
 VERSION=${VERSION:-5.0.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

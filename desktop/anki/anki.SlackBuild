@@ -28,7 +28,7 @@ PRGNAM=anki
 VERSION=${VERSION:-25.02.7}
 PYVERSION=$(python -c 'import sys; print(".".join(map(str, sys.version_info[0:2])))')
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Find ARCH

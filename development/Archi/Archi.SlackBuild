@@ -28,7 +28,7 @@ PRGNAM=Archi
 ARCNAM=Archi-Linux64
 VERSION=${VERSION:-5.7.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=${ARCH:-x86_64}
 

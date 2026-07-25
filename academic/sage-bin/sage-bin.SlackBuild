@@ -28,7 +28,7 @@ PRGNAM=sage-bin
 VERSION=${VERSION:-9.4}
 DEBVERSION=${DEBVERSION:-11}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 SLK_VERSION=${SLK_VERSION:-$(cat /etc/slackware-version|cut -d' ' -f2)}
 [ $SLK_VERSION = 14.2 ] && PYTHON=python || PYTHON=python2

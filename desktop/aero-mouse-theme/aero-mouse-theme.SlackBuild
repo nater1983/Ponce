@@ -9,7 +9,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=aero-mouse-theme
 VERSION=${VERSION:-2016.04.15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

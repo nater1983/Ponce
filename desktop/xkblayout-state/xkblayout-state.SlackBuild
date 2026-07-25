@@ -18,7 +18,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xkblayout-state
 VERSION=${VERSION:-1b_git20211006}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 HASH=${HASH:-f311779ed95f43f1fdebed0f710ad84057e6fe19}
 

@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=zxbasicstudio
 VERSION=${VERSION:-1.8.0_beta2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL=ZXBasicStudio-Linux-x64.v1.8.0-beta2.zip
 

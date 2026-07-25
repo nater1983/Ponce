@@ -29,7 +29,7 @@ PRGNAM=floorp-bin
 SRCNAM=floorp
 VERSION=${VERSION:-12.16.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 INSTALLDIR=${INSTALLDIR:-/usr/lib64}
 

@@ -30,7 +30,7 @@ PRGNAM=libunique3
 SRCNAM=libunique
 VERSION=${VERSION:-3.0.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

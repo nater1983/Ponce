@@ -29,7 +29,7 @@ SRCNAM=libu2f-host-libu2f-host
 VERSION=${VERSION:-1.1.11}
 SRCVERSION=${SRCVERSION:-1.1.10}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

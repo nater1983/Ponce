@@ -28,7 +28,7 @@ PRGNAM=python3-libsass
 SRCNAM=$(echo $PRGNAM | cut -c9-15)
 VERSION=${VERSION:-0.23.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

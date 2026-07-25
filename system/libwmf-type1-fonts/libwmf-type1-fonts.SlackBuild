@@ -12,7 +12,7 @@ PRGNAM=libwmf-type1-fonts
 SRCNAM=urw-base35-fonts
 VERSION=${VERSION:-20200910}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

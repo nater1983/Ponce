@@ -30,7 +30,7 @@ PRGNAM=python3-service-identity
 SRCNAM=service_identity
 VERSION=${VERSION:-24.2.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

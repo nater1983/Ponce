@@ -28,7 +28,7 @@ PRGNAM=rustdesk
 VERSION=${VERSION:-1.4.7}
 BUILD=${BUILD:-1}
 RPMBUILD=${RPMBUILD:-0}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

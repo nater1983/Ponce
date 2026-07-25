@@ -30,7 +30,7 @@ VERSION=${VERSION:-1.98.9}
 ARCHSTR=amd64
 BINDIR=$PRGNAM"_"$VERSION"_"$ARCHSTR
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

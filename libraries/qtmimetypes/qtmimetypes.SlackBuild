@@ -28,7 +28,7 @@ PRGNAM=qtmimetypes
 SRCNAM=mimetypes
 VERSION=${VERSION:-20140903_123e525}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

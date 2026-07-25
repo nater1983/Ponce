@@ -30,7 +30,7 @@ PRGNAM=tauonmb
 VERSION=${VERSION:-7.8.0}
 SRCNAM=Tauon
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 SLACKVER=$(awk 'NR {print $2}' "/etc/slackware-version" | sed 's/[^+]//g')
 

@@ -28,7 +28,7 @@ PRGNAM=gnatstudio-bin
 VERSION=${VERSION:-26.0w.20250417}
 SRC_FILE="gnatstudio-26.0w-20250417-x86_64-linux-bin.tar.gz"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

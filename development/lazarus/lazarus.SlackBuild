@@ -44,7 +44,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=lazarus
 VERSION=${VERSION:-4.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 LCL=${LCL:-gtk2}

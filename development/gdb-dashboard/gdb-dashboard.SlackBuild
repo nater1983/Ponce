@@ -11,7 +11,7 @@ PRGNAM=gdb-dashboard
 VERSION=${VERSION:-20240131}
 COMMITVER="b96e429c0db4b35c38302dd8c6cd90c65152f211"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

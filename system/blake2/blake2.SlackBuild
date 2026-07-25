@@ -32,7 +32,7 @@ PRGNAM=blake2
 VERSION=${VERSION:-20160619}
 SRCNAM=BLAKE2
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

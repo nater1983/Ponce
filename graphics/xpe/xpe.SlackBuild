@@ -17,7 +17,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xpe
 VERSION=${VERSION:-0.9.5b}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # The tarballs come with the name "xpe_project" to distinguish them from

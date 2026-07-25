@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=kasp_updater
 TARNAME=updater
 VERSION=${VERSION:-2.0.1.2015.1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 BUILD=${BUILD:-1}
 

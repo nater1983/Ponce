@@ -19,7 +19,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=fsviewer
 VERSION=${VERSION:-0.2.6+20220428_38b38a6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

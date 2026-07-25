@@ -29,7 +29,7 @@ SRCNAM=Subsurface
 VERSION=${VERSION:-4.9.3}
 GOOGLEMAPSVER=${MD5LONG:-0.0.0.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

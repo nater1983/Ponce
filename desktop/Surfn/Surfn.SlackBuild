@@ -31,7 +31,7 @@ PRGNAM=Surfn
 VERSION=${VERSION:-20.12_7}
 SRCVER=${SRCVER:-$( echo $VERSION | tr _ -)}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

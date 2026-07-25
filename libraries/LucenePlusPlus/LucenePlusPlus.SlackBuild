@@ -28,7 +28,7 @@ PRGNAM=LucenePlusPlus
 VERSION=${VERSION:-3.0.9}
 COMMITID="29fcfed6b4c92710dd16685c9fcc7b8575789ddb"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

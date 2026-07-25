@@ -28,7 +28,7 @@ PRGNAM=mupen64plus-input-raphnetraw
 VERSION=${VERSION:-20210226_8611241}
 SRCVER=${SRCVER:-86112413e98a8648edb11d199673cc24d5799af8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

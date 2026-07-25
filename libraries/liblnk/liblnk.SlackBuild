@@ -30,7 +30,7 @@ PRGNAM=liblnk
 VERSION=${VERSION:-20230205}
 STATUS=${STATUS:-alpha}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

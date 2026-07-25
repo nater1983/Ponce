@@ -33,7 +33,7 @@ MSINAM=${MSINAM:-GobiInstaller.msi}
 CARRIER=${CARRIER:-UMTS}
 VERSION=${VERSION:-0.7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

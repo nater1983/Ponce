@@ -33,7 +33,7 @@ PRGNAM=freeciv
 VERSION=${VERSION:-3.2.4}
 SRCVERSION=${SRCVERSION:-3.2.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

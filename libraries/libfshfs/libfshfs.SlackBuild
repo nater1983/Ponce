@@ -30,7 +30,7 @@ PRGNAM=libfshfs
 VERSION=${VERSION:-20220831}
 STATUS=${STATUS:-experimental}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

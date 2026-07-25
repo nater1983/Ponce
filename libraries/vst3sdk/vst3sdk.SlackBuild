@@ -29,7 +29,7 @@ PRGNAM=vst3sdk
 VERSION=${VERSION:-3.8.0}
 SDK_BUILD=${SDK_BUILD:-_build_66}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

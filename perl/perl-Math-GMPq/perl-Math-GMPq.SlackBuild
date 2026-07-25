@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-Math-GMPq
 VERSION=${VERSION:-0.51}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$(printf $PRGNAM | cut -d- -f2-)"

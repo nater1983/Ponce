@@ -28,7 +28,7 @@ PRGNAM=autokey-gtk
 SRCNAM=autokey
 VERSION=${VERSION:-0.96.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

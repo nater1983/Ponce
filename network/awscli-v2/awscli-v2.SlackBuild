@@ -28,7 +28,7 @@ PRGNAM=awscli-v2
 SRCNAM=aws-cli
 VERSION=${VERSION:-2.27.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

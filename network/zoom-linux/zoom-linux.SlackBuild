@@ -28,7 +28,7 @@ PRGNAM=zoom-linux
 VERSION=${VERSION:-7.1.5.4332} # may be overridden by source!
 SRCNAM=zoom
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -29,7 +29,7 @@ SRCNAM=chromium-compact-language-detector
 SRCREV=baaa737cb7fbd073df3ce3627b9d9e24e0f2753b
 VERSION=${VERSION:-20151111}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

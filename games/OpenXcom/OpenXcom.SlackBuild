@@ -39,7 +39,7 @@ PRGNAM=OpenXcom
 VERSION=${VERSION:-20260605_630130c}
 COMMIT="630130c5c9ac236b9e1d8496005fb23e84e397ca"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

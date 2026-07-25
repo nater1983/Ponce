@@ -30,7 +30,7 @@ PRGNAM=importlib-resources
 SRCNAM=$( printf %s $PRGNAM | tr - _ )
 VERSION=${VERSION:-6.5.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

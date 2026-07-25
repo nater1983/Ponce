@@ -28,7 +28,7 @@ PRGNAM=snpEff
 VERSION=${VERSION:-4.3t}
 SRCVER=${SRCVER:-v4_3t}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

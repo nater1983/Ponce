@@ -28,7 +28,7 @@ PRGNAM=kmuddy
 VERSION=${VERSION:-20230704_0af202c}
 COMMIT=0af202c8ef0bfaa3189497595d453f6ec33b08ec
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

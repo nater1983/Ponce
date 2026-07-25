@@ -20,7 +20,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=hack-of-life
 VERSION=${VERSION:-20130628_3a6c824}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

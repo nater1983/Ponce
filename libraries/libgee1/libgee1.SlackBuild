@@ -10,7 +10,7 @@ PRGNAM=libgee1
 SRCNAM=libgee
 VERSION=${VERSION:-0.6.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

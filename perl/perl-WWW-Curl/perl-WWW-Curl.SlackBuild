@@ -8,7 +8,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-WWW-Curl
 VERSION=${VERSION:-4.17}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=$(echo $PRGNAM | cut -f2- -d-)

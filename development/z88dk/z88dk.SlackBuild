@@ -19,7 +19,7 @@ PRGNAM=z88dk
 VERSION=${VERSION:-2.3}
 ZSDCC_REV=14210
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

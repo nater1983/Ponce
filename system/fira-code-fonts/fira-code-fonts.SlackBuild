@@ -29,7 +29,7 @@ PRGNAM=fira-code-fonts
 SRCNAM=Fira_Code
 VERSION=${VERSION:-6.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

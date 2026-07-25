@@ -28,7 +28,7 @@ PRGNAM=zellij-bin
 _PRGNAM=zellij
 VERSION=${VERSION:-0.44.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

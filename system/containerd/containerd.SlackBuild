@@ -30,7 +30,7 @@ PRGNAM=containerd
 VERSION=${VERSION:-1.7.33}
 GITHASH=${GITHASH:-180a7b7385ae633344ff3db0db7eea11a4164f00}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

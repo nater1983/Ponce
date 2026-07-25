@@ -28,7 +28,7 @@ PRGNAM=oracle-instantclient-devel
 VERSION=${VERSION:-21.5.0.0.0}
 RELEASE=${RELEASE:-1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ORAVER="21"
 # 2023-05-16 DW: this doesn't contain any binaries

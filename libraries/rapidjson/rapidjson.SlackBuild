@@ -32,7 +32,7 @@ PRGNAM=rapidjson
 VERSION=${VERSION:-1.1.0}
 GTESTVER=${GTESTVER:-ba96d0b1161f540656efdaed035b3c062b60e006}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

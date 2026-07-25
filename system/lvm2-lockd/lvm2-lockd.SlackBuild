@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=lvm2-lockd
 VERSION=${VERSION:-2.02.154}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=LVM2

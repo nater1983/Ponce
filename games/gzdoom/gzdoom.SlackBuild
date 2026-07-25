@@ -48,7 +48,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=gzdoom
 VERSION=${VERSION:-4.14.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

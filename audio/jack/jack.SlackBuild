@@ -47,7 +47,7 @@ PRGNAM=jack
 VERSION=${VERSION:-1.9.22}
 TOOLSVER=${TOOLSVER:-4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=jack2

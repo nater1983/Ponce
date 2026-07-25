@@ -29,7 +29,7 @@ SRCNAM=FileBot
 VERSION=${VERSION:-5.2.3}
 JNAVER=${JNAVER:-5.13.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

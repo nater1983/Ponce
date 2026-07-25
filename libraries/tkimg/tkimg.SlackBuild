@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=tkimg
 VERSION=${VERSION:-2.1.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 # the source tar.gz is named "Img" but the SlackBuilds package name is "tkimg".
 TARNAM=Img

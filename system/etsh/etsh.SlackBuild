@@ -31,7 +31,7 @@ VERSION=${VERSION:-5.4.0}    # main etsh version
 V6S_VER=${V6S_VER:-20180109} # v6scripts version
 LT_VER=${LT_VER:-20180115}   # looptest  version
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -40,7 +40,7 @@ STAGINGVERSION=$WINEVERSION
 ARCHS="i386,x86_64"
 MULTI=""
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

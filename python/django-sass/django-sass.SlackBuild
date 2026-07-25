@@ -28,7 +28,7 @@ PRGNAM=django-sass
 SRCPKG=${SRCPKG-django-sass}
 VERSION=${VERSION:-1.0.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="$(printf $SRCPKG)"

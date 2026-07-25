@@ -40,7 +40,7 @@ PRGNAM=adobe-source-sans-pro-font
 SRCNAM=source-sans
 VERSION=${VERSION:-3.052}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -27,7 +27,7 @@ PRGNAM=bluez-sixaxis
 SRCNAM=bluez
 VERSION=${VERSION:-5.58}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

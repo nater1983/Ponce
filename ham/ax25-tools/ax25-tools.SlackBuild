@@ -30,7 +30,7 @@ PRGNAM=ax25-tools
 VERSION=${VERSION:-0.0.10_rc5}
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

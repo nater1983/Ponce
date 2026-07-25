@@ -28,7 +28,7 @@ PRGNAM=nvidia-fabricmanager
 VERSION=${VERSION:-550.54.14}
 SRCVER=${SRCVER:-$(printf "%s_%s-1" $( echo $VERSION | cut -d. -f1,1 ) $VERSION)}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

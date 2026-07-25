@@ -27,7 +27,7 @@ PRGNAM=python3-profilehooks
 VERSION=${VERSION:-1.13.0}
 SRCNAM=${SRCNAM:-profilehooks}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

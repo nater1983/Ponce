@@ -28,7 +28,7 @@ PRGNAM=tkdiff
 VERSION=${VERSION:-6.0}
 SRCVERSION=$( echo $VERSION | tr . - )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

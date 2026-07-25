@@ -28,7 +28,7 @@ PRGNAM=python2-blessed
 TARNAM=blessed
 VERSION=${VERSION:-1.22.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

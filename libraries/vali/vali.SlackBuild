@@ -28,7 +28,7 @@ PRGNAM=vali
 VERSION=${VERSION:-20251015_263c1ae0}
 GITHASH="$(echo "$VERSION" | cut -d_ -f2)"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

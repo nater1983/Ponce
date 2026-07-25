@@ -31,7 +31,7 @@ PRGNAM=wine
 VERSION=${VERSION:-11.0}
 ARCHS="i386,x86_64"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

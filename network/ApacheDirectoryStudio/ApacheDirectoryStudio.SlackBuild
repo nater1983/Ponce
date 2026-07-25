@@ -9,7 +9,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ApacheDirectoryStudio
 VERSION=${VERSION:-2.0.0.v20130628}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}

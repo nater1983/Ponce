@@ -39,7 +39,7 @@ DEBIVER=${DEBIVER:-0.98.11} # Version of Debian's package
 ROSAVER=${ROSAVER:-2.0} # Version of ROSA's package
 CUSTVER=${CUSTVER:-0.01} # Custom themes version
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

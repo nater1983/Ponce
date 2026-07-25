@@ -28,7 +28,7 @@ PRGNAM=perl-Tie-Simple
 SRCNAM=Tie-Simple
 VERSION=${VERSION:-1.04}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -16,7 +16,7 @@ PRGNAM=soxr
 VERSION=${VERSION:-a66f3ee}
 COMMIT=${COMMIT:-a66f3eeeeb62a32403ff143b756eed92b1ec6b62}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

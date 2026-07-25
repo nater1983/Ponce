@@ -36,7 +36,7 @@ PRGNAM=wiimms-iso-tools
 VERSION=${VERSION:-3.05a}
 COMMIT=${COMMIT:-fc1c0b840cb3ac41ca6e4f1d5e16da12b47eab58}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

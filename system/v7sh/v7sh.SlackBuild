@@ -22,7 +22,7 @@ PRGNAM=v7sh
 SRCNAM=v7_sh
 VERSION=${VERSION:-20100108}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

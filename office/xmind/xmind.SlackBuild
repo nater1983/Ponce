@@ -27,7 +27,7 @@ PRGNAM=xmind
 VERSION=${VERSION:-8update5}
 SRCVERSION=${SRCVERSION:-8-update5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

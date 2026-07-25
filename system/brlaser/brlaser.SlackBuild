@@ -28,7 +28,7 @@ PRGNAM=brlaser
 VERSION=${VERSION:-20251013_9bfea99}
 COMMIT=9bfea996dcffb694b608d4f00224344af9091083
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

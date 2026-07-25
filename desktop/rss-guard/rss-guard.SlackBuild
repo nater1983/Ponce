@@ -29,7 +29,7 @@ PRGNAM=rss-guard
 SRCNAM=rssguard
 VERSION=${VERSION:-4.8.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 # Building by default with QT6 if available
 # Can be forced with env BUILD_WITH_QT6=ON/OFF

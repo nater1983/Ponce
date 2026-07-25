@@ -28,7 +28,7 @@ PRGNAM=WEVOTE
 VERSION=${VERSION:-1.8.0}  # The version number is found in "install.sh"
 COMMIT=645523db5aba843b2681e83146783b18e92866b1
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

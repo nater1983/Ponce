@@ -28,7 +28,7 @@ PRGNAM=metasploit-framework-bin
 SRCNAM=metasploit-framework
 VERSION=${VERSION:-6.4.144}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

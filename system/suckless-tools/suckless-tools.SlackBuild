@@ -14,7 +14,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=suckless-tools
 VERSION=${VERSION:-20140317}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 PROGS="lsw lsx sprop sselp ssid swarp wmname xssstate"

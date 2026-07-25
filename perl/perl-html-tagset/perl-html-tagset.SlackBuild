@@ -33,7 +33,7 @@ PRGNAM=perl-html-tagset
 SRC_PRGNAM=HTML-Tagset
 VERSION=${VERSION:-3.24}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

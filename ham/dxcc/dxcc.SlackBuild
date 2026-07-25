@@ -25,7 +25,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=dxcc
 VERSION=${VERSION:-20191204}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 # This is a Perl script, architecture agnostic
 ARCH=noarch

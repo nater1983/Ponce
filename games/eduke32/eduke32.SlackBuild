@@ -53,7 +53,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=eduke32
 VERSION=${VERSION:-20221225_10166_122aee012}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

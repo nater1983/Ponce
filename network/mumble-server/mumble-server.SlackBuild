@@ -29,7 +29,7 @@ PRGNAM=mumble-server
 SRCNAM=mumble
 VERSION=${VERSION:-1.5.857}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ICE=${ICE:-no}
 

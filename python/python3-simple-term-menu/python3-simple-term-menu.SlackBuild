@@ -28,7 +28,7 @@ PRGNAM=python3-simple-term-menu
 SRCNAM=simple-term-menu
 VERSION=${VERSION:-1.6.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

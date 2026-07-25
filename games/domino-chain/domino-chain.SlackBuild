@@ -15,7 +15,7 @@ PRGNAM=domino-chain
 TARNAM=$PRGNAM.gitlab.io
 VERSION=${VERSION:-1.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

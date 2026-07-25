@@ -29,7 +29,7 @@ PRGNAM=grisbi
 VERSION=${VERSION:-3.90.1}
 SRCVER=${VERSION//./_}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

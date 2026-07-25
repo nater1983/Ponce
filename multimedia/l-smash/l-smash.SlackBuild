@@ -42,7 +42,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=l-smash
 VERSION=${VERSION:-2.18.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # 20240822 bkw: parser has been split out into its own project.

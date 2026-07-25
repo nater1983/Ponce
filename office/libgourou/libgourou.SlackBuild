@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=libgourou
 VERSION=${VERSION:-0.8.9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 UPDFPARSER_VERSION=${UPDFPARSER_VERSION:-20240323_6060d12}

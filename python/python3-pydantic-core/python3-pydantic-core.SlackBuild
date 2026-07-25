@@ -30,7 +30,7 @@ PRGNAM=python3-pydantic-core
 SRCNAM=pydantic_core
 VERSION=${VERSION:-2.46.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 VSBUILD=${VSBUILD:-1}
 

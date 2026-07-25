@@ -28,7 +28,7 @@ PRGNAM=iTest
 VERSION=${VERSION:-1.4.2_PREVIEW4}
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

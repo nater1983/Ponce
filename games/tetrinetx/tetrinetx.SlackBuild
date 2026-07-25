@@ -14,7 +14,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=tetrinetx
 VERSION=${VERSION:-1.13.16+qirc_1.40c_15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

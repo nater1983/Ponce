@@ -19,7 +19,7 @@ PRGNAM=jfsw_hires_pack
 VERSION=${VERSION:-20201205_r21}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

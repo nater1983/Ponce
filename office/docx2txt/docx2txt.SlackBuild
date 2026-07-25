@@ -20,7 +20,7 @@ PRGNAM=docx2txt
 VERSION=${VERSION:-1.4}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

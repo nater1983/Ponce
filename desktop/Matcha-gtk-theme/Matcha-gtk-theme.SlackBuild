@@ -28,7 +28,7 @@ PRGNAM="Matcha-gtk-theme"
 SRCVER=${SRCVER:-2025-04-11}
 VERSION=${VERSION:-2025_04_11}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -30,7 +30,7 @@ PRGNAM=mediainfo
 VERSION=${VERSION:-26.05}
 SRCNAM=MediaInfo
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # CLI is built by default, GUI is autodetected

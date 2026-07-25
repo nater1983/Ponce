@@ -39,7 +39,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=html2text
 VERSION=${VERSION:-2025.4.15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -29,7 +29,7 @@ PRGNAM=python3-ruamel.yaml
 SRCNAM=ruamel_yaml
 VERSION=${VERSION:-0.19.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

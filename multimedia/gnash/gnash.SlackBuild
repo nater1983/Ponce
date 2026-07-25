@@ -28,7 +28,7 @@ PRGNAM=gnash
 VERSION=${VERSION:-0.8.11dev_20190130}
 SRCVER=${SRCVER:-583ccbc1275c7701dc4843ec12142ff86bb305b4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

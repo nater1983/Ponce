@@ -18,7 +18,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=minidjvu
 VERSION=${VERSION:-0.8.svn.2010.05.06_20210826_2202ebc}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMIT=2202ebc8eac5804521bd943fe65b8453d0ceb7d9
 

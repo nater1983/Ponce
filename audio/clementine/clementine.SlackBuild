@@ -32,7 +32,7 @@ SRCNAM=Clementine
 VERSION=${VERSION:-1.4.1_78_gb55eca391}
 SRCVER=$(echo $VERSION | tr _ - )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

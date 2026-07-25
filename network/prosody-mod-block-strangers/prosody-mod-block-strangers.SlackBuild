@@ -29,7 +29,7 @@ PRGNAM=prosody-mod-block-strangers
 VERSION=${VERSION:-hg3023}
 REVISION=${REVISION:-38365c1f1fe4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

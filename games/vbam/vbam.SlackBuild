@@ -74,7 +74,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=vbam
 VERSION=${VERSION:-2.2.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCVER="$VERSION"

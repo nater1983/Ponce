@@ -28,7 +28,7 @@ PRGNAM=qemacs
 VERSION=${VERSION:-6.5.1}
 GITHASH=${GITHASH:-634d84f41dce5d87a0695d83431ae6f01c6f93c3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

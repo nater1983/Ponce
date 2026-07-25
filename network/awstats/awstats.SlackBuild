@@ -34,7 +34,7 @@ VERSION=${VERSION:-7.9}
 # hardcode ARCH
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DOCROOT=${DOCROOT:-/var/www/htdocs}

@@ -15,7 +15,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=totem-pl-parser
 VERSION=${VERSION:-3.26.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

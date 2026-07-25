@@ -44,7 +44,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=jack-tools
 VERSION=${VERSION:-20210917_ab297f4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

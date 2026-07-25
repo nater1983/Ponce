@@ -28,7 +28,7 @@ PRGNAM=lualdap
 VERSION=${VERSION:-1.4.0}
 COMMIT=7a73c883012f9d12a05563afbb3481a57055368c
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

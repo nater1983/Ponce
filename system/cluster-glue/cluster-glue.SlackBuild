@@ -31,7 +31,7 @@ PRGNAM=cluster-glue
 VERSION=${VERSION:-20161102_afaeeb}
 COMMIT=${COMMIT:-afaeeb2f3e2a576c8a50ee3ce98e83e4da635c76}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

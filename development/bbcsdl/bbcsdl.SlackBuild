@@ -28,7 +28,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=bbcsdl
 VERSION=${VERSION:-20260713_22fb22f}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL=${TARBALL:-BBCSDL-22fb22facd11c93c7edf415e14e1bdd7eecbc09a}
 

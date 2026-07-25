@@ -29,7 +29,7 @@ PRGNAM=smartsvn
 VERSION=${VERSION:-14.5.1}
 SRCVER=$(echo $VERSION | tr . _)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

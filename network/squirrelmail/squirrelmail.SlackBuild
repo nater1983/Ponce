@@ -28,7 +28,7 @@ PRGNAM=squirrelmail
 VERSION=${VERSION:-1.4.22}
 LOCALEVERSION=${LOCALEVERSION:-1.4.18-20090526}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM="squirrelmail-webmail"

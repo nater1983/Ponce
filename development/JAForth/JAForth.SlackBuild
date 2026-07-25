@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=JAForth
 VERSION=${VERSION:-20260407_82541e7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL=82541e7ed12eca17fe1803a3c657cd9f36f1f2d8
 

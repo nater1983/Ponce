@@ -29,7 +29,7 @@ SRCNAM=GSL
 ARCH=noarch
 VERSION=${VERSION:-4.2.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then

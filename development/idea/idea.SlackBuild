@@ -10,7 +10,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=idea
 VERSION=${VERSION:-2026.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=x86_64

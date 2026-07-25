@@ -29,7 +29,7 @@ SRCNAM=mdk3-master
 VERSION=${VERSION:-v6_1bf2bd3}
 COMMIT=${COMMIT:-1bf2bd31b79560aa99fc42123f70f36a03154b9e}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

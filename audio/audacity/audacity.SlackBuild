@@ -37,7 +37,7 @@ PRGNAM=audacity
 VERSION=${VERSION:-3.7.8}
 MANVER=${MANVER:-3.7.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

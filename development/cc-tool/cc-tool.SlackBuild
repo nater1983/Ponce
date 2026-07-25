@@ -28,7 +28,7 @@ PRGNAM=cc-tool
 VERSION=${VERSION:-20160504+f0c4858}
 COMMIT="f0c485805d9d62cbb2c4b2b5ecd2518c0db242cf"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

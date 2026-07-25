@@ -28,7 +28,7 @@ PRGNAM=armcord
 SRCNAM=ArmCord
 VERSION=${VERSION:-3.2.8}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

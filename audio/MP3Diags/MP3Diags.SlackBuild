@@ -17,7 +17,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=MP3Diags
 VERSION=${VERSION:-1.4.01}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

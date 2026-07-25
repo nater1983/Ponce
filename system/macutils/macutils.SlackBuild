@@ -11,7 +11,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=macutils
 VERSION=${VERSION:-2.0b3_16}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

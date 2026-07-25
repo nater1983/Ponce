@@ -28,7 +28,7 @@ VERSION=${VERSION:-0.27.1}
 RAPIDVER=${RAPIDVER:-fdbcc21}
 SRCNAM=${SRCNAM:-Levenshtein}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

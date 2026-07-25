@@ -28,7 +28,7 @@ PRGNAM=dotnet-runtime-7.0
 SRCNAM=dotnet-runtime
 VERSION=${VERSION:-7.0.20}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

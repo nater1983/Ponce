@@ -28,7 +28,7 @@ PRGNAM=irc2dc
 VERSION=${VERSION:-20121129}
 COMMIT=7fad67a4ddc1f93231d467ac3ef62605e69d3e93
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

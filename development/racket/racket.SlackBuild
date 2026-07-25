@@ -30,7 +30,7 @@ PRGNAM=racket
 VERSION=${VERSION:-8.18}
 SUFFIX=src-builtpkgs    # suffix of the UNIX sourcepackage
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

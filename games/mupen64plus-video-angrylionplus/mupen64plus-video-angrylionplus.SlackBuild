@@ -31,7 +31,7 @@ DATE=${DATE:-2023-08-15}
 SRCVER=${SRCVER:-20eaeaffc83ee7a4ca64a533a65f906b82d10dc4}
 COMMIT=$(echo $SRCVER | cut -c -7)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

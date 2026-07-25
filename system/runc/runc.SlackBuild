@@ -32,7 +32,7 @@ PRGNAM=runc
 VERSION=${VERSION:-1.4.2}
 GITHASH=${GITHASH:-c241c0bb5e60a8e8c1b2e53d4eca8d0068d8d57e}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCVER=$(echo $VERSION | tr _ -)

@@ -30,7 +30,7 @@ SRCNAM=VMware-Horizon-Client
 VERSION=${VERSION:-2312.1_8.12.1_23543969}
 DEBVERSION=${VERSION//_/-}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

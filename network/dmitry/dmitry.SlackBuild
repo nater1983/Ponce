@@ -26,7 +26,7 @@ PRGNAM=dmitry
 SRCNAM=DMitry
 VERSION=${VERSION:-1.3a}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

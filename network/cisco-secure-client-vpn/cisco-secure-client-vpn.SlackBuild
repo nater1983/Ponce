@@ -28,7 +28,7 @@ PRGNAM=cisco-secure-client-vpn
 SRCNAM=cisco-secure-client
 VERSION=${VERSION:-5.1.18.314}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -43,7 +43,7 @@ PRGNAM=mcwm
 VERSION=${VERSION:-20130209_2}
 SRCVER=${VERSION/_/-}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

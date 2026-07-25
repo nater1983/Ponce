@@ -28,7 +28,7 @@ PRGNAM=ttf-hanazono
 SRCNAM=hanazono
 VERSION=${VERSION:-20170904}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

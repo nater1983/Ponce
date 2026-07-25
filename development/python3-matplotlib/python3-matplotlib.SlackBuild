@@ -39,7 +39,7 @@ PRGNAM=python3-matplotlib
 SRCNAM=matplotlib
 VERSION=${VERSION:-3.8.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TARBALL_VERSION=${TARBALL_VERSION:-3.8.4} # Tarball may have wrong versioning

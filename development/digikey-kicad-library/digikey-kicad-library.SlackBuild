@@ -30,7 +30,7 @@ PRGNAM=digikey-kicad-library
 VERSION=${VERSION:-20191024+0802230}
 COMMIT="080223022765f0a639e1189dc5479e8fb2722ae4"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH="noarch"
 

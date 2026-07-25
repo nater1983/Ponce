@@ -28,7 +28,7 @@ PRGNAM=gnome-shell-extension-dash-to-panel
 SRCNAM=dash-to-panel
 VERSION=${VERSION:-52}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

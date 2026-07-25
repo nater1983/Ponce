@@ -30,7 +30,7 @@ LIBNAM=${PRGNAM/-/_}_libretro
 VERSION=${VERSION:-2025.05.22_6365a75}
 COMMIT=6365a756c02d25c76bf90c78e42316b46f876c49
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

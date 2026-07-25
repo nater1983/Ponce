@@ -28,7 +28,7 @@ PRGNAM=leo
 SRCNAM=${PRGNAM^}
 VERSION=${VERSION:-5.5}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

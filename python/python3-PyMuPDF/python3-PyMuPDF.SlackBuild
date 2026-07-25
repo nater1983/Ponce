@@ -25,7 +25,7 @@ SRCNAM=PyMuPDF
 VERSION=${VERSION:-1.24.11}
 MUVER=${MUVER:-1.24.10}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

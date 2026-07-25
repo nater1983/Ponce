@@ -27,7 +27,7 @@ PRGNAM=gusersoundfont
 VERSION=${VERSION:-1.471}
 ZIPNAME="GeneralUser_GS_"$VERSION".zip"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 #this is a data package so no arch
 ARCH=noarch

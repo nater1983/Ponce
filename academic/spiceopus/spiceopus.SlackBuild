@@ -29,7 +29,7 @@ VERSION=${VERSION:-2.3}
 SRCDIR=spice_opus23_linux_18.Jan.2010_08.57
 PROGNAME=spice_opus23_linux
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

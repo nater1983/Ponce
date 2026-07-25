@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=ZoneMinder
 VERSION=${VERSION:-1.32.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 CAMBOZOLA_VERSION=${CAMBOZOLA_VERSION:-0.936}  # Java streaming client

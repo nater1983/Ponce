@@ -8,7 +8,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pd_mrpeach
 VERSION=${VERSION:-git2015.8.31}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

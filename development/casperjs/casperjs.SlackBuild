@@ -28,7 +28,7 @@ PRGNAM=casperjs
 VERSION=${VERSION:-1.1.4_2}
 SRCVERSION=$(echo "$VERSION" | tr _ -)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

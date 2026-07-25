@@ -29,7 +29,7 @@ SRCNAM=linuxq3ademo
 VERSION=${VERSION:-1.11.6}
 SRCVER=1.11-6
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCARCH=x86

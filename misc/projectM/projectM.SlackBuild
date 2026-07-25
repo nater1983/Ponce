@@ -29,7 +29,7 @@ VERSION=${VERSION:-4.1.2}
 SRCNAM2=projectm-eval
 VERSION2=${VERSION2:-1.0.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=projectm

@@ -28,7 +28,7 @@ PRGNAM=libmodsecurity
 SRCNAM=modsecurity
 VERSION=${VERSION:-3.0.14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

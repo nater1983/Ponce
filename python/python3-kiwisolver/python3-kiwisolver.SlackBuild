@@ -31,7 +31,7 @@ PRGNAM=python3-kiwisolver
 SRCNAM=kiwi
 VERSION=${VERSION:-1.5.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

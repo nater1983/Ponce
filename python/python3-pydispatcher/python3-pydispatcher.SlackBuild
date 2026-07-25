@@ -28,7 +28,7 @@ PRGNAM=python3-pydispatcher
 TARNAM=PyDispatcher
 VERSION=${VERSION:-2.0.7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

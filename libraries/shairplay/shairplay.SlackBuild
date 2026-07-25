@@ -28,7 +28,7 @@ PRGNAM=shairplay
 VERSION=${VERSION:-096b61a}
 SRCVER=${SRCVER:-096b61ad14c90169f438e690d096e3fcf87e504e}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

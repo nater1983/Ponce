@@ -19,7 +19,7 @@ PRGNAM=aaphoto
 VERSION=${VERSION:-0.45}
 COMMIT="${COMMIT:-ad4fc3c04b9e25212d78c231e1507458dfea8909}" # this is ver. 0.45
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

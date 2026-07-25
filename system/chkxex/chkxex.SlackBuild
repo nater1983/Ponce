@@ -18,7 +18,7 @@ SRCNAM=chkXEX
 VERSION=${VERSION:-20230607_e5c1564}
 COMMIT=${COMMIT:-e5c156472f9c6b2e695f9ee4be3e28b5b0945f07}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=tuxtype2
 VERSION=${VERSION:-1.8.1}
 SRCPATH=tuxtype_w_fonts
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

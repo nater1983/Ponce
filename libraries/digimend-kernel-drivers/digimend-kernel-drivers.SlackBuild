@@ -28,7 +28,7 @@ PRGNAM=digimend-kernel-drivers
 VERSION=${VERSION:-13}
 GITVER=f3c7c7f1179fc786a8e5aad027d4db904c31b42c
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 KERNEL=${KERNEL:-$(uname -r)}

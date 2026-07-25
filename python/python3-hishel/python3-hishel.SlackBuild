@@ -27,7 +27,7 @@ PRGNAM=python3-hishel
 VERSION=${VERSION:-1.1.8}
 SRCNAM=${SRCNAM:-hishel}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

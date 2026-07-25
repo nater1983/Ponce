@@ -34,7 +34,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=hare
 VERSION=${VERSION:-0.24.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMMITVERSION=${COMMITVERSION:-66ebb53ef4fa8aea329e883ea21787a74bdcedf9}
 

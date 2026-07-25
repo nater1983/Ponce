@@ -23,7 +23,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=cmatrix
 VERSION=${VERSION:-20231209_5c082c6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

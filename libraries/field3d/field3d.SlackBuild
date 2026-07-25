@@ -29,7 +29,7 @@ TARNAM=Field3D
 COMMIT=b0ff0cd67893a4cbfa322676eb3eef10100d904d
 VERSION=${VERSION:-1.7.3.20230509}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

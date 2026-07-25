@@ -28,7 +28,7 @@ PRGNAM=libliftoff
 COMMIT="e045589f37835d66e3ffe8130a597bb4eb9ee08f"
 VERSION=${VERSION:-0.4.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

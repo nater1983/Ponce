@@ -32,7 +32,7 @@ PRGNAM=qute
 SRCNAM=${PRGNAM^}
 VERSION=${VERSION:-0.4.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # 20220217 bkw: prebuilt binary for this platform only:

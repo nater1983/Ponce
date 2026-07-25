@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=haxe-bin
 VERSION=${VERSION:-4.3.7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT_VER=$(tar --list -f ${PRGNAM%-bin}-${VERSION}-linux64.tar.gz | head -n 1 | sed -e "s_/__")

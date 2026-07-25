@@ -36,7 +36,7 @@ PRGNAM=system76-power
 VERSION=${VERSION:-1.1.25_fc8eb49}
 SRCVER=${SRCVER:-fc8eb49fae5222da56dcfa414ef2b190e9f870c7}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

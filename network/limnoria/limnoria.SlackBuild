@@ -33,7 +33,7 @@ SRCNAM=Limnoria-master
 VERSION=${VERSION:-2026_05_08}
 SRCVERSION=${VERSION//_/-}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

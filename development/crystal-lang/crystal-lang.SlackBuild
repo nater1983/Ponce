@@ -30,7 +30,7 @@ BIN=crystal
 VERSION=${VERSION:-1.14.0}
 BUILD=${BUILD:-1}
 SRCBUILD=${SRCBUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 STEM=linux-x86_64-bundled
 

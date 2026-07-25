@@ -28,7 +28,7 @@ PRGNAM=python3-desktop-notify
 SRCNAM=desktop-notify
 VERSION=${VERSION:-1.3.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

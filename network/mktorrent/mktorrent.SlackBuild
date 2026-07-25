@@ -29,7 +29,7 @@ PRGNAM=mktorrent
 VERSION=${VERSION:-1.1_de7d011}
 COMMIT=de7d011b35458de1472665f50b96c9cf6c303f39
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

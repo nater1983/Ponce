@@ -50,7 +50,7 @@ DOCSVER=3.0.2     # version of abiword-docs
 DOCTAR=3.0.1      # sigh, the tarball contains abiword-docs-3.0.1 still
                   # (DOCTAR WHO?)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

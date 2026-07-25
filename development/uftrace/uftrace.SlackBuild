@@ -28,7 +28,7 @@ PRGNAM=uftrace
 VERSION=${VERSION:-20260630_39f97db}
 GITHASH=${GITHASH:-39f97db9b847155153cfb3cb1814bd2624478f2d}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

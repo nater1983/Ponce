@@ -31,7 +31,7 @@ PRGNAM=focuswriter-qt6
 SRCNAM=focuswriter
 VERSION=${VERSION:-1.8.13}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

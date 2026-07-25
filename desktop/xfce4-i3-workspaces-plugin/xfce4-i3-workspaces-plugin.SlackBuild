@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xfce4-i3-workspaces-plugin
 VERSION=${VERSION:-1.4.2.20250530}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=d7c2d978e736a5e07f96142a31fac3bb7d0806b4

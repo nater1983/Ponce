@@ -26,7 +26,7 @@ PRGNAM=python3-pastedeploy
 SRCNAM=PasteDeploy
 VERSION=${VERSION:-3.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

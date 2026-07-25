@@ -30,7 +30,7 @@ PRGNAM=a68g
 SRCNAM=algol68g
 VERSION=${VERSION:-3.12.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

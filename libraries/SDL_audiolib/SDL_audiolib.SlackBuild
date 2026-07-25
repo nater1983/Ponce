@@ -28,7 +28,7 @@ PRGNAM=SDL_audiolib
 VERSION=${VERSION:-20230225_b2df2df}
 SRCVER=${SRCVER:-b2df2dfeddc692caa01fd1e1769f59b285912b87}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

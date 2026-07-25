@@ -29,7 +29,7 @@ PRGNAM=nanobind
 VERSION=${VERSION:-2.12.0}
 ROBINVER=${ROBINVER:-4ec1bf1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

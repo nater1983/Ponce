@@ -28,7 +28,7 @@ PRGNAM=perl-Alien-SDL
 SRCNAM=Alien-SDL
 VERSION=${VERSION:-1.446}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

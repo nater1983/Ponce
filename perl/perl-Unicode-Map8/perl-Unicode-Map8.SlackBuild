@@ -28,7 +28,7 @@ PRGNAM=perl-Unicode-Map8
 SRCNAM=Unicode-Map8
 VERSION=${VERSION:-0.13}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=python3-augeas
 SRCNAM=python-augeas
 VERSION=${VERSION:-1.2.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

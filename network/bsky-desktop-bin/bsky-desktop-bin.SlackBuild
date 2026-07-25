@@ -27,7 +27,7 @@ PRGNAM=bsky-desktop-bin
 VERSION=${VERSION:-1.2.1}
 SRCNAM64=bskyDesktop-"$VERSION"-linux-x64
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 COMPRESS=AppImage
 

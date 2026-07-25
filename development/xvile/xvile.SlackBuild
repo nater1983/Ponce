@@ -41,7 +41,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xvile
 VERSION=${VERSION:-9.8z}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=vile

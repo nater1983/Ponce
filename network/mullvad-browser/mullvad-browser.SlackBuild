@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=mullvad-browser
 VERSION=${VERSION:-15.0.19}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 TARBALL=mullvad-browser-linux-x86_64-${VERSION}.tar.xz
 

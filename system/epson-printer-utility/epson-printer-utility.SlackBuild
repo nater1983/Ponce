@@ -40,7 +40,7 @@ VERSION=${VERSION:-1.1.3}
 EXTRABIT=1
 TARNAM=$PRGNAM-$VERSION-$EXTRABIT.src.tgz
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -30,7 +30,7 @@ PRGNAM=beetle-psx-libretro
 LIBNAM=mednafen_psx_libretro
 VERSION=${VERSION:-2026.07.07_672f213}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

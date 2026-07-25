@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=python2-oauth2
 VERSION=${VERSION:-1.5.211}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=oauth2

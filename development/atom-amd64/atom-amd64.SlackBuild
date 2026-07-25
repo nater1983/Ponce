@@ -34,7 +34,7 @@ SRCNAM=atom-amd64
 VERSION=${VERSION:-1.60.0}
 SRCDIR=atom-$VERSION-amd64
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=x86_64

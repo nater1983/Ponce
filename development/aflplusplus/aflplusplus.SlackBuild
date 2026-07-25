@@ -18,7 +18,7 @@ PRGNAM=aflplusplus
 SRCNAM=AFLplusplus
 VERSION=${VERSION:-4.32c}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

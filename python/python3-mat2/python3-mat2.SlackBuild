@@ -28,7 +28,7 @@ PRGNAM=python3-mat2
 TGZNAM=mat2
 VERSION=${VERSION:-0.13.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -16,7 +16,7 @@ PRGNAM=perl-io-uncompress-brotli
 SRCNAM=IO-Compress-Brotli
 VERSION=${VERSION:-0.019}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

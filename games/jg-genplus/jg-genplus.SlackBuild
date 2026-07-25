@@ -14,7 +14,7 @@ PRGNAM=jg-genplus
 SRCNAM=genplus
 VERSION=${VERSION:-1.7.6.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

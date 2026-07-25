@@ -33,7 +33,7 @@ VULKANHEADERS=${VULKANHEADERS:-1.2.158}
 XNVCTRL=${XNVCTRL:-disabled}
 MANGOAPP=${MANGOAPP:-true}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

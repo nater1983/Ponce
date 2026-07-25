@@ -29,7 +29,7 @@ SRCNAM=GitHubDesktop
 VERSION=${VERSION:-3.4.1}
 BUILD=${BUILD:-1}
 DEBBUILD=${DEBBUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

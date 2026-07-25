@@ -13,7 +13,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=dnstop
 VERSION=${VERSION:-20121017}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

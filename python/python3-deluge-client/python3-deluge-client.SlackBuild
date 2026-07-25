@@ -27,7 +27,7 @@ PRGNAM=python3-deluge-client
 VERSION=${VERSION:-1.10.2}
 SRCNAM=${SRCNAM:-deluge-client}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -16,7 +16,7 @@ PRGNAM=dtmflib
 VERSION=${VERSION:-20210112_6609071}
 COMMIT=${COMMIT:-6609071ba383e7a6d9bf7f7fd9d75bbdd1d8d717}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

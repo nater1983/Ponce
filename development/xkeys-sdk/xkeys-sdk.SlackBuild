@@ -29,7 +29,7 @@ SRCNAM=X-keys_Linux
 VERSION=${VERSION:-2.1.0}
 COMMIT=6d63ceedb00f21a21a723ca899b4ff65f274c8b3
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

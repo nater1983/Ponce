@@ -21,7 +21,7 @@ PRGNAM=canto-next
 VERSION=${VERSION:-0.9.8}
 CURSVER=${CURSVER:-0.9.9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

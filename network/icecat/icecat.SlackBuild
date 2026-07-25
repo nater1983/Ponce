@@ -31,7 +31,7 @@ VERSION=${VERSION:-60.7.0}
 RELEASEVER="$VERSION"
 RELEASEVERMAJ=$(echo $RELEASEVER | cut -f 1 -d .)
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

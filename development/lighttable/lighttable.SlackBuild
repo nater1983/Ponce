@@ -30,7 +30,7 @@ PRGNAM=lighttable
 SRCNAM=LightTable
 VERSION=${VERSION:-0.8.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -41,7 +41,7 @@ PRGNAM=yt-dlp-bin
 SRCNAM=${PRGNAM%-bin}
 VERSION=${VERSION:-2026.07.04}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -33,7 +33,7 @@ PRGNAM=d1x-rebirth
 SRCNAM=dxx-rebirth
 VERSION=${VERSION:-20230520_695e8b9}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

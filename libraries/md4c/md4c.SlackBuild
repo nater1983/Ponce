@@ -29,7 +29,7 @@ PRGNAM=md4c
 SRCNAM=md4c-release
 VERSION=${VERSION:-0.5.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

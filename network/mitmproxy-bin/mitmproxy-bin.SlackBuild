@@ -34,7 +34,7 @@ PRGNAM=mitmproxy-bin
 SRCNAM=mitmproxy
 VERSION=${VERSION:-12.2.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Binary repack, only supports:

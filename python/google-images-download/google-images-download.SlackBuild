@@ -28,7 +28,7 @@ PRGNAM=google-images-download
 VERSION=${VERSION:-620e7f5}
 FULLHASH=${FULLHASH:-620e7f54ea29631e5e7d8a2b82a16a40932bf42a}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

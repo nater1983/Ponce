@@ -27,7 +27,7 @@ PRGNAM=python3-qbittorrent-api
 VERSION=${VERSION:-2025.11.1}
 SRCNAM=${SRCNAM:-qbittorrent-api}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -27,7 +27,7 @@ PRGNAM=python3-x-wr-timezone
 VERSION=${VERSION:-2.0.1}
 SRCNAM=${SRCNAM:-x-wr-timezone}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

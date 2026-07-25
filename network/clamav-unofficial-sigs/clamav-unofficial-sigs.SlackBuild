@@ -31,7 +31,7 @@ PRGNAM="clamav-unofficial-sigs"
 VERSION=${VERSION:-5.6.2}
 ARCH="noarch"	# hardcode ARCH
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # If the variable PRINT_PACKAGE_NAME is set, then this script will report what

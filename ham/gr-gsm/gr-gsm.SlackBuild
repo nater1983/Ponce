@@ -28,7 +28,7 @@ PRGNAM=gr-gsm
 VERSION=${VERSION:-71e9630}
 COMMITVER="71e9630ecda0aa3ba2bd22b76f7e2424cb6e6c31"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

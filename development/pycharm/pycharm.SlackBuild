@@ -29,7 +29,7 @@ PRGNAM=pycharm
 VERSION=${VERSION:-2026.1.4}
 SRCVER=$( echo $VERSION | cut -c1-8 )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=x86_64

@@ -28,7 +28,7 @@ PRGNAM=slackware-xdg-menu
 SRCNAM=arch-xdg-menu
 VERSION=${VERSION:-0.7.6.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

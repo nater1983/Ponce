@@ -34,7 +34,7 @@ PRGNAM=squeak-vm
 SRCNAM=Squeak
 VERSION=${VERSION:-4.19.9.3816}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

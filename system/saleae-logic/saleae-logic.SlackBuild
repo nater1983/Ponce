@@ -28,7 +28,7 @@ PRGNAM=saleae-logic
 VERSION=${VERSION:-1.2.18}
 SRCNAME="Logic 1.2.18 (64-bit)"
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=x86_64

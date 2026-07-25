@@ -30,7 +30,7 @@ PRGNAM=vuescan
 VERSION=${VERSION:-9.8.53}
 SRCVER=${SRCVER:-$(echo "$VERSION" | cut -d. -f-2 | sed 's/\.//g')}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

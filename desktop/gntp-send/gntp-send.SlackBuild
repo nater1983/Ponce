@@ -13,7 +13,7 @@ PRGNAM=gntp-send
 VERSION=${VERSION:-0.3.2}
 GITCOMMIT=8241d46903219cecca371f89ac6edf33a091eb03
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

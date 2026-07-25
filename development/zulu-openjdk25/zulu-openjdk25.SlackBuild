@@ -28,7 +28,7 @@ PRGNAM=zulu-openjdk25
 VERSION=${VERSION:-25.0.3}
 ZULUVERSION=${ZULUVERSION:-25.34.17}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

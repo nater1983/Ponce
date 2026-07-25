@@ -27,7 +27,7 @@ PRGNAM=simplex-desktop
 VERSION=${VERSION:-6.2.5}
 UBUNTUVER=${UBUNTU:-ubuntu-22_04}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 TMP=${TMP:-/tmp/rdlnx}

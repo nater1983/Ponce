@@ -29,7 +29,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=mlton
 VERSION=${VERSION:-20180207}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 PREBUILT=${PREBUILT:-$PRGNAM-$VERSION-1.amd64-linux}
 

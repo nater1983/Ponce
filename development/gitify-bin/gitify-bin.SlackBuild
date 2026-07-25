@@ -28,7 +28,7 @@ PRGNAM=gitify-bin
 VERSION=${VERSION:-6.20.0}
 SRCNAM=gitify_"$VERSION"_amd64
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 

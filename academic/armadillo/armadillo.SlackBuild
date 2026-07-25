@@ -31,7 +31,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=armadillo
 VERSION=${VERSION:-8.100.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 DOCS="README.txt examples/ index.html LICENSE.txt docs.html rcpp_armadillo_csda_2014.pdf"

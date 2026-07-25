@@ -28,7 +28,7 @@ PRGNAM=iscan-data
 VERSION=${VERSION:-1.39.2}
 ADDVER=${ADDVER:-1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

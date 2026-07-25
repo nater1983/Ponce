@@ -30,7 +30,7 @@ PRGNAM=grass
 VERSION=${VERSION:-8.4.2}
 SHRTVER=$( echo $VERSION | sed "s/\([0-9]*\).\([0-9]*\)..*/\1\2/" )
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

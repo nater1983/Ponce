@@ -29,7 +29,7 @@ PRGNAM=rstudio-desktop-legacy
 SRCNAM=rstudio
 VERSION=${VERSION:-1.1.463}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

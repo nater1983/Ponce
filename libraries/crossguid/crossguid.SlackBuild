@@ -29,7 +29,7 @@ PRGNAM=crossguid
 VERSION=${VERSION:-20190529_ca1bf4b}
 SRCVER=${SRCVER:-ca1bf4b810e2d188d04cb6286f957008ee1b7681}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

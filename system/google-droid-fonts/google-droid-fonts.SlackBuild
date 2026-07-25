@@ -30,7 +30,7 @@ PRGNAM=google-droid-fonts
 VERSION=${VERSION:-20141010}
 SRCVERSION=5.x
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

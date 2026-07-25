@@ -28,7 +28,7 @@ PRGNAM=android-studio
 VERSION=${VERSION:-2024.3.2.15}
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-$(uname -m)}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 MAJORVER=${VERSION%_*}

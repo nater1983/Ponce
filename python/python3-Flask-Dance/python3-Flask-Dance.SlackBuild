@@ -31,7 +31,7 @@ PRGNAM=python3-Flask-Dance
 SRCNAM=flask_dance
 VERSION=${VERSION:-7.1.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

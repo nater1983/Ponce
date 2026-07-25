@@ -38,7 +38,7 @@ SRCNAM=openoffice
 VERSION=${VERSION:-4.1.16}
 BUILD_ID=${BUILD_ID:-9816}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 SRCSHORT=$(echo $VERSION | cut -f1 -d.)
 

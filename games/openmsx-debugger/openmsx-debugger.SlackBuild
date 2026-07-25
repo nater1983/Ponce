@@ -29,7 +29,7 @@ SRCNAM=debugger
 VERSION=${VERSION:-20230717}
 SRCVERSION=9766bd546b59f415798f24c5b48719ee2462a2ae
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

@@ -28,7 +28,7 @@ PRGNAM=pcem
 VERSION=${VERSION:-b8ad941.20230304}
 SRCVERSION=${SRCVERSION:-b8ad9416bc1d3acd8b384a83b753ddf2282bd091}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 # Use ALSA=yes to output MIDI with ALSA.

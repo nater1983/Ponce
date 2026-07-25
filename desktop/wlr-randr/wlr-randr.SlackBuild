@@ -28,7 +28,7 @@ PRGNAM=wlr-randr
 SRCNAM=wlr-randr-v0.2.0
 VERSION=${VERSION:-0.2.0}	
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}		
+TAG=${TAG:-rdlnx}		
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

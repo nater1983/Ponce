@@ -40,7 +40,7 @@ PRGNAM=wendzelnntpd
 VERSION=${VERSION:-2.1.2}
 TGZ_DIRNAME=cdpxe-WendzelNNTPd-5ea53d6 # for v2.1.2
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

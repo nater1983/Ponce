@@ -16,7 +16,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=marathon-red-data
 VERSION=${VERSION:-20110331} # Last modified date from the zipfile's http header
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch

@@ -31,7 +31,7 @@ PRGNAM=openscad-mcad
 COMVER=bd0a7ba3f042bfbced5ca1894b236cea08904e26
 VERSION=${VERSION:-2021.10.25.bd0a7ba}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 

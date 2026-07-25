@@ -29,7 +29,7 @@ VERSION=${VERSION:-20221114_d55acb1}
 SRCVER=${SRCVER:-d55acb1ba26f1c5b5e3048d6d6c0bd116625216f}
 JACK=${JACK:-OFF}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then

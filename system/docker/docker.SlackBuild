@@ -30,7 +30,7 @@ PRGNAM=docker
 VERSION=${VERSION:-29.6.2}
 GITHASH=${GITHASH:-3d80467}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
+TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=moby-docker
