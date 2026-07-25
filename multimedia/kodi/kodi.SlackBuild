@@ -85,7 +85,9 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Actually now that we have the incompatible ffmpeg 7.x in current
+patch -p1 < $CWD/giflib6.patch
+
+# Actually now that we have the incompatible ffmpeg 8.x in current
 # we need to update the internal version...
 echo 'LIBNAME=ffmpeg' > tools/depends/target/ffmpeg/FFMPEG-VERSION
 echo 'VERSION=6.1.2' >> tools/depends/target/ffmpeg/FFMPEG-VERSION

@@ -94,6 +94,7 @@ patch -p1 -i $CWD/patches/libquicktime-1.2.4-ffmpeg-codecs.patch
 patch -p1 -i $CWD/patches/libquicktime-1.2.4-ffmpeg5.patch
 patch -p1 -i $CWD/patches/libquicktime-1.2.4-qtpng.patch
 patch -p1 -i $CWD/patches/libquicktime-1.2.4-ffmpeg7.patch
+patch -p1 -i $CWD/patches/libquicktime-1.2.4-ffmpeg8.patch
 
 autoreconf -vif
 

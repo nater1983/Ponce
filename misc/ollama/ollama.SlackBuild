@@ -25,13 +25,13 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=ollama
-VERSION=${VERSION:-0.30.6}
+VERSION=${VERSION:-0.31.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 
-LLAMA_CPP_VERSION=${LLAMA_CPP_VERSION:-b9509}
-MLX_VERSION=${MLX_VERSION:-2165dc08d7b33258260aa849d39f087d50e62962}
+LLAMA_CPP_VERSION=${LLAMA_CPP_VERSION:-b9888}
+MLX_VERSION=${MLX_VERSION:-de7b4ed986b6d6f55b8ace5e73c24d1ca0bea89b}
 MLX_C_VERSION=${MLX_C_VERSION:-fba4470b89073180056c9ea46c443051375f7399}
 JSON_VERSION=${JSON_VERSION:-3.11.3}
 
@@ -97,8 +97,8 @@ sed -i 's/PRE_INCLUDE_REGEXES.*/PRE_INCLUDE_REGEXES = ""/' \
     cmake/mlx/CMakeLists.txt
 # llama.cpp compatibility layer
 pushd llama.cpp-${LLAMA_CPP_VERSION}
-patch -Np1 -i $TMP/$PRGNAM-$VERSION/llama/compat/llama-cpp-hooks.patch
-patch -Np1 -i $TMP/$PRGNAM-$VERSION/llama/compat/models/llama-cpp-laguna.patch
+patch -Np1 -i $TMP/$PRGNAM-$VERSION/llama/compat/001-llama-cpp-hooks.patch
+patch -Np1 -i $TMP/$PRGNAM-$VERSION/llama/compat/models/003-llama-cpp-laguna.patch
 popd
 
 # disabling ggml-vulkan until we have vulkan-sdk >= 1.4
@@ -156,7 +156,6 @@ fi
 
 # rocm
 if [ "${ROCM:-OFF}" = "ON" ]; then
-    OPTS+=" -DAMDGPU_TARGETS=$(rocm-supported-gfx)"
     cmake -S llama/server --preset rocm_v7_2_linux "${base_options[@]}"
     cmake --build build/llama-server-rocm_v7_2
     DESTDIR=$PKG cmake --install build/llama-server-rocm_v7_2 --component llama-server --strip

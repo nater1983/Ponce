@@ -8,5 +8,5 @@ MD5SUM="be9fca6eee9bad9de2f8999bec51ccbb  \
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="FreeImage libmediainfo"
-MAINTAINER="Felipe Bugno"
-EMAIL="capent@yahoo.com"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="NOEMAIL"

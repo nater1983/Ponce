@@ -6,6 +6,7 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20260702 bkw: add missing dep perl-pango.
 # 20230506 bkw: update for v20230429.
 # 20230103 bkw: update for v20220807.
 # 20220425 bkw:
@@ -45,8 +46,9 @@ rm -rf $PRGNAM-$VERSION
 unzip $CWD/$PRGNAM-$VERSION.zip
 cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
-        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
+find . ! -type l    -a \
+  \(     -perm /111 -a ! -perm 755 -a -exec chmod -f 755 {} + \) -o \
+  \(   ! -perm /111 -a ! -perm 644 -a -exec chmod -f 644 {} + \)
 
 # Don't run update-desktop-database or install icons on the build host.
 # 20220425 bkw: patch also changes icon path to /usr/share/pixmaps

@@ -1,7 +1,14 @@
 #!/bin/bash
 
 # Slackware build script for xmms-shn
-# Written by mightaswell <mightaswell@gmail.com>
+# Written by mightaswell.
+# Modified and now maintained by B. Watson <urchlay@slackware.uk>.
+# Originally this had no license. Modified version is licensed under
+# the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
+
+# 20260706 bkw, BUILD=2:
+# - take over maintenance.
+# - get INSTALL out of the package.
 
 cd $(dirname $0) ; CWD=$(pwd)
 
@@ -19,9 +26,6 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-# If the variable PRINT_PACKAGE_NAME is set, then this script will report what
-# the name of the created package would be, and then exit. This information
-# could be useful to other scripts.
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
@@ -58,11 +62,9 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
- -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
- -exec chmod 644 {} \;
+find . ! -type l    -a \
+  \(     -perm /111 -a ! -perm 755 -a -exec chmod -f 755 {} + \) -o \
+  \(   ! -perm /111 -a ! -perm 644 -a -exec chmod -f 644 {} + \)
 
 CFLAGS="$SLKCFLAGS -fgnu89-inline -Wno-overflow" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -75,6 +77,7 @@ CXXFLAGS="$SLKCFLAGS" \
 
 make
 make install DESTDIR=$PKG
+strip $PKG/usr/lib*/xmms/Input/*.so
 
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

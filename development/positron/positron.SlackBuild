@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=positron
 DEB_PRGNAM=Positron
-VERSION=${VERSION:-2026.06.0_211}
+VERSION=${VERSION:-2026.07.1_5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -75,13 +75,12 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-
 # Remove ARM aarch64 binaries
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |grep ELF \
   | grep ARM |cut -f 1 -d : | xargs rm
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Create symlinks in /usr/bin for the program's executables.
 mkdir -p $PKG/usr/bin
@@ -98,6 +97,21 @@ chmod +x $QUARTO_DIR/dart-sass/src/sass.snapshot
 chmod +x $POSITRON_EXT_DIR/positron-python/python_files/lib/ipykernel/py3/debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_linux_amd64.so
 chmod +x $POSITRON_EXT_DIR/microsoft-authentication/dist/msal-node-runtime.node
 chmod +x $POSITRON_EXT_DIR/microsoft-authentication/dist/libmsalruntime.so
+chmod +x $POSITRON_EXT_DIR/positron-duckdb/resources/excel.duckdb_extension
+chmod +x $POSITRON_EXT_DIR/positron-duckdb/node_modules/@duckdb/node-bindings-linux-x64-musl/libduckdb.so
+chmod +x $POSITRON_EXT_DIR/positron-duckdb/node_modules/@duckdb/node-bindings-linux-x64-musl/duckdb.node
+chmod +x $POSITRON_EXT_DIR/positron-duckdb/node_modules/@duckdb/node-bindings-linux-x64/libduckdb.so
+chmod +x $POSITRON_EXT_DIR/positron-duckdb/node_modules/@duckdb/node-bindings-linux-x64/duckdb.node
+chmod +x $POSITRON_EXT_DIR/positron-data-driver-duckdb/node_modules/@duckdb/node-bindings-linux-x64-musl/libduckdb.so
+chmod +x $POSITRON_EXT_DIR/positron-data-driver-duckdb/node_modules/@duckdb/node-bindings-linux-x64-musl/duckdb.node
+chmod +x $POSITRON_EXT_DIR/positron-data-driver-duckdb/node_modules/@duckdb/node-bindings-linux-x64/libduckdb.so
+chmod +x $POSITRON_EXT_DIR/positron-data-driver-duckdb/node_modules/@duckdb/node-bindings-linux-x64/duckdb.node
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@img/sharp-linuxmusl-x64/lib/sharp-linuxmusl-x64.node
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@img/sharp-linux-x64/lib/sharp-linux-x64.node
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@img/sharp-libvips-linuxmusl-x64/lib/libvips-cpp.so.8.17.3
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.8.17.3
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@github/copilot/sdk/prebuilds/linux-x64/computer.node
+chmod +x $POSITRON_EXT_DIR/copilot/node_modules/@anthropic-ai/claude-agent-sdk/vendor/audio-capture/x64-linux/audio-capture.node
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 

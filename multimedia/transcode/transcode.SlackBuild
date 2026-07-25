@@ -121,7 +121,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-lame \
   --enable-nuv \
   --enable-lzo \
-  --enable-libpostproc \
+  --disable-libpostproc \
   --build=$ARCH-slackware-linux
 
 make

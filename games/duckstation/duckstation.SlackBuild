@@ -100,6 +100,9 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# Add missing Qt6::GuiPrivate dependency required for qpa/qplatformnativeinterface.h with modern Qt6.
+patch -p2 < $CWD/duckstation-add-qt6-guiprivate.patch
+
 mkdir -p build
 cd build
   cmake \

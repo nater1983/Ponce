@@ -2,7 +2,7 @@
 
 # Slackware build script for gst-plugins-bad-nonfree
 
-# Copyright 2013-2025  Robby Workman, Tuscaloosa, Alabama, USA
+# Copyright 2013-2026  Robby Workman, Tuscaloosa, Alabama, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -21,6 +21,12 @@
 #  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# 20260713 bkw:
+# - take over maintenance (Robby doesn't have time for this).
+# - remove mention of libsrtp from README: meson fails to autodetect
+#   it. updating to libsrtp-2.8.0 doesn't help.
+# - no script or package changes.
 
 # 20250805 bkw: BUILD=2
 # - x265 and zxing are optional deps that weren't mentioned in the
@@ -41,10 +47,10 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gst-plugins-bad-nonfree
-VERSION=${VERSION:-1.26.5}
+VERSION=${VERSION:-1.28.4}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
-PKGTYPE=${PKGTYPE:-txz}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -187,7 +193,6 @@ cd build
     -Dvideoparsers=disabled \
     -Dvideosignal=disabled \
     -Dvmnc=disabled \
-    -Dy4m=disabled \
     -Dbluez=disabled \
     -Ddecklink=disabled \
     -Ddvb=disabled \
@@ -232,7 +237,7 @@ cd build
     -Dcodecalpha=disabled \
     -Dcodectimestamper=disabled \
     -Dinsertbin=disabled \
-    -Dmse=disabled \
+    -Dhip=disabled \
     -Dqroverlay=disabled \
     -Dqsv=disabled \
     -Dtensordecoders=disabled \
@@ -244,13 +249,16 @@ cd build
 cd ..
 
 # 20220307 bkw: remove all the things that already exist in Slackware.
+# last two must be manually removed or build breaks
 rm -rf $PKG/usr/lib*/gstreamer-*/libgstshm.so \
        $PKG/usr/lib*/*.so* \
        $PKG/usr/lib*/girepository* \
        $PKG/usr/lib*/pkgconfig \
        $PKG/usr/share \
        $PKG/usr/include \
-       $PKG/usr/bin
+       $PKG/usr/bin \
+       $PKG/usr/lib*/gstreamer-*/libgstmse* \
+       $PKG/usr/lib*/libgstmse*
 
 strip $PKG/usr/lib*/gstreamer-*/*.so
 

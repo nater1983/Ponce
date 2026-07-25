@@ -27,7 +27,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=newsboat
-VERSION=${VERSION:-2.43}
+VERSION=${VERSION:-2.44}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -163,7 +163,7 @@ fi
 
 export CARGO_HOME=.cargo
 
-CXXFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS -Wno-error=unused-function" \
 CARGO_FLAGS="$CARGOTARGET" \
 make -j1 prefix=/usr
 make doc

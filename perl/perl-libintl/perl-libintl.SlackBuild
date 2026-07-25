@@ -2,7 +2,15 @@
 
 # Slackware build script for perl-libintl
 
-# Written by Luis Henrique <lmello.009@gmail.com>
+# Written by Luis Henrique <email removed>.
+# Modified and now maintained by B. Watson <urchlay@slackware.uk>.
+# Original had no license. Modified version is:
+
+# Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
+
+# 20260701 bkw:
+# - take over maintenance.
+# - update for v1.37.
 
 # 20230702 bkw: Modified by SlackBuilds.org, BUILD=2:
 # - clean up doc dir.
@@ -10,10 +18,10 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=perl-libintl
-VERSION=${VERSION:-1.32}
+VERSION=${VERSION:-1.37}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
-PKGTYPE=${PKGTYPE:-txz}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -48,6 +56,7 @@ else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
 fi
+# 20260702 bkw: no need for SLKCFLAGS or LIBDIRSUFFIX here.
 
 set -e
 

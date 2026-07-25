@@ -89,6 +89,7 @@ if [ -f /usr/include/libavfilter/buffersink.h ]; then
 fi
 
 patch -p1 < $CWD/ffmpeg-7.patch
+patch -p1 < $CWD/ffmpeg-8.patch
 
 sh autogen.sh || true
 

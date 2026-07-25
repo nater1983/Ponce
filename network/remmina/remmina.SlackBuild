@@ -28,7 +28,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=remmina
-VERSION=${VERSION:-1.4.35}
+VERSION=${VERSION:-1.4.43}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -103,6 +103,7 @@ cd build
     -DWITH_APPINDICATOR=OFF \
     -DWITH_WWW=OFF \
     -DWITH_KF5WALLET=${KWALLET} \
+    -DWITH_FREERDP3='ON' \
     -DCMAKE_BUILD_TYPE=Release ..
   make VERBOSE=1
   make install DESTDIR=$PKG
