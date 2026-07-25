@@ -87,7 +87,6 @@ strip $PKG/usr/bin/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 gzip -9 $PKG/usr/man/man1/xbrightness.1x
 
 mkdir -p $PKG/install

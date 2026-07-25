@@ -95,7 +95,6 @@ cp -a \
   $PKG/usr/doc/$PRGNAM-$VERSION
 ========
 cp -a AUTHORS CHANGELOG LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 >>>>>>> origin/current
 
 mkdir -p $PKG/install

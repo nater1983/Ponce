@@ -111,7 +111,6 @@ make install-strip DESTDIR=$PKG UPDATE_DESKTOP=echo
 
 cp -a README.md $PKGDOC
 rm -f $PKGDOC/INSTALL
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

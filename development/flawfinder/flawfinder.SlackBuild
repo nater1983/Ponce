@@ -19,8 +19,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=flawfinder
 VERSION=${VERSION:-2.0.20}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=noarch
 
@@ -57,7 +57,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 rm -f INSTALL.md
 cp -a *.md COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

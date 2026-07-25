@@ -28,8 +28,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=mtpaint
 VERSION=${VERSION:-3.50.14}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 SRCNAM=mtPaint
 COMMIT=8304376e8861a8a603371b0f188db30f9cafdc17

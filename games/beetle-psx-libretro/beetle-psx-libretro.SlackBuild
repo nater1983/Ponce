@@ -29,9 +29,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=beetle-psx-libretro
 LIBNAM=mednafen_psx_libretro
 VERSION=${VERSION:-2026.07.07_672f213}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -98,7 +98,6 @@ for DOCDIR in . parallel-psx; do
     cp -a $DOCDIR/$DOC $PKG/usr/doc/$PRGNAM-$VERSION/$DOCDIR
   done
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/libretro-core/mednafen_psx_hw_libretro \
 	> $PKG/usr/lib${LIBDIRSUFFIX}/libretro/info/mednafen_psx_hw_libretro.info
 cat $CWD/libretro-core/mednafen_psx_libretro \

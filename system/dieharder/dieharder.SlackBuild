@@ -122,7 +122,6 @@ gzip -9 $PKG/usr/man/man*/*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING NOTES AUTHORS $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20260703 bkw: this stuff is broken, just dike it out.
 ## if [ "${MANPDF:-no}" = "yes" ]; then

@@ -34,9 +34,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=perl-Test-Requires
 VERSION=${VERSION:-0.10}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 SRCNAM=Test-Requires
@@ -83,7 +83,6 @@ find $PKG -depth -type d -empty -delete || true
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changes LICENSE $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

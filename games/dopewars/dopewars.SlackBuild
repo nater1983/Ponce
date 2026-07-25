@@ -99,7 +99,6 @@ rm -rf $PKG/usr/share/gnome
 # Add documentation
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 cp -a NEWS* TODO* README* AUTHOR* ChangeLog* COPYING $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # Copy the slack-desc and doisnt.sh
 mkdir -p $PKG/install

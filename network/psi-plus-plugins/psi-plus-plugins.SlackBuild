@@ -26,9 +26,9 @@ cd "$(dirname "$0")" ; CWD=$(pwd)
 PRGNAM=psi-plus-plugins
 VERSION=${VERSION:-1.5.1600}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-_rdlnx}
 SRCNAM=psi-plus-snapshots-${VERSION}
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE=${PKGTYPE:-txz}
 
 ARCH=${ARCH:-$(uname -m)}
 if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
@@ -44,7 +44,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-${PRGNAM}
 OUTPUT=${OUTPUT:-/tmp}
 JOBS=${JOBS:-$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 1)}
@@ -133,7 +133,6 @@ mkdir -p "$PKG/usr/doc/$PRGNAM-$VERSION"
 for DOC in "$TMP/$SRCNAM"/README* "$TMP/$SRCNAM"/COPYING* "$TMP/$SRCNAM"/LICENSE*; do
   [ -f "$DOC" ] && install -m 0644 "$DOC" "$PKG/usr/doc/$PRGNAM-$VERSION/"
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 cat > "$PKG/usr/doc/$PRGNAM-$VERSION/build-options.txt" <<EOF
 Psi+ source snapshot: ${VERSION}

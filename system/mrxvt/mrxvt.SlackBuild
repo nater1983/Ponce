@@ -98,7 +98,6 @@ mkdir -p $PKGDOC
 cp -a AUTHORS COPYING ChangeLog NEWS README TODO $PKGDOC
 mv $PKG/usr/share/doc/$PRGNAM/* $PKGDOC/
 rm -rf $PKG/usr/share/doc
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 ( cd $PKG/usr/doc/$PRGNAM-$VERSION
   for i in *.bz2 ; do

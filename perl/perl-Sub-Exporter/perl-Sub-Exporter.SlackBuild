@@ -31,8 +31,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=perl-Sub-Exporter
 VERSION=${VERSION:-0.991}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH="noarch"
 
 SRCNAM=Sub-Exporter

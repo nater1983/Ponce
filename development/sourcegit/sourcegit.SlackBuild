@@ -29,8 +29,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=sourcegit
 VERSION=${VERSION:-2026.15}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 AvaloniaEdit=11bf2b6a8265329974606604ecc96ece8bfbc0b9
 
 if [ -z "$ARCH" ]; then

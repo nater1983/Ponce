@@ -125,7 +125,6 @@ cp -aR -t $PKG/usr/doc/$PRGNAM-$VERSION \
 iconv -f koi8-r -t utf-8 -o $PKG/usr/doc/$PRGNAM-$VERSION/ru/example1.txt doc/ru/example1.txt
 iconv -f koi8-r -t utf-8 -o $PKG/usr/doc/$PRGNAM-$VERSION/ru/iodbc.txt doc/ru/iodbc.txt
 cp -a CHANGELOG.rus $PKG/usr/doc/$PRGNAM-$VERSION/ru/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

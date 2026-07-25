@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM="vivaldi-altffmpeg"
 VERSION=${VERSION:-8.1} # Matches Vivaldi Major.Minor
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 SUBVERSION=${SUBVERSION:-150-S-20260618} # Expected Vivaldi naming
 ELECTRONVERSION=${ELECTRONVERSION:-43.0.0-beta.8} # Electron Chr equivalent
 
@@ -80,7 +80,6 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs chmod 0755 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

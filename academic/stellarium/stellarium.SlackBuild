@@ -27,8 +27,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=stellarium
 VERSION=${VERSION:-26.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 QT6="${QT6:-0}"
 
 if [ -z "$ARCH" ]; then

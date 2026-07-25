@@ -103,7 +103,6 @@ done
 
 mkdir -p $PKGDOC
 cp -a license.txt readme.txt $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

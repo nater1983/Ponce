@@ -32,9 +32,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=perl-Inline-C
 VERSION=${VERSION:-0.78}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 SRCNAM="$(printf $PRGNAM | cut -d- -f2-)"
@@ -78,7 +78,6 @@ find $PKG -depth -type d -empty -delete || true
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changes CONTRIBUTING README $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

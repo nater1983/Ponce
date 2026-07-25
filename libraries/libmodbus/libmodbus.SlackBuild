@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libmodbus
 VERSION=${VERSION:-3.2.0}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -102,7 +102,6 @@ make install-strip DESTDIR=$PKG
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS COPYING* README* $PKG/usr/doc/$PRGNAM-$VERSION
 cp -avxu docs $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

@@ -143,7 +143,6 @@ rm -rf $PKG/usr/man/cat*
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION/
 mkdir -p $PKGDOC/
 cp -a $DOCFILES $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 rm -f $PKG/usr/lib*/*.la
 

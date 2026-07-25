@@ -94,7 +94,6 @@ mkdir -p $PKGDOC
 cp -a \
    README ALL_I_GET_IS_A_GRAY_BOX AUTHORS CODING INSTALL COPYING ChangeLog \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

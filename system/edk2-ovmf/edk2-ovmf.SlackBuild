@@ -74,7 +74,6 @@ sed -i 's|edk2/ovmf|edk2-ovmf-x64|g' $PKG/usr/share/qemu/firmware/*x64*
 sed -i 's|edk2/ovmf|edk2-ovmf|g' $PKG/usr/share/qemu/firmware/*ia32*
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM-ia32-$VERSION_32
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cp usr/share/licenses/$PRGNAM/* $PKG/usr/doc/$PRGNAM-$VERSION
 # Ensure that the correct license files are included for the ia32 firmware.
 cp usr/share/licenses/$PRGNAM-ia32/* $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM-ia32-$VERSION_32

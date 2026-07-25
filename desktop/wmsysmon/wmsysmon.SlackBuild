@@ -121,7 +121,6 @@ make -C src install DESTDIR=$PKG
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a COPYING ChangeLog README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@WITHSMP@,$WITHSMP," < $CWD/slack-desc > $PKG/install/slack-desc

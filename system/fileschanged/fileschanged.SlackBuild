@@ -123,7 +123,6 @@ mkdir -p $PKGDOC
 cp -a COPYING $PKGDOC
 mv $PKG/usr/share/$PRGNAM/* $PKGDOC
 rm -rf $PKG/usr/share/$PRGNAM $PKGDOC/{NEWS,INSTALL}
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

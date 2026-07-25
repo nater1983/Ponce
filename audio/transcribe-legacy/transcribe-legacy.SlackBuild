@@ -51,8 +51,8 @@ PRGNAM=transcribe-legacy
 SRCNAM=transcribe
 VERSION=${VERSION:-8.80}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -67,7 +67,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -128,7 +128,6 @@ if [ -e libgstvideosection.so ]; then
   install -m0755 libgstvideosection.so $PKG/usr/lib$LIBDIRSUFFIX/gstreamer-1.0
 fi
 
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/$SRCNAM.desktop > $PKG/usr/share/applications/$SRCNAM.desktop
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

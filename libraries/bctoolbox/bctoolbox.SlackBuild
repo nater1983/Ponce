@@ -124,7 +124,6 @@ mkdir -p $PKGDOC
 cp -a $DOCS  $PKGDOC
 chown -R root:root $PKGDOC
 chmod 0644 $PKGDOC/*
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -74,8 +74,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=xerces-c
 VERSION=${VERSION:-3.3.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

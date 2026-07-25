@@ -26,8 +26,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=claude-desktop
 VERSION=${VERSION:-1.19367.0}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -51,7 +51,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
 fi
 
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -85,7 +85,6 @@ rm -f $PKG/usr/bin/claude-desktop
 ln -sf ../lib64/claude-desktop/claude-desktop $PKG/usr/bin/claude-desktop
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 mv $PKG/usr/share/doc/claude-desktop/copyright $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
 

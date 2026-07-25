@@ -34,8 +34,8 @@ PRGNAM=aubio
 VERSION=${VERSION:-20260410_ad5cf97}
 WAFVER=${WAFVER:-2.0.26}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

@@ -35,9 +35,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=perl-Image-Size
 VERSION=${VERSION:-3.300}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 SRCNAM=Image-Size
 
