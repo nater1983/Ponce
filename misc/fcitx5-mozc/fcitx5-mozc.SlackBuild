@@ -1,0 +1,120 @@
+#!/bin/bash
+
+# Slackware build script for fcitx5-mozc
+
+# Written by JW(Shinichi Abe)
+# Modified by K. Eugene Carlson
+#
+# K. Eugene Carlson 2026
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+cd $(dirname $0) ; CWD=$(pwd)
+
+PRGNAM=fcitx5-mozc
+SRCNAM=mozc
+VERSION=${VERSION:-20260720.3f9b1bd}
+MOZC_REV=${MOZC_REV:-3f9b1bd6d089cef2e1e8814d7de25291e730274b}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
+
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+SLKCFLAGS="-fPIC"
+
+set -e
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf $SRCNAM-$MOZC_REV
+unzip $CWD/$SRCNAM-$MOZC_REV.zip
+cd $SRCNAM-$MOZC_REV
+
+export HOME=$PWD/FAKE_HOME
+mkdir -p $HOME
+
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+# build package with bazel
+cd src
+bazel build \
+      unix/icons \
+      gui/tool:mozc_tool \
+      server:mozc_server \
+      unix/fcitx5:fcitx5-mozc.so \
+      unix/emacs:mozc_emacs_helper \
+      --compilation_mode=opt \
+      --config=release_build \
+      --copt="${SLKCFLAGS}" \
+      --cxxopt="${SLKCFLAGS}"
+
+# Extract license part of mozc
+head -n 29 server/mozc_server.cc > LICENSE
+
+mkdir -p "$PKG/usr/share/licenses/$PRGNAM/"
+install -m 644 LICENSE data/installer/*.html "$PKG/usr/share/licenses/$PRGNAM/"
+
+PREFIX="$PKG/usr" ../scripts/install_fcitx5_bazel
+PREFIX="$PKG/usr" ../scripts/install_server_bazel
+
+mkdir -p $PKG/usr/lib64
+mv $PKG/usr/lib/fcitx5 $PKG/usr/lib64/
+
+# Install emacs_helper
+install -Dm644 ../LICENSE $PKG/usr/share/licenses/emacs-mozc/LICENSE
+install -Dm644 data/installer/credits_en.html  $PKG/usr/share/licenses/emacs-mozc/credits_en.html
+install -Dm755 bazel-bin/unix/emacs/mozc_emacs_helper $PKG/usr/bin/mozc_emacs_helper
+install -Dm644 unix/emacs/mozc.el $PKG/usr/share/emacs/site-lisp/mozc.el
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mkdir -p $PKG/usr/doc
+mv $PKG/usr/share/doc/mozc $PKG/usr/doc/$PRGNAM-$VERSION
+rmdir $PKG/usr/share/doc
+install -m644 $CWD/init.el_mozc $CWD/README.emacs $PKG/usr/doc/$PRGNAM-$VERSION/
+install -m644 $CWD/$PRGNAM.SlackBuild $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+cat $CWD/slack-desc > $PKG/install/slack-desc
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

@@ -73,6 +73,10 @@ cd ${PRGNAM}
 # To self generate the patch, see README
 patch -p0 < $CWD/bootstrap-updates.diff
 
+# Uncomment the following line to enable further
+# updating of bootstrap node list.
+#python3 tools/update-bootstrap.py > src/tox_bootstrap.h
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

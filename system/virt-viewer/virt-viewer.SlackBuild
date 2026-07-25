@@ -80,8 +80,6 @@ patch -p1 < $CWD/new_meson.diff
 
 patch -p1 < $CWD/virt-viewer-10.0_p20210730-meson-0.61.patch
 
-patch -p1 < $CWD/virt-viewer-10.0_p20210730-meson-0.61.patch
-
 mkdir build
 cd build
   CFLAGS="$SLKCFLAGS" \

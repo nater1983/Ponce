@@ -321,7 +321,7 @@ mv $PKG/usr/share/man/man1/nvidia-* $PKG/usr/man/man1
 rm -rf $PKG/usr/share/man
 mv $PKG/usr/share/doc/NVIDIA_GLX-1.0 $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
-cp -a LICENSE NVIDIA_Changelog README.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp LICENSE NVIDIA_Changelog README.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README.Slackware
 cp $CWD/README.nvidia-persistenced $PKG/usr/doc/$PRGNAM-$VERSION
 

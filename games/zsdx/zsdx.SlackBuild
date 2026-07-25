@@ -29,10 +29,10 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=zsdx
-VERSION=${VERSION:-1.12.2}
+VERSION=${VERSION:-1.12.3}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_rdlnx}
-PKGTYPE=${PKGTYPE:-txz}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
 
 ARCH=noarch
 
@@ -75,7 +75,7 @@ cd build
 cd ..
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a changelog.txt license.txt readme.md work/*.txt \
+cp -a changelog.md license.txt readme.md work/*.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install

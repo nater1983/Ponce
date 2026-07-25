@@ -24,8 +24,8 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PRGNAM=BibTool
-VERSION=${VERSION:-2.68}
+PRGNAM=ngspice-jit
+VERSION=${VERSION:-46.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -97,9 +97,8 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --build=$ARCH-slackware-linux
 
-make all doc
-make install INSTALLPREFIX=$PKG
-make install.man INSTALLPREFIX=$PKG INSTALL="install -p -m 644"
+make
+make install DESTDIR=$PKG
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
@@ -109,8 +108,20 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a Changes.tex README.md THANKS ToDo doc/*.pdf $PKG/usr/doc/$PRGNAM-$VERSION
+PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
+mkdir -p $PKGDOC
+cp -a COPYING* README* ANNOUNCE* NEWS* $PKGDOC 2> /dev/null || true
+
+# Example circuits, our HTML/PDF reference manual, and the per-feature docs
+# (each with a runnable self-test deck) all ship in the source tree; "make dist"
+# keeps examples/ and the whole docs/ tree.  Install them.
+cp -a examples $PKGDOC/ 2> /dev/null || true
+cp -a docs/* $PKGDOC/ 2> /dev/null || true
+chmod 644 $PKGDOC/examples/klu/Circuits/libraries/*.lib
+chmod 644 $PKGDOC/examples/shared/t.shx
+chmod 644 $PKGDOC/examples/xspice/ghdl/build
+
+cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

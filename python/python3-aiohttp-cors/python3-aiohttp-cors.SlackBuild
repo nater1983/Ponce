@@ -1,0 +1,143 @@
+#!/bin/bash
+
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
+# Slackware build script for python2-six
+
+# Copyright 2012-2018 Larry Hajali <larryhaja[at]gmail[dot]com>
+# Copyright 2024 Arkadiusz Drabczyk <arkadiusz@drabczyk.org>
+========
+# Slackware build script for python3-aiohttp-cors
+
+# Copyright 2020-2026 Emmanuel N. Millan, Argentina
+>>>>>>>> current:python/python3-aiohttp-cors/python3-aiohttp-cors.SlackBuild
+# All rights reserved.
+#
+# Redistribution and use of this script, with or without modification, is
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of this script must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
+#  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+#  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+#  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+#  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+cd $(dirname $0) ; CWD=$(pwd)
+
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
+PRGNAM=python2-six
+SRCNAM=six
+VERSION=${VERSION:-1.16.0}
+========
+PRGNAM=python3-aiohttp-cors
+SRCNAM=aiohttp_cors
+VERSION=${VERSION:-0.8.1}
+>>>>>>>> current:python/python3-aiohttp-cors/python3-aiohttp-cors.SlackBuild
+BUILD=${BUILD:-1}
+TAG=${TAG:-_rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
+
+if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  exit 0
+fi
+
+TMP=${TMP:-/tmp/rdlnx}
+PKG=$TMP/package-$PRGNAM
+OUTPUT=${OUTPUT:-/tmp}
+
+<<<<<<<< HEAD:python/python2-progress/python2-progress.SlackBuild
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+========
+  SLKCFLAGS="-O2 -fPIC"
+>>>>>>>> current:python/python3-aiohttp-cors/python3-aiohttp-cors.SlackBuild
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
+
+========
+>>>>>>> origin/current
+set -e
+
+rm -rf $PKG
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
+rm -rf $SRCNAM-$VERSION
+tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
+cd $SRCNAM-$VERSION
+
+chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
+python2 setup.py install --root=$PKG
+========
+python3 setup.py install --root=$PKG
+>>>>>>>> current:python/python3-aiohttp-cors/python3-aiohttp-cors.SlackBuild
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+# Build and install documentation if sphinx is installed.
+if $(python -c 'import sphinx.pygments_styles' 2>/dev/null); then
+  make -j1 -C documentation man singlehtml
+  install -D -m 0644 documentation/_build/man/$SRCNAM.1 $PKG/usr/man/man1/$SRCNAM.1
+  gzip -9 $PKG/usr/man/man?/*.?
+fi
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
+<<<<<<<< HEAD:python/python2-progress/python2-progress.SlackBuild
+cp -a \
+  LICENSE README.rst test_progress.py \
+  $PKG/usr/doc/$PRGNAM-$VERSION
+========
+cp -a LICENSE PKG-INFO README.rst $PKG/usr/doc/$PRGNAM-$VERSION
+[ -d documentation/_build/singlehtml ] && \
+  cp -a documentation/_build/singlehtml/index.html \
+    documentation/_build/singlehtml/_static \
+    $PKG/usr/doc/$PRGNAM-$VERSION
+find $PKG/usr/doc -type f -exec chmod 0644 '{}' \;
+>>>>>>> origin/current
+========
+cp -a CHANGES.rst LICENSE MANIFEST.in README.rst $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+>>>>>>>> current:python/python3-aiohttp-cors/python3-aiohttp-cors.SlackBuild
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+
+cd $PKG
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

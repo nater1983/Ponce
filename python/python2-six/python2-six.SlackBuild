@@ -49,7 +49,6 @@ TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-<<<<<<<< HEAD:python/python2-progress/python2-progress.SlackBuild
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
@@ -67,8 +66,6 @@ else
   LIBDIRSUFFIX=""
 fi
 
-========
->>>>>>> origin/current
 set -e
 
 rm -rf $PKG
@@ -98,18 +95,12 @@ if $(python -c 'import sphinx.pygments_styles' 2>/dev/null); then
 fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-<<<<<<<< HEAD:python/python2-progress/python2-progress.SlackBuild
-cp -a \
-  LICENSE README.rst test_progress.py \
-  $PKG/usr/doc/$PRGNAM-$VERSION
-========
 cp -a LICENSE PKG-INFO README.rst $PKG/usr/doc/$PRGNAM-$VERSION
 [ -d documentation/_build/singlehtml ] && \
   cp -a documentation/_build/singlehtml/index.html \
     documentation/_build/singlehtml/_static \
     $PKG/usr/doc/$PRGNAM-$VERSION
 find $PKG/usr/doc -type f -exec chmod 0644 '{}' \;
->>>>>>> origin/current
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
