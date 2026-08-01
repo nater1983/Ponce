@@ -28,7 +28,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=pmidi
-VERSION=${VERSION:-1.6.0}
+VERSION=${VERSION:-1.7.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -99,10 +99,9 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS COPYING ChangeLog INSTALL NEWS README \
   $PKG/usr/doc/$PRGNAM-$VERSION
 
-( cd $PKG/usr/man
-  find . -type f -exec gzip -9 {} \;
-  for i in $( find . -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
-)
+mkdir -p $PKG/usr/man/man1
+cat $PKG/usr/share/man/man1/pmidi.1 | gzip > $PKG/usr/man/man1/pmidi.1.gz
+rm -rf $PKG/usr/share
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

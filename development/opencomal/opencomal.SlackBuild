@@ -117,8 +117,9 @@ rm -f doc/BUILD
 # no man pages. neither binary takes any flags, so I don't see much point
 # in creating them.
 
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a doc/* samples $PKG/usr/doc/$PRGNAM-$VERSION
+PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
+mkdir -p $PKGDOC
+cp -a doc/* samples $PKGDOC
 
 # 20250114 bkw: doinst.sh and douninst.sh are identical, this is not an error.
 mkdir -p $PKG/install
