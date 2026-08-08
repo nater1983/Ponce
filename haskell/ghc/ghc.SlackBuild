@@ -62,10 +62,11 @@ elif [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+  TARARCH="x86_64"
 elif [ "$ARCH" = "aarch64" ]; then
   SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
-  TARARCH="x86_64"
+  TARARCH="aarch64"
 else
   printf "$ARCH is not supported...\n"
   exit 1
