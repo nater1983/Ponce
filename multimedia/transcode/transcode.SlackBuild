@@ -84,6 +84,7 @@ find -L . \
 patch -p1 -i $CWD/transcode-1.1.7-imagemagick7.patch
 patch -p1 -i $CWD/transcode-1.1.7-gcc10.patch
 patch -p1 -i $CWD/transcode-1.1.7-glibc-2.32.patch
+patch -p1 -i $CWD/transcode-1.1.7-newer_lame.patch
 
 autoreconf -vif
 

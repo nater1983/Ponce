@@ -1,6 +1,6 @@
 PRGNAM="python3-pygame"
 VERSION="2.6.1"
-HOMEPAGE="http://www.pygame.org/"
+HOMEPAGE="https://pypi.org/project/pygame/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pygame/pygame-2.6.1.tar.gz"
 MD5SUM="cb6bf42a449b0bb1f53c534bcbcc220c"
 DOWNLOAD_x86_64=""

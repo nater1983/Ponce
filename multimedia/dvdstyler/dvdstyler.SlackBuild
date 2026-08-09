@@ -90,6 +90,7 @@ fi
 
 patch -p1 < $CWD/ffmpeg-7.patch
 patch -p1 < $CWD/ffmpeg-8.patch
+patch -p1 < $CWD/ffmpeg-9.patch
 
 sh autogen.sh || true
 

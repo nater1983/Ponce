@@ -91,6 +91,8 @@ cd $TMP
 mkdir -p $MYTMP
 cd $MYTMP
 
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/opt/llvm-opt/bin:$PATH"
+
 (
 rm -rf gtirb-$GTIRB_VERSION
 tar xvf $CWD/gtirb-$GTIRB_VERSION.tar.gz
@@ -120,6 +122,8 @@ cd build
     -DGTIRB_RUN_CLANG_TIDY=OFF \
     -DCMAKE_CXX_COMPILER=clang++ \
     -DCMAKE_C_COMPILER=clang \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DProtobuf_LIBRARIES='-lprotobuf' \
     -DGTIRB_JAVA_API=OFF \
     -DGTIRB_CL_API=OFF \
@@ -151,6 +155,8 @@ cmake \
     -DMAN_INSTALL_DIR=/usr/man \
     -DCMAKE_BUILD_TYPE=Release .. \
     -DCAPSTONE_BUILD_STATIC_RUNTIME=ON \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DCMAKE_EXE_LINKER_FLAGS='-labsl_status -labsl_hash -labsl_log_internal_check_op -labsl_log_internal_message'
   make || exit 1
 )
@@ -185,6 +191,8 @@ cd build
     -DGTIRB_PPRINTER_ENABLE_TESTS=OFF \
     -DGTIRB_PPRINTER_BUILD_SHARED_LIBS=OFF \
     -DENABLE_CODE_COVERAGE=OFF \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DProtobuf_LIBRARIES='-lprotobuf' \
     -DCMAKE_LIBRARY_PATH=$MYTMP/capstone-$CAPSTONE_VERSION/build/ \
     -DCMAKE_EXE_LINKER_FLAGS='-labsl_status -labsl_hash -labsl_log_internal_check_op -labsl_log_internal_message'
@@ -217,6 +225,8 @@ cd build
     -DMAN_INSTALL_DIR=/usr/man \
     -DCMAKE_CXX_COMPILER=clang++ \
     -DCMAKE_C_COMPILER=clang \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DLIEF_EXAMPLES=OFF \
     -DLIEF_TESTS=OFF \
     -DLIEF_PYTHON_API=OFF \
@@ -252,6 +262,8 @@ cmake \
     -DMAN_INSTALL_DIR=/usr/man \
     -DCMAKE_CXX_COMPILER=clang++ \
     -DCMAKE_C_COMPILER=clang \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DCMAKE_BUILD_TYPE=Release .. \
     -DEHP_BUILD_SHARED_LIBS=OFF \
     -DBUILD_SHARED_LIBS=OFF
@@ -281,6 +293,8 @@ cd build
     -DMAN_INSTALL_DIR=/usr/man \
     -DCMAKE_CXX_COMPILER=/usr/bin/clang++ \
     -DCMAKE_C_COMPILER=/usr/bin/clang \
+    -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+    -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DCMAKE_LIBRARY_PATH="$MYTMP/capstone-$CAPSTONE_VERSION/build;$TMP/LIEF-$LIEF_VERSION/build" \
     -DCMAKE_PROGRAM_PATH="$MYTMP"/capstone-$CAPSTONE_VERSION/build \
     -DCMAKE_MODULE_PATH=$MYTMP/LIEF-$LIEF_VERSION/install/share/LIEF/cmake/ \

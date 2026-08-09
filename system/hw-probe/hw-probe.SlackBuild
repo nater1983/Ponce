@@ -3,6 +3,7 @@
 # Slackware build script for hw-probe
 
 # Copyright 2024  Dimitar Nikov, Alfreton, United Kingdom
+# Copyright 2026  K. Eugene Carlson, Tsukuba, Japan
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -50,7 +51,7 @@ cd $PRGNAM-$VERSION
 
 mkdir -p $PKG/usr/bin
 
-patch -p0 < $CWD/0001-Remove-pacman-binary.patch
+patch -p0 < $CWD/no_games.diff
 
 chmod 0755 $PRGNAM.pl
 mv $PRGNAM.pl $PKG/usr/bin/$PRGNAM
