@@ -41,7 +41,7 @@ libdvdreadVER=${libdvdreadVER:-6.1.3-Next-Nexus-Alpha2-2}
 groovyVER=${groovyVER:-4.0.26}
 comLangVER=${comLangVER:-3.17.0}
 comTextVER=${comTextVER:-1.13.0}
-ffmpegVER=${ffmpegVER:-6.1.2}
+ffmpegVER=${ffmpegVER:-6.1.6}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -90,9 +90,9 @@ patch -p1 < $CWD/giflib6.patch
 # Actually now that we have the incompatible ffmpeg 8.x in current
 # we need to update the internal version...
 echo 'LIBNAME=ffmpeg' > tools/depends/target/ffmpeg/FFMPEG-VERSION
-echo 'VERSION=6.1.2' >> tools/depends/target/ffmpeg/FFMPEG-VERSION
+echo 'VERSION=6.1.6' >> tools/depends/target/ffmpeg/FFMPEG-VERSION
 echo 'ARCHIVE=$(LIBNAME)-$(VERSION).tar.xz' >> tools/depends/target/ffmpeg/FFMPEG-VERSION
-echo 'SHA512=3a009184d971fc3168e1322d1d724aae787ed0e9c152d8d1813ea0b9099bda3b35c41fcabbd7b140560e7a8fa9fa1ffd7f0938432d5d498c43829fc6cc3d9e08' >> tools/depends/target/ffmpeg/FFMPEG-VERSION
+echo 'SHA512=3fdc98fb582d8ffc537848277e603917920d300a91b095a87190f89d8a6ba6f0d3e6a76172393662a38a26a58b42da0bd4843c2bd3d990ebf136b7b7084d5864' >> tools/depends/target/ffmpeg/FFMPEG-VERSION
 
 # Autodetection of "optional" dependencies sucks. It does not work and
 # compilation will fail on each of these if not explicitly disabled.

@@ -27,7 +27,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=open-vm-tools
-VERSION=${VERSION:-12.5.2_24697584} # Remember to change VERSION - to _ !!!
+VERSION=${VERSION:-13.1.0_25218885} # Remember to change VERSION - to _ !!!
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -80,7 +80,7 @@ case "$VGAUTH" in
     VGAUTH_OPTS="--enable-xmlsec1"
     ;;
   *)
-    echo "eRRoR with VGAUTH parameter"
+    echo "error with VGAUTH parameter"
     exit 1
     ;;
 esac
@@ -116,7 +116,12 @@ LIBS=-lcrypt \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-pam \
-  --without-x \
+  --without-kernel-modules \
+  --enable-shared \
+  --disable-static \
+  --disable-docs \
+  --disable-tests \
+  --without-gtkmm4 \
   $VGAUTH_OPTS \
   --build=$ARCH-slackware-linux
 
@@ -129,13 +134,8 @@ cp $CWD/rc.vmtoolsd $PKG/etc/rc.d/rc.vmtoolsd.new
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-find $PKG -name perllocal.pod \
-  -o -name ".packlist" \
-  -o -name "*.bs" \
-  | xargs rm -f
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a LICENSE README docs/ $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING ChangeLog LICENSE NEWS README docs/ $PKG/usr/doc/$PRGNAM-$VERSION
 
 rm -f $PKG/usr/lib*/*.la
 

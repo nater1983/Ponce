@@ -122,8 +122,6 @@ find . ! -type l    -a \
 
 patch -p1 < $CWD/gettext-0.22.patch
 
-patch -p1 < $CWD/gettext-0.22.patch
-
 mkdir -p build
 cd build
   cmake \

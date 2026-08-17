@@ -255,7 +255,7 @@ cd build
     -Dunixfd=disabled \
     -Duvcgadget=disabled \
     -Dzxing=disabled
-  "${NINJA:=ninja}"
+  "${NINJA:=ninja}" -v
   DESTDIR=$PKG $NINJA install
 cd ..
 
