@@ -27,9 +27,9 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=uw-ttyp0
 VERSION=${VERSION:-2.1}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
+TAG=${TAG:-rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=${ARCH:-}
-PKGTYPE=${PKGTYPE:-tgz}
 
 if [ -z "$ARCH" ]; then
   case $(uname -m) in
@@ -60,7 +60,7 @@ if [ -n "$PRINT_PACKAGE_NAME" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -87,6 +87,10 @@ chown -R root:root .
 sed -i 's/^GEN_CONS_LINUX[[:space:]]*=[[:space:]]*0/GEN_CONS_LINUX = 1/' \
   TARGETS.dat
 
+# Select the dotted zero variant; replace Digit0Dotted to choose another one.
+sed -i 's/^#COPYTO Digit0Dotted Digit0$/COPYTO Digit0Dotted Digit0/' \
+  VARIANTS.dat
+
 ./configure \
   --prefix=/usr \
   --pcfdir=/usr/share/fonts/X11/misc \
@@ -110,8 +114,6 @@ find $PKG -print0 | xargs -0 file | grep ELF | cut -f1 -d: | \
   xargs strip --strip-unneeded 2>/dev/null || true
 
 gzip -9 $PKG/usr/man/man1/bdfmangle.1
-
-cp $CWD/$PRGNAM.SlackBuild $PKG/usr/doc/$PRGNAM-$VERSION/
 
 mkdir -p $PKG/install
 install -m 644 "$CWD/slack-desc" "$PKG/install/"

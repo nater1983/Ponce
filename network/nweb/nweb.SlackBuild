@@ -2,6 +2,7 @@
 
 # Slackware build script for nweb
 
+# Copyright 2026 Frederic Galusik, Bordeaux, France
 # Copyright 2021  Dave Woodfall <dave@slackbuilds.org>
 # All rights reserved.
 #
@@ -93,6 +94,7 @@ cp -a nigel.jpg favicon.ico nweb.log index.html \
   $PKG/usr/doc/$PRGNAM-$VERSION/www-example
 
 cp -a README.md $CWD/README.client $PKG/usr/doc/$PRGNAM-$VERSION
+chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION/*
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

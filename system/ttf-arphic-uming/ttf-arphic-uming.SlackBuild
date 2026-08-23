@@ -87,7 +87,6 @@ cp -av *.conf $PKG/etc/fonts/conf.avail
 mkdir -pv $PKG/usr/doc/$PRGNAM-$VERSION
 cp -av CONTRIBUTERS FONTLOG Font_Comparison_ShanHeiSun_UMing.odt \
       Font_Comparison_ShanHeiSun_UMing.pdf README README.Bitmap license $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
