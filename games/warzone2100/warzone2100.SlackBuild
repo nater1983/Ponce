@@ -95,6 +95,7 @@ find -L . \
  -exec chmod 644 {} \;
 
 patch -p1 < $CWD/SQLiteCPP-gcc15.patch
+patch -p1 < $CWD/8701c62ae68ca70da43ec915cbf6776c492e6656.patch
 
 export CMAKE_POLICY_VERSION_MINIMUM=3.5
 

@@ -6,7 +6,6 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                |-----handy-ruler------------------------------------------------------|
-<<<<<<<< HEAD:multimedia/losslesscut-bin/slack-desc
 losslesscut-bin: losslesscut-bin (Lossless video editor)
 losslesscut-bin:
 losslesscut-bin: LosslessCut aims to be the ultimate cross platform FFmpeg GUI for
@@ -18,16 +17,3 @@ losslesscut-bin:
 losslesscut-bin:
 losslesscut-bin:
 losslesscut-bin:
-========
-perl-Data-Float: perl-Data-Float (details of floating point data type)
-perl-Data-Float:
-perl-Data-Float: This module provides details of the floating point data type.
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
-perl-Data-Float:
->>>>>>>> current:perl/perl-Data-Float/slack-desc
