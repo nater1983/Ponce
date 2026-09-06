@@ -90,6 +90,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS CHANGELOG LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> e0d209ef5e130ddaa67cc1e8f657953d0e1c15a7
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

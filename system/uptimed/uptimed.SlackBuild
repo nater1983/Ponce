@@ -105,8 +105,8 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a $DOCS $PKGDOC
 
-mkdir -p $PKG/etc/rc.d
-install -m 644 $CWD/rc.uptimed $PKG/etc/rc.d/rc.uptimed
+# don't overwrite the old rc.uptimed.
+install -Dm644 $CWD/rc.uptimed $PKG/etc/rc.d/rc.uptimed.new
 
 rm -f $PKG/usr/lib*/*.la
 

@@ -8,5 +8,5 @@ MD5SUM="24e6a4a5ed7f343a3e2e8af4d714455b \
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="pugixml"
-MAINTAINER="Roberto Metere"
-EMAIL="roberto@metere.it"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="NOEMAIL"

@@ -27,8 +27,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=ngrep
-VERSION=${VERSION:-1.47}
-SOURCEVERSION=${VERSION/./_}
+VERSION=${VERSION:-1.49.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -75,9 +74,9 @@ NGREP_IPV6=${NGREP_IPV6:-yes}
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$SOURCEVERSION
-tar xvf $CWD/$PRGNAM-$SOURCEVERSION.tar.gz
-cd $PRGNAM-$SOURCEVERSION
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -88,7 +87,7 @@ find -L . \
 patch -p1 < $CWD/ngrep-1.47-regex.patch
 autoreconf -vif
 
-CFLAGS="$SLKCFLAGS" \
+CFLAGS="$SLKCFLAGS -std=gnu17" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
@@ -98,6 +97,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-ipv6=${NGREP_IPV6} \
   --build=$ARCH-slackware-linux
 
+sed -i 's/DHAVE_ALLOCA=1/DHAVE_ALLOCA=1 -std=gnu17/g'  ./regex-0.12/Makefile
 make
 make install DESTDIR=$PKG mandir=/usr/man
 
@@ -107,7 +107,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp CHANGES CREDITS LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
+cp CREDITS LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

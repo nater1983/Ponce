@@ -111,6 +111,7 @@ cp -a \
    3RDPARTY.md CHANGELOG.md README.md CONTRIBUTORS.md COPYING.LESSER.txt \
    LICENSE.txt docs LICENSES  examples  \
   $PKG/usr/doc/$PRGNAM-$VERSION
+rm $PKG/usr/doc/$PRGNAM-$VERSION/docs/INSTALL.md
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

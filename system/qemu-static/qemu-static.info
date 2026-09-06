@@ -13,4 +13,4 @@ c59d43d79902312311cb7e6a1f449035 \
 23c6f5a27932b435cae94e087cb8b1f5"
 REQUIRES="device-tree-compiler qemu"
 MAINTAINER="Lockywolf"
-EMAIL="for_sbo.qemu-static_2025-07-13@lockywolf.net"
+EMAIL="for_sbo.master@lockywolf.net"

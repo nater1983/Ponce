@@ -326,12 +326,12 @@ EOF
 
 cat >doinst.sh <<EOF
 echo "$INSTALL_PATH/lib${LIBDIRSUFFIX}" >  etc/ld.so.conf.d/${PRGNAM}.conf
-/sbin/ldconfig
+chroot . /sbin/ldconfig
 EOF
 cat >douninst.sh <<EOF
 if [ -f etc/ld.so.conf.d/${PRGNAM}.conf ]; then
-  rm etc/ld.so.conf.d/${PRGNAM}.conf
-  /sbin/ldconfig
+  bin/rm -f etc/ld.so.conf.d/${PRGNAM}.conf
+  chroot . /sbin/ldconfig
 fi
 EOF
 

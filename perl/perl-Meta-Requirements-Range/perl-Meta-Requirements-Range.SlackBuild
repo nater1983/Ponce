@@ -2,7 +2,7 @@
 
 # Slackware build script for perl-Meta-Requirements-Dynamic
 
-# Copyright 2024 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2024-2026 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -48,6 +48,19 @@ TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
+
+if [ "$ARCH" = "i586" ]; then
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  LIBDIRSUFFIX="64"
+else
+  LIBDIRSUFFIX=""
+fi
+
 set -e
 
 rm -rf $PKG
@@ -77,6 +90,9 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+rm $PKG/usr/man/man3/CPAN::Meta::Requirements::Range.3.gz
+rm $PKG/usr/share/perl5/vendor_perl/CPAN/Meta/Requirements.pm
+rm -rf $PKG/usr/lib${LIBDIRSUFFIX}
 
 find $PKG -name perllocal.pod -o -name ".packlist" -o -name "*.bs" | xargs rm -f || true
 

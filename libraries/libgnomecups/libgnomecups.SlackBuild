@@ -71,6 +71,8 @@ else
   LIBDIRSUFFIX=""
 fi
 
+set -e
+
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
@@ -98,7 +100,7 @@ patch -p1 -i $CWD/patches/$PRGNAM-$VERSION-glib.h.patch
 # cups-1.6 compat
 patch -p1 -i $CWD/patches/$PRGNAM-$VERSION-cups-1.6.patch
 
-CFLAGS="$SLKCFLAGS" \
+CFLAGS="$SLKCFLAGS -Wno-error=incompatible-pointer-types" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \

@@ -28,12 +28,12 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=brave-origin
-PRCNAM=amd64
-VERSION=${VERSION:-1.93.137}
+VERSION=${VERSION:-1.94.119}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
 DEBBUILD=${DEBBUILD:-1}
+PRCNAM=amd64
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
