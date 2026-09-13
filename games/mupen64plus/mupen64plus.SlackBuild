@@ -105,7 +105,6 @@ for i in audio-sdl core input-sdl rom rsp-hle ui-console video-glide64mk2 video-
   cp -a source/$PRGNAM-$i/{CREDITS,LICENSES,README,RELEASE,README.md,AUTHORS,gpl-license} \
      $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM-$i 2>/dev/null || :
 done
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

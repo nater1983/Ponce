@@ -91,6 +91,9 @@ if [ "$PATCH" = "yes" ]; then
   done
 fi
 
+# This patch is picked to build against webkit2gtk4.1
+patch -p1 < $CWD/webkit2gtk4.1.patch
+
 # Customization.
 
 # Default to rxvt rather than st as the terminal for running curl when
