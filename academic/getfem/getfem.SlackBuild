@@ -120,6 +120,10 @@ mv $PKG/usr/getfem_toolbox $PKG/usr/share/$PRGNAM/
 # remove .la files
 rm -f $PKG/usr/lib*/*.la
 
+# remove gmm headers to not overwrite the stock one
+# getfem should work fine with stock gmm even if it is older than getfem own version
+rm -rf $PKG/usr/include/gmm/
+
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 

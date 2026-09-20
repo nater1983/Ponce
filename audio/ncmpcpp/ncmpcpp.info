@@ -8,5 +8,5 @@ MD5SUM="2c90b825291c51bd7630b909daee7cd6 \
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libmpdclient"
-MAINTAINER="Jostein Berntsen"
-EMAIL="jvbernts@online.no"
+MAINTAINER="Emmanuel N. Millan"
+EMAIL="emmanueln@gmail.com"
