@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Slackware build script for lua-std._debug
+# Copyright 2026 Gregory J. L. Tourte <ArTourter@gmail.com>
 # Copyright 2019 abooksigun <abooksigun09@gmail.com>
 # All rights reserved.
 #
@@ -29,7 +30,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=lua-std._debug
 SRCNAM=_debug
-VERSION=${VERSION:-1.0.1}
+VERSION=${VERSION:-1.1.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -66,7 +67,6 @@ done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -t $PKG/usr/doc/$PRGNAM-$VERSION doc/* AUTHORS.md LICENSE.md NEWS.md README.md
-
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

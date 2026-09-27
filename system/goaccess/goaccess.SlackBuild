@@ -30,7 +30,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=goaccess
-VERSION=${VERSION:-1.11}
+VERSION=${VERSION:-1.12}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -70,7 +70,6 @@ else
 fi
 
 geoip="--enable-geoip=${GEOIP:-no}"
-tcb="--enable-tcb=${TCB:-no}"
 
 set -e
 
@@ -101,7 +100,6 @@ CXXFLAGS="$SLKCFLAGS" \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --enable-utf8 \
   $geoip \
-  $tcb \
   --build=$ARCH-slackware-linux
 
 make

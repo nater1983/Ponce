@@ -36,7 +36,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=sslscan
-VERSION=${VERSION:-2.2.2}
+VERSION=${VERSION:-2.2.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -65,7 +65,8 @@ elif [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
 elif [ "$ARCH" = "aarch64" ]; then
-  SLKCFLAGS="-O2 -fPIC"
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
 fi
@@ -85,7 +86,7 @@ sed -i "s/^GIT_VERSION = .*$/GIT_VERSION = $VERSION/" Makefile
 STATIC=${STATIC:-yes}
 
 if [ "$STATIC" = "yes" ] ; then
-  OPENSSLVERSION=${OPENSSLVERSION:-openssl-3.5.7}
+  OPENSSLVERSION=${OPENSSLVERSION:-openssl-3.5.8}
   tar xf "$CWD/openssl-$OPENSSLVERSION.tar.gz"
   mv "openssl-$OPENSSLVERSION" openssl
 fi
