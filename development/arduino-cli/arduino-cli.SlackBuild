@@ -57,6 +57,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+rm -rf $PRGNAM-$VERSION
+mkdir -p $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
 tar xvf $CWD/${PRGNAM}_${VERSION}_Linux_${BIT}.tar.gz
 chown -R root:root .
 find -L . \

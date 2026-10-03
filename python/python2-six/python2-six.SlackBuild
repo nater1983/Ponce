@@ -1,9 +1,15 @@
 #!/bin/bash
 
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
 # Slackware build script for python2-six
 
 # Copyright 2012-2018 Larry Hajali <larryhaja[at]gmail[dot]com>
 # Copyright 2024 Arkadiusz Drabczyk <arkadiusz@drabczyk.org>
+========
+# Slackware build script for qt-sudo
+
+# Copyright 2025 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
+>>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1:system/qt-sudo/qt-sudo.SlackBuild
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,9 +31,14 @@
 
 cd $(dirname $0) ; CWD=$(pwd)
 
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
 PRGNAM=python2-six
 SRCNAM=six
 VERSION=${VERSION:-1.16.0}
+========
+PRGNAM=qt-sudo
+VERSION=${VERSION:-20240524_242342e}
+>>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1:system/qt-sudo/qt-sudo.SlackBuild
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -54,10 +65,16 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
 rm -rf $SRCNAM-$VERSION
 tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
 cd $SRCNAM-$VERSION
 
+========
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.*z
+cd $PRGNAM-$VERSION
+>>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1:system/qt-sudo/qt-sudo.SlackBuild
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -65,7 +82,15 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
 python2 setup.py install --root=$PKG
+========
+qmake PREFIX=/usr
+make
+make install INSTALL_ROOT=$PKG
+
+#rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
+>>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1:system/qt-sudo/qt-sudo.SlackBuild
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
@@ -78,12 +103,17 @@ if $(python -c 'import sphinx.pygments_styles' 2>/dev/null); then
 fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<<< HEAD:python/python2-six/python2-six.SlackBuild
 cp -a LICENSE PKG-INFO README.rst $PKG/usr/doc/$PRGNAM-$VERSION
 [ -d documentation/_build/singlehtml ] && \
   cp -a documentation/_build/singlehtml/index.html \
     documentation/_build/singlehtml/_static \
     $PKG/usr/doc/$PRGNAM-$VERSION
 find $PKG/usr/doc -type f -exec chmod 0644 '{}' \;
+========
+cp -a AUTHORS CHANGELOG LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+>>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1:system/qt-sudo/qt-sudo.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

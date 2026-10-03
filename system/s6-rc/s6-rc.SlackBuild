@@ -92,6 +92,7 @@ CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
+  --sysconfdir=/etc \
   --dynlibdir=/lib${LIBDIRSUFFIX} \
   --bindir=/bin \
   --libexecdir=/usr/libexec \

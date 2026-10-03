@@ -6,6 +6,8 @@
 # Copyright 2015-2022  Jostein Berntsen <jvbernts@online.no>
 # All rights reserved.
 #
+# Updated by Emmanuel N. Millan, 2026
+#
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
 #
@@ -83,7 +85,9 @@ cp -a $CWD/boost.m4 m4/
 
 sed -ie 's/if (!mpeg_file->save(TagLib::MPEG::File::ID3v2, true, 4, false))/if (!mpeg_file->save(TagLib::MPEG::File::ID3v2, true, 4))/g' src/tags.cpp
 
-autoreconf -fi
+VERSION_LOCAL=$(autoconf --version | head -n 1 | grep -oE '[0-9]+\.[0-9]+')
+sed -i "s/AC_PREREQ(\[.*\])/AC_PREREQ([$VERSION_LOCAL])/" configure.ac
+autoreconf -fiv
 ./configure \
 --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \

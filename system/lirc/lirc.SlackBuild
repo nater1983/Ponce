@@ -48,8 +48,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=lirc
 VERSION=${VERSION:-0.10.2}
 BUILD=${BUILD:-1}
-TAG=${TAG:-rdlnx}
-PKGTYPE=${PKGTYPE:-txz}
+TAG=${TAG:-_SBo}
+PKGTYPE=${PKGTYPE:-tgz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -104,6 +104,10 @@ patch -p1 < $CWD/datarootdir.patch
 # Thanks to Martin Schmidt for the heads up and the patch
 patch -p1 < $CWD/gi.patch
 
+# Let's not clobber the system lirc.4 manpage and just not install
+# it (it's what upstream changed in a later version).
+sed -i 's|man/lirc\.4 ||' doc/Makefile.in
+
 MAN2HTML=no \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -122,6 +126,9 @@ make -j1
 # doc/Makefile, unless we set it here also.
 make install-strip DESTDIR=$PKG docdir=/usr/doc/$PRGNAM-$VERSION
 
+# Remove the empty man4 dir
+rmdir $PKG/usr/man/man4
+
 gzip -9 $PKG/usr/man/man*/*
 
 # 20220211 bkw: not sure if the .la files in /usr/lib(64?)/lirc/plugins
@@ -129,8 +136,9 @@ gzip -9 $PKG/usr/man/man*/*
 # in their own private directory.
 rm -f $PKG/usr/lib*/*.la
 
-mkdir -p $PKG/lib/udev/rules.d
-cat contrib/60-lirc.rules > $PKG/lib/udev/rules.d/60-lirc.rules
+#mkdir -p $PKG/lib/udev/rules.d
+#cat contrib/lirc.rules > $PKG/lib/udev/rules.d/96-lirc.rules
+cp -R contrib $PKG/usr/doc/$PRGNAM-$VERSION/
 
 mkdir -p $PKG/etc/logrotate.d
 cat contrib/lircd.conf > $PKG/etc/lircd.conf.new

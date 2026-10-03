@@ -6,7 +6,6 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
                |-----handy-ruler------------------------------------------------------|
-<<<<<<<< HEAD:multimedia/losslesscut-bin/slack-desc
 losslesscut-bin: losslesscut-bin (Lossless video editor)
 losslesscut-bin:
 losslesscut-bin: LosslessCut aims to be the ultimate cross platform FFmpeg GUI for
@@ -18,16 +17,5 @@ losslesscut-bin:
 losslesscut-bin:
 losslesscut-bin:
 losslesscut-bin:
-========
-python3-asgiref: python3-asgiref (ASGI specification and utilities)
-python3-asgiref:
-python3-asgiref: ASGI is a standard for Python asynchronous web apps and servers to
-python3-asgiref: communicate with each other, and positioned as an asynchronous
-python3-asgiref: successor to WSGI.
-python3-asgiref:
-python3-asgiref: Homepage: https://github.com/django/asgiref/
-python3-asgiref:
-python3-asgiref:
-python3-asgiref:
-python3-asgiref:
->>>>>>>> 32e5ef44050abdc3687cd4ca2941396199a32fe5:python/python3-asgiref/slack-desc
+=======
+>>>>>>> 5f7be1569a6851b622f56f2c5cd2168eb5b869a1
