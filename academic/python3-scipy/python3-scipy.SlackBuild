@@ -72,8 +72,18 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
 
-# Cython in current is too new
-sed -i "s|3\.2\.0\"|3.5.0\"|" pyproject.toml
+# Allow our version of meson-python to work
+sed -i 's|meson-python>=0.15.0.*",|meson-python>=0.15.0\",|' pyproject.toml
+
+# Ignore upper pybind11 limits until something breaks
+# Use 2.11.0 instead of 2.12.0 in case user has pybind11-legacy also installed
+sed -i 's|pybind11>=2.13.2.*|pybind11>=2.11.0",|' pyproject.toml
+
+# Ignore upper pythran limits until something breaks
+sed -i 's|pythran>.*|pythran>=0.14.0",|' pyproject.toml
+
+# Ignore upper cython limits
+sed -i 's|Cython>=3.0.8.*|Cython>=3.0.8",|' pyproject.toml
 
 python3 -m build --wheel --no-isolation
 python3 -m installer --destdir "$PKG" dist/*.whl

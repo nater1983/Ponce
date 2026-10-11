@@ -55,7 +55,6 @@ OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" -o "$ARCH" = "i686" ]; then
   SLKCFLAGS="-march=$ARCH -mtune=i686 -pipe -O2 -fPIC"
-  LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-march=x86-64 -mtune=generic -pipe -O2 -fPIC"
   LIBDIRSUFFIX="64"

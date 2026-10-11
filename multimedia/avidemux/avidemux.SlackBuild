@@ -37,7 +37,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=avidemux
-VERSION=${VERSION:-20260826_13b4a26}
+VERSION=${VERSION:-20261001_eb2ab6e}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
