@@ -60,6 +60,10 @@ elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
 fi
@@ -138,6 +142,7 @@ cd build
     -DLIBDIR:PATH=$(pwd)/../lib/linux_x64 \
     -DCMAKE_EXE_LINKER_FLAGS_RELEASE=-ldrm \
     -DCMAKE_INSTALL_PREFIX=$INSTALL_PATH \
+    -DCMAKE_INSTALL_LIBDIR:PATH=lib${LIBDIRSUFFIX}
     -DWITH_INSTALL_PORTABLE:BOOL=ON \
     -DWITH_BUILDINFO:BOOL=ON \
     -DWITH_STATIC_LIBS=ON \
@@ -178,15 +183,15 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 # In case gcc14 is removed after building,
 # include updated libstdc++
-(  cd $PKG/$INSTALL_PATH/lib && \
-   cp -p ${GCC14_PATH}/lib64/libstdc++.so.6.0.33 . && \
+(  cd $PKG/$INSTALL_PATH/lib$LIBDIRSUFFIX && \
+   cp -p ${GCC14_PATH}/lib$LIBDIRSUFFIX/libstdc++.so.6.0.33 . && \
    ln -s libstdc++.so.6.0.33 libstdc++.so.6
 )
 
 mkdir $PKG/usr/bin
 cat >$PKG/usr/bin/blender <<EOF
 #!/bin/bash
-export LD_LIBRARY_PATH=$INSTALL_PATH/lib
+export LD_LIBRARY_PATH=$INSTALL_PATH/lib$LIBDIRSUFFIX
 exec $INSTALL_PATH/blender
 EOF
 chmod a+x $PKG/usr/bin/blender

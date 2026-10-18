@@ -59,7 +59,6 @@ elif [ "$ARCH" = "x86_64" ]; then
 elif [ "$ARCH" = "aarch64" ]; then
   SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
   LIBDIRSUFFIX="64"
->>>>>>> f0b5ca6c6e77078b32dfd11dc57de0f0f7309185
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""

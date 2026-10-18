@@ -54,6 +54,10 @@ OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-march=x86-64 -mtune=generic -pipe -O2 -fPIC"
+  LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
 else
    echo "This SlackBuild will not run on $ARCH" && exit 1
 fi

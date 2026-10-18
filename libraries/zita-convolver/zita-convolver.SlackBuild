@@ -55,6 +55,9 @@ elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="$OPTFLAG -march=i686 -mtune=i686"
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="$OPTFLAG -fPIC"
+elif [ "$ARCH" = "aarch64" ]; then
+  SLKCFLAGS="$OPTFLAG -march=armv8-a -mtune=generic -fPIC"
+  LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="$OPTFLAG"
 fi

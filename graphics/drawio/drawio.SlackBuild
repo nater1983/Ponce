@@ -33,12 +33,12 @@ PKGTYPE=${PKGTYPE:-txz}
 TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
-ARCH=x86_64
+ARCH=$(uname -m)
 
-case "$(uname -m)" in
-    $ARCH) ;;
+case "$ARCH" in
+    x86_64|aarch64) ;;
     *)
-        echo "$PRGNAM package only supported on the x86_64 architecture" >&2
+        echo "$PRGNAM package only supported on x86_64 and aarch64" >&2
         exit 1
         ;;
 esac

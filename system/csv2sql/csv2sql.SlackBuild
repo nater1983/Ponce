@@ -6,6 +6,8 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20261010 bkw: bump BUILD to 2, as the name of the dependency has changed.
+
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=csv2sql
