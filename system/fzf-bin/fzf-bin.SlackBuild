@@ -29,11 +29,16 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=fzf-bin
-VERSION=${VERSION:-0.74.4}
+VERSION=${VERSION:-0.74.5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
-SRCNAM=${SRCNAM:-fzf-0.74.4-linux_amd64}
+case "$(uname -m)" in
+  x86_64)  SRCARCH=amd64 ;;
+  aarch64) SRCARCH=arm64 ;;
+  *) echo "unsupported arch: $(uname -m)" >&2; exit 1 ;;
+esac
+SRCNAM=${SRCNAM:-fzf-0.74.5-linux_${SRCARCH}}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -52,7 +57,7 @@ TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-if [ "$ARCH" = "x86_64" ]; then
+if [ "$ARCH" = "x86_64" -o "$ARCH" = "aarch64" ]; then
   echo "The will install the fzf binary for your $ARCH"
 else
 echo "This slackbuild will not run in $ARCH" && exit 1

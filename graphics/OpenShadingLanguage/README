@@ -11,5 +11,3 @@ standard shading language for VFX and animated features, used across
 the industry in many commercial and studio- proprietary renderers.
 
 Cuda and OptIx are optional dependencies but they are not tested.
-
-OSL is an optional dependency for Blender.
