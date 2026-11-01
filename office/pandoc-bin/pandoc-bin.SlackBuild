@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=pandoc-bin
 SRCNAM=pandoc
-VERSION=${VERSION:-3.12.1}
+VERSION=${VERSION:-3.13}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -65,11 +65,10 @@ rm -rf $PRGNAM-$VERSION
 
 ar x $CWD/$SRCNAM-$VERSION-*-$DEBARCH.deb data.tar.gz
 mkdir -p $PRGNAM-$VERSION
-tar -xvf data.tar.gz -C $PRGNAM-$VERSION/
+tar -xvf data.tar.gz -C $PRGNAM-$VERSION --no-same-owner
 rm data.tar.gz
 
 cd $PRGNAM-$VERSION
-chown -R root:root .
 find . ! -type l    -a \( \
   \(     -perm /111 -a ! -perm 755 -a -exec chmod -f 755 {} + \) -o \
   \(   ! -perm /111 -a ! -perm 644 -a -exec chmod -f 644 {} + \) \)
@@ -90,7 +89,6 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 mv \

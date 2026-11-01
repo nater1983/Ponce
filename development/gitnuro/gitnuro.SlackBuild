@@ -25,7 +25,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gitnuro
-VERSION=${VERSION:-1.5.0}
+VERSION=${VERSION:-2.0.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -37,6 +37,17 @@ if [ -z "$ARCH" ]; then
        *) ARCH=$( uname -m ) ;;
   esac
 fi
+
+if [ "$ARCH" = "x86_64" ]; then
+  SRCNAM="x86_64"
+ elif [ "$ARCH" = "aarch64" ]; then
+  SRCNAM="arm_aarch64"
+else
+  echo "This program does not work with your architecture: $(uname -m)"
+  exit 1
+fi
+
+JAR=Gitnuro-linux-$ARCH-2.0-$VERSION.jar
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
@@ -53,13 +64,13 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 
 mkdir -p $PKG/opt/$PRGNAM $PKG/usr/bin $PKG/usr/share/applications $PKG/usr/share/pixmaps
-install -D -m0644 $CWD/Gitnuro-linux-x86_64-$VERSION.jar $PKG/opt/$PRGNAM/Gitnuro-linux-x86_64-$VERSION.jar
+install -D -m0644 $CWD/$JAR $PKG/opt/$PRGNAM/$JAR
 cat << EOF > $PKG/usr/bin/gitnuro
 #!/bin/bash
 
-JVM=/usr/lib64/zulu-openjdk21/bin/java
+JVM=/usr/lib64/zulu-openjdk25/bin/java
 if [ -f "\$JVM" ]; then
-    \$JVM -jar /opt/$PRGNAM/Gitnuro-linux-x86_64-$VERSION.jar
+    \$JVM -jar /opt/$PRGNAM/Gitnuro-linux-$ARCH-2.0-$VERSION.jar
 else
     echo "Could not find zulu-openjdk21's java command. Please install it from SlackBuilds.org (or fix this script to use other jvm)."
 fi

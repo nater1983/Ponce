@@ -78,8 +78,6 @@ find . ! -type l    -a \( \
 
 patch -p1 < $CWD/avcodec_close.patch
 
-patch -p1 < $CWD/avcodec_close.patch
-
 mkdir -p build
 cd build
   cmake ../ \

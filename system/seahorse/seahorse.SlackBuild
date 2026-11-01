@@ -8,7 +8,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=seahorse
-VERSION=${VERSION:-43.0}
+VERSION=${VERSION:-47.0.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -65,9 +65,8 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-for i in $CWD/patches/*.patch ; do
-  patch -p1 < $i
-done
+sed -i '/^[[:space:]]*case GPGME_EVENT_NEXT_TRUSTITEM:/d' \
+  pgp/seahorse-gpgme.c
 
 mkdir build
 cd build

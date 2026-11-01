@@ -25,10 +25,11 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=perl-Error
-VERSION=${VERSION:-0.17030}
+VERSION=${VERSION:-0.17031}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
+ARCH="noarch"
 
 SRCNAM="$(printf $PRGNAM | cut -d- -f2-)"
 
@@ -52,9 +53,6 @@ elif [ "$ARCH" = "x86_64" ]; then
   LIBDIRSUFFIX="64"
 elif [ "$ARCH" = "aarch64" ]; then
   SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
-  LIBDIRSUFFIX="64"
-elif [ "$ARCH" = "aarch64" ]; then
-  SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
 else
   SLKCFLAGS="-O2"
