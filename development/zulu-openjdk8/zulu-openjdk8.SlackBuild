@@ -27,7 +27,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=zulu-openjdk8
 VERSION=${VERSION:-8.0.512}
-ZULUVERSION=${ZULUVERSION:-8.98.0.107}
+ZULUVERSION=${ZULUVERSION:-8.98.0.111}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -61,21 +61,15 @@ if [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   ZULU_ARCH=x64
   LIBDIRSUFFIX="64"
-elif [ "$ARCH" = "aarch64" ]; then
-  SLKCFLAGS="-O2 -march=armv8-a -mtune=generic -fPIC"
-  LIBDIRSUFFIX="64"
   JVMLIBARCH="amd64"
+elif [ "$ARCH" = "aarch64" ]; then
+  ZULU_ARCH=aarch64
+  LIBDIRSUFFIX="64"
+  JVMLIBARCH="aarch64"
 elif  [ "$ARCH" = "arm" ]; then
   ZULU_ARCH=aarch32hf
   LIBDIRSUFFIX=""
   JVMLIBARCH="aarch32"
-  # arm32 hf latest version not yet published to the community
-  VERSION=8.0.504
-  ZULUVERSION=8.96.0.205
-elif  [ "$ARCH" = "aarch64" ]; then
-  ZULU_ARCH=aarch64
-  LIBDIRSUFFIX="64"
-  JVMLIBARCH="aarch64"
 else
   echo "Architecture ${ARCH} is not supported."
   exit 1
