@@ -104,7 +104,6 @@ mkdir -p $PKGDOC
 cp -a \
  AUTHORS COPYING* ChangeLog README README.dovecotauth UPGRADE \
  $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # The HTML docs are simply copies of the man pages, so are removed from
 # generated package. If you really want the HTML version of the man pages

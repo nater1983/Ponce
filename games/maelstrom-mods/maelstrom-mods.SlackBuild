@@ -18,8 +18,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=maelstrom-mods
 VERSION=${VERSION:-20260730}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
@@ -27,7 +27,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -64,7 +64,6 @@ for i in $MODS; do
 done
 
 cp -a *.rst $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 sed "s,@MODS@,$MODS," < $CWD/slack-desc > $PKG/install/slack-desc

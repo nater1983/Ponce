@@ -150,7 +150,6 @@ install -m0644 sh-completion/astyle.fish $PKG/etc/fish/completions
 cp -a *.md $PKGDOC
 sed -i 's,\r,,' $PKGDOC/file/*
 
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

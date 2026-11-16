@@ -183,7 +183,6 @@ sed -n '/Zone/,$p' $CWD/root-anchors.xml | sed -e 's|<[^>]*>||g' | \
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a Changelog LICENSE README* doc/TODO $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # 20220308 bkw: it's fully possible for there to be multiple
 # /usr/share/vim/vim<version> directories. For one thing, if vim gets

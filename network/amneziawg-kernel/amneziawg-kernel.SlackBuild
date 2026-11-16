@@ -93,7 +93,6 @@ mkdir -p $PKGDOC
 cp -a \
   COPYING README.md \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -117,7 +117,6 @@ PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 gzip -9 $PKGMAN/$PRGNAM.1
 mkdir -p $PKGDOC
 cp -a AUTHORS COPYING ChangeLog README $PKGDOC/
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh

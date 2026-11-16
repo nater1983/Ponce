@@ -120,7 +120,6 @@ cp -a \
 COPYING README_LINUX.txt README_debian.txt \
 README.txt TODO.txt  LICENSE.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 rm -rf $PKD/usr/doc/$PRGNAM-$VERSION/docs/usage_docs/.git
 
 mkdir -p $PKG/install

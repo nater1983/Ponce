@@ -130,7 +130,6 @@ for doc in README CHANGELOG gpl_license.txt ; do
 done
 cp -a ./contrib/adsl-failover $PKGDOC/contrib/
 cp -a ./contrib/Slackware/syslog.conf $PKGDOC/contrib/
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

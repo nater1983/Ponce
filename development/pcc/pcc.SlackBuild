@@ -47,8 +47,8 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=pcc
 VERSION=${VERSION:-1.2.0.DEVEL+20260727_08c57ee}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 
 COMMIT=${COMMIT:-08c57eee81dcc6106e2ec47b63b93db62a84640a}
 LIBCOMMIT=${LIBCOMMIT:-f2155b9a3c1c930c3470afa9d896013e07d68927}
@@ -66,7 +66,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -165,7 +165,6 @@ mv $PKG/usr/man/man1/cpp.1.gz $PKG/usr/man/man1/pcpp.1.gz
 PKGDOC=$PKG/usr/doc/$PRGNAM-$VERSION
 mkdir -p $PKGDOC
 cp -a LICENSE* README* $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 # now, build the libs. we don't attempt to build them with the just-built
 # pcc (maybe possible, but not worth the effort).

@@ -30,13 +30,13 @@ cd $(dirname $0) ; CWD=$(pwd)
 PRGNAM=terminalia-fonts
 VERSION=${VERSION:-1.020}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-rdlnx}
+PKGTYPE=${PKGTYPE:-txz}
 ARCH=noarch
 
 TARNAM=Terminalia-Terminalia_v.$VERSION
 
-TMP=${TMP:-/tmp/SBo}
+TMP=${TMP:-/tmp/rdlnx}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 

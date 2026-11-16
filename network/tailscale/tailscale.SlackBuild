@@ -93,7 +93,6 @@ mkdir -p $PKGDOC
 cp -a \
   $TMP/$PRGNAM-$VERSION/{CODE_OF_CONDUCT.md,LICENSE,PATENTS,README.md,SECURITY.md} \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

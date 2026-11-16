@@ -94,7 +94,6 @@ mkdir -p $PKGDOC
 mv \
   $PKG/usr/share/doc/pandoc/copyright \
   $PKGDOC
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 rm -rf $PKG/usr/share
 
 mkdir -p $PKG/install

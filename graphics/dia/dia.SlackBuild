@@ -119,7 +119,6 @@ rmdir $PKGSHR/man
 # Install documentation.
 cp -a AUTHORS COPYING ChangeLog* KNOWN_BUGS MAINTAINERS NEWS README \
       RELEASE-PROCESS THANKS TODO $PKGDOC/
-cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
