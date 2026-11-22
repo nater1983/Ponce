@@ -26,7 +26,7 @@ cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=php-pgsql
 SRCNAM=php
-VERSION=${VERSION:-7.4.27}
+VERSION=${VERSION:-7.4.33}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -100,6 +100,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-php-config=$PHP_CONFIG \
+  --with-pgsql=/usr/lib${LIBDIRSUFFIX}/postgresql18/18 \
   --build=$ARCH-slackware-linux
 
 make
@@ -124,6 +125,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --with-php-config=$PHP_CONFIG \
+  --with-pdo-pgsql=/usr/lib${LIBDIRSUFFIX}/postgresql18/18 \
   --build=$ARCH-slackware-linux
 
 make

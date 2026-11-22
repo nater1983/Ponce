@@ -30,7 +30,7 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=tclap
-VERSION=${VERSION:-1.2.2}
+VERSION=${VERSION:-1.2.5}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -105,7 +105,7 @@ make install docdir=/usr/doc/$PRGNAM-$VERSION DESTDIR=$PKG
 rmdir $PKG/usr/doc/$PRGNAM-$VERSION/html &>/dev/null || true
 
 cp -a \
-  AUTHORS COPYING ChangeLog NEWS README \
+  AUTHORS COPYING ChangeLog README \
   $PKG/usr/doc/$PRGNAM-$VERSION
 
 rm -f $PKG/usr/lib*/*.la

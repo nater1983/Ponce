@@ -54,9 +54,10 @@ OUTPUT=${OUTPUT:-/tmp}
 
 set -e
 
-#CPREFIX=cuda-13.4
+#SHORT_VERSION=13.5 BASE_VERSION=13 CPREFIX=cuda-13
 SHORT_VERSION=$(echo ${VERSION%.*})
-CPREFIX=cuda-$SHORT_VERSION
+BASE_VERSION=$(echo ${VERSION%%.*})
+CPREFIX=cuda-$BASE_VERSION
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -148,7 +149,7 @@ echo
 echo -n "Installing profile.d and pkgconfig files ... "
 install -Dm755 "${CWD}/profile/cuda.sh" "${PKG}/etc/profile.d/$CPREFIX.sh"
 install -Dm755 "${CWD}/profile/cuda.csh" "${PKG}/etc/profile.d/$CPREFIX.csh"
-sed -i "s|@VERSION@|$SHORT_VERSION|g" "${PKG}/etc/profile.d/$CPREFIX.sh" "${PKG}/etc/profile.d/$CPREFIX.csh"
+sed -i "s|@VERSION@|$BASE_VERSION|g" "${PKG}/etc/profile.d/$CPREFIX.sh" "${PKG}/etc/profile.d/$CPREFIX.csh"
 
 # Generate and install pkgconfig files
 pkg_config_path="$PKG"/opt/"${CPREFIX}"/usr/share/pkgconfig

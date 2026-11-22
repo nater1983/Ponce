@@ -26,8 +26,8 @@
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=zulu-openjdk11
-VERSION=${VERSION:-11.0.33}
-ZULUVERSION=${ZULUVERSION:-11.92.113}
+VERSION=${VERSION:-11.0.33.1}
+ZULUVERSION=${ZULUVERSION:-11.92.201}
 BUILD=${BUILD:-1}
 TAG=${TAG:-rdlnx}
 PKGTYPE=${PKGTYPE:-txz}
@@ -61,6 +61,9 @@ elif [ "$ARCH" = "aarch64" ]; then
 elif  [ "$ARCH" = "arm" ]; then
   ZULU_ARCH=aarch32hf
   LIBDIRSUFFIX=""
+  # arm32 hf latest version not yet published to the community
+  VERSION=11.0.33
+  ZULUVERSION=11.92.113
 else
   echo "Architecture ${ARCH} is not supported."
   exit 1
@@ -107,8 +110,6 @@ mv ${PKG}/usr/lib$LIBDIRSUFFIX/${PRGNAM}/demo ${PKG}/usr/doc/${PRGNAM}-${VERSION
 for CFILE in DISCLAIMER Welcome.html readme.txt ; do
   mv ${PKG}/usr/lib$LIBDIRSUFFIX/${PRGNAM}/${CFILE} ${PKG}/usr/doc/${PRGNAM}-${VERSION}
 done
-
-cat ${CWD}/${PRGNAM}.SlackBuild > ${PKG}/usr/doc/${PRGNAM}-${VERSION}/${PRGNAM}.SlackBuild
 
 mkdir -p ${PKG}/install
 cat ${CWD}/slack-desc > ${PKG}/install/slack-desc

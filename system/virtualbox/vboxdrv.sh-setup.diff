@@ -1,6 +1,5 @@
-diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7.0.16/src/VBox/Installer/linux/vboxdrv.sh
---- VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh	2024-04-16 14:03:24.000000000 +0200
-+++ VirtualBox-7.0.16/src/VBox/Installer/linux/vboxdrv.sh	2024-04-17 13:03:53.478708972 +0200
+--- vboxdrv.sh.orig
++++ vboxdrv.sh
 @@ -55,38 +55,12 @@
    MODPROBE="$MODPROBE --allow-unsupported-modules"
  fi
@@ -40,7 +39,7 @@ diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7
  
  # If the VirtualBoxVM file has the set-uid bit set or if it doesn't exist, setup vboxdrv
  # in hardened mode.  Otherwise, do the developer mode using vboxusers for access control.
-@@ -185,342 +159,12 @@
+@@ -185,363 +159,21 @@
      lsmod | grep -q "$1[^_-]"
  }
  
@@ -393,7 +392,7 @@ diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7
          if ! rm -f $DEVICE; then
              failure "Cannot remove $DEVICE"
          fi
-@@ -593,8 +234,6 @@
+@@ -593,8 +225,6 @@
          mkdir -p -m 0750 /dev/vboxusb 2>/dev/null
          chown root:vboxusers /dev/vboxusb 2>/dev/null
      fi
@@ -402,7 +401,7 @@ diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7
      succ_msg "VirtualBox services started"
  }
  
-@@ -675,153 +314,10 @@
+@@ -675,153 +305,10 @@
      fi
  }
  
@@ -557,7 +556,7 @@ diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7
  }
  
  dmnstatus()
-@@ -871,20 +367,7 @@
+@@ -871,20 +358,7 @@
      stop && start
      ;;
  setup)
@@ -579,7 +578,7 @@ diff -ru VirtualBox-7.0.16.orig/src/VBox/Installer/linux/vboxdrv.sh VirtualBox-7
      ;;
  force-reload)
      stop
-@@ -894,7 +377,7 @@
+@@ -894,7 +368,7 @@
      dmnstatus
      ;;
  *)
